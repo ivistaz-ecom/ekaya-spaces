@@ -181,10 +181,10 @@ var settings = {
 <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <img src="slider.png" className='w-[800px] h-[400px]' />
                           </div>
                           <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <img src="slider.png" className='w-[800px] h-[400px]' />
                           </div>
                           
                   </Slider>
@@ -225,10 +225,10 @@ var settings = {
 <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <img src="ellen.png" className='w-[800px] h-[400px]' />
                           </div>
                           <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <img src="ellen.png" className='w-[800px] h-[400px]' />
                           </div>
                           
                   </Slider>

@@ -24,13 +24,13 @@ function WhyEkaya() {
 </div>
 
 <div id="default-tab-content">
-    <div class="hidden p-4 h-[350px] content-center " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="hidden p-4 h-[350px] content-center poppins-regular" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <p class="text-2xl font-light text-gray-600 ml-20">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
     </div>
     <div class="hidden p-4 h-[350px] content-center poppins-regular" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
     <p class="text-2xl font-light text-gray-600 ml-20">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
     </div>
-    <div class="hidden p-4 h-[350px] content-center " id="settings" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="hidden p-4 h-[350px] content-center poppins-regular" id="settings" role="tabpanel" aria-labelledby="settings-tab">
     <p class="text-2xl font-light text-gray-600 ml-20">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
     </div>
     
