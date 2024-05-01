@@ -42,14 +42,12 @@ function Footer() {
                         <hr className='h-px border-t-2 border-gray-300 pb-4 -ml-[77px] ' />
                         <h4 className='text-lg border p-2 border-e-green w-[190px]'>Projects in Bangalore</h4>
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                            <li>
-                                <p className='px-4 text-e-green poppins-light text-[18px]'>Embrace</p>
+                            
+                                <li>
+                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Embrace</a>
                             </li>
                             <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ellen</a>
-                            </li>
-                            <li className='pt-4'>
-                                <p className='px-4 text-e-green poppins-light text-[18px]'>Bangalore</p>
                             </li>
                             <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Takshavi</a>
