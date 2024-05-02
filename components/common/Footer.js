@@ -40,7 +40,7 @@ function Footer() {
                     <div className='pl-16'>
                         <h3 className='text-xl font-medium pb-5 poppins-medium'>Our Projects</h3>
                         <hr className='h-px border-t-2 border-gray-300 pb-4 -ml-[77px] ' />
-                        <h4 className='text-lg border p-2 border-e-green w-[190px]'>Projects in Bangalore</h4>
+                        <h4 className='text-lg border p-2 border-e-green w-[220px]'>Projects in Bangalore</h4>
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             
                                 <li>
@@ -54,7 +54,7 @@ function Footer() {
                             </li>
 
                         </ul>
-                        <h4 className='text-lg border p-2 border-e-green w-[190px]'>Projects in Goa</h4>
+                        <h4 className='text-lg border p-2 border-e-green w-[220px]'>Projects in Goa</h4>
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
                                 <p className='px-4 text-e-green poppins-light text-[18px]'>Goa - Dona Paula</p>

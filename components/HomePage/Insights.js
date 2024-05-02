@@ -85,7 +85,7 @@ function Insights() {
         <>
             <div className="text-center mt-[0px] w-[70%] mx-auto z-96">
                 <h2 className='text-5xl poppins-regular py-10'>Insights</h2>
-                <p className='poppins-light text-2xl'>Gain valuable insights into the world of luxury real estate and what makes an Ekaya home the right choice for discerning buyers.</p>
+                <p className='poppins-light text-[18px]'>Gain valuable insights into the world of luxury real estate and what makes an Ekaya home the right choice for discerning buyers.</p>
             </div>
             <div className="mx-auto mt-10 justify-center w-[80%] z-96">
 

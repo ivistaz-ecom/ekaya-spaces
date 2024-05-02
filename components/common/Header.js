@@ -74,7 +74,7 @@ function Header({stats}) {
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Embrace</a>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Ellen</a>
+                                <Link href="/about-ellen" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Ellen</Link>
                               </li>
 
                             </ul>
