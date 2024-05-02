@@ -1,8 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-function Header() {
-
-
+import Link from 'next/link'
+function Header({stats}) {
 
 
   const [status, setStatus] = useState(false);
@@ -18,11 +17,21 @@ function Header() {
   };
 
 
+
+  const handleClick = () => {
+    setStatus(false);
+    setEkaya(false);
+    // alert('hello')
+  };
+
   return (
 
-    <>
+    < >
+      <span className='absolute w-full h-screen z-20' onClick={handleClick}></span>
       <nav class="bg-transparent bg-opacity-5 absolute w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]">
-      <div class="flex justify-between p-4 w-[80%] mx-auto  items-center">
+      
+
+      <div class="flex justify-between p-4 w-[80%] mx-auto  items-center z-50">
           <div className=''>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
               <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
@@ -41,7 +50,7 @@ function Header() {
                             <p className='border-b border-gray-400 p-2 poppins-light text-[18px]'>Ongoing Projects</p>
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                               <li>
-                                <p className='px-4 text-e-green poppins-light text-[18px]'>Goa - Dona Paula</p>
+                                <Link href="/about-dona-paula" className='px-4 text-e-green poppins-light text-[18px]'>Goa - Dona Paula</Link>
                               </li>
                               <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Vista Do Mar</a>
@@ -50,7 +59,7 @@ function Header() {
                                 <p className='px-4 text-e-green poppins-light text-[18px]'>Bangalore</p>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Takshavi</a>
+                                <Link href="/takshavi" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Takshavi</Link>
                               </li>
 
                             </ul>
@@ -77,7 +86,7 @@ function Header() {
                                 <p className='px-4 text-e-green poppins-light text-[18px]'>Goa</p>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Moira</a>
+                                <Link href="/about-moira" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Moira</Link>
                               </li>
                               <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Amora</a>
@@ -107,7 +116,7 @@ function Header() {
 
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Story</a>
+                                <Link href="/about-us" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Story</Link>
                               </li>
                               <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a>
@@ -116,7 +125,7 @@ function Header() {
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why Ekaya</a>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sustainability</a>
+                                <Link href="/sustainability" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sustainability</Link>
                               </li>
 
                             </ul>
@@ -134,10 +143,10 @@ function Header() {
           </div>
           <div className='mr-[200px]'>
 
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <Link href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="/logo.svg" class="h-8" alt="Ekaya" />
 
-            </a>
+            </Link>
 
           </div>
           <div class="flex md:order-2 space-x-3 md:space-x-0">
