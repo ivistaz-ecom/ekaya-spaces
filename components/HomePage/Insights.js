@@ -109,7 +109,7 @@ function Insights() {
                   </Slider>
                
             </div>
-            <div className="z-0 -mt-40 bg-no-repeat bg-cover bg-[url('/background.png')] bg-gray-300 bg-blend-multiply h-screen relative">
+            <div className="z-0 -mt-40 bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-gray-300 bg-blend-multiply h-screen relative">
                 
                 </div>
         </>
