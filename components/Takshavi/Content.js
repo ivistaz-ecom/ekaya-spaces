@@ -57,13 +57,16 @@ function Content() {
               <p className='poppins-light text-[18px] text-start pb-5'>Positioned within the tranquil surroundings of Frazer Town, Takshavi enjoys a coveted location that grants easy access to nearby parks, esteemed educational institutions, and essential amenities. Its integration into the neighborhood fabric reflects a commitment to fostering a sense of community and belonging.</p>
               <p className='poppins-extralight  text-[24px] text-start'>Our homes are designed to create a harmonious flow between<br/>interior luxury and the beauty of the outdoors.</p>
           </div>
+          <div className='w-[80%] mx-auto pt-12'>
+              <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
+              </div>
           <div className='w-[80%] mx-auto'>
           <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="ellen.png" className='' />
+                      <img src="takshavi-banner-1.png" className='' />
                           </div>
                           <div>
-                      <img src="ellen.png" className='' />
+                      <img src="takshavi-banner-1.png" className='' />
                           </div>  
               </Slider>
               <div className='text-[18px] poppins-light border border-e-green w-[490px] p-6 my-12'>
@@ -80,7 +83,7 @@ function Content() {
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
                       
-                      <div className='text-2xl'>Structure</div>
+                      <div className='text-2xl poppins-light'>Structure</div>
                       <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>RCC structure with concrete/block masonry walls.</li>
                           <li>Open surface parking on stilt floor.Polished VDF flooring</li>
@@ -88,7 +91,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>Finishes</div>
+                  <div className='text-2xl poppins-light'>Finishes</div>
                       <div>
                           <p className='poppins-medium text-[18px]'>LIVING / DINING</p>
                           <ul className="poppins-light text-[18px] list-image-[url(/right-icon.svg)] pb-1">
@@ -108,7 +111,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>Toilets</div>
+                  <div className='text-2xl poppins-light'>Toilets</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Creanza Matt finish vitrified tile flooring.</li>
                           <li>Vitrified wall tiling upto 7 ft level.</li>
@@ -116,7 +119,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>Kitchen</div>
+                  <div className='text-2xl poppins-light'>Kitchen</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Vitrified tile flooring.</li>
                           <li>Ceramic wall tiling 2 ft above counter level.</li>
@@ -128,7 +131,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>Balconies/Utilities</div>
+                  <div className='text-2xl poppins-light'>Balconies/Utilities</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Matt finish Vitrified tile flooring and skirting.</li>
                           <li>Glass with MS hand rails.</li>
@@ -139,7 +142,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>Common areas and Staircase</div>
+                  <div className='text-2xl poppins-light'>Common areas and Staircase</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Granite for landing, treads & risers from basement to terrace floor.</li>
                           <li>Premium emulsion for ceiling and walls.</li>
@@ -149,7 +152,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>JOINERY</div>
+                  <div className='text-2xl poppins-light'>JOINERY</div>
                       <div>
                       <p className='poppins-medium text-[18px]'>Main Door</p>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -175,7 +178,7 @@ function Content() {
               <div className='w-[80%] mx-auto'>
                   <div className='grid grid-cols-2 py-4'>
                       
-                      <div className='text-2xl'>SANITARY & PLUMBING</div>
+                      <div className='text-2xl poppins-light'>SANITARY & PLUMBING</div>
                       <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>CP Fittings: Jacquar or equvivalent.</li>
                           <li>Ceramic Fittings: Jacquar or equvivalent</li>
@@ -183,7 +186,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>ELECTRICAL</div>
+                  <div className='text-2xl poppins-light'>ELECTRICAL</div>
                       <div>
                           
                           <ul className="poppins-light text-[18px] list-image-[url(/right-icon.svg)] pb-1">
@@ -193,14 +196,14 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>AIR CONDITIONG</div>
+                  <div className='text-2xl poppins-light'>AIR CONDITIONG</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Provision for Electrical conduit,</li>
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>TELEPHONE POINTS</div>
+                  <div className='text-2xl poppins-light' >TELEPHONE POINTS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Provision for Electrical conduit, Drain pipe and outdoor unit space for split type</li>
                           <li>AC for Living, Dinning & Master Bedroom.</li>
@@ -209,7 +212,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>TELEPHONE POINTS</div>
+                  <div className='text-2xl poppins-light'>TELEPHONE POINTS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>In Living Room and in all Bedrooms.</li>
                           
@@ -218,7 +221,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>D.G. KIRLOSKAR MAKE</div>
+                  <div className='text-2xl poppins-light'>D.G. KIRLOSKAR MAKE</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>For common area lighting, lifts and pumps.</li>
                           <li>4 Kva power back-up for each unit</li>
@@ -228,7 +231,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>ELEVATORS</div>
+                  <div className='text-2xl poppins-light'>ELEVATORS</div>
                       <div>
                       
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -240,7 +243,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>SECURITY</div>
+                  <div className='text-2xl poppins-light'>SECURITY</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>24 hour security & CCTV on all sides of the stilt(Parking) floorincluding lobby area.</li>
@@ -256,7 +259,7 @@ function Content() {
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
         <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Floor plan 1</button>
+            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Floor plan 1</button>
         </li>
         <li class="me-2" role="presentation">
             <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Floor Plan 2</button>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Banner() {
   return (
-      <div className="bg-center bg-no-repeat bg-cover bg-[url('/slider.png')] bg-gray-300 bg-blend-multiply h-screen relative">
+      <div className="bg-center bg-no-repeat bg-cover bg-[url('/ellen-banner-1.png')] bg-gray-300 bg-blend-multiply h-screen relative">
             <div className='w-[80%] absolute bottom-0 py-12 ml-40'>
               <h1 className='text-7xl text-white poppins-light'>
               Ellen

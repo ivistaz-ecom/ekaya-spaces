@@ -53,7 +53,7 @@ function Header({stats}) {
                                 <Link href="/about-dona-paula" className='px-4 text-e-green poppins-light text-[18px]'>Goa - Dona Paula</Link>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Vista Do Mar</a>
+                                <Link href="/vista-do-mar" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Vista Do Mar</Link>
                               </li>
                               <li className='pt-4'>
                                 <p className='px-4 text-e-green poppins-light text-[18px]'>Bangalore</p>
@@ -71,7 +71,7 @@ function Header({stats}) {
                                 <p className='px-4 text-e-green poppins-light text-[18px]'>Bangalore</p>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Embrace</a>
+                                <Link href="/about-embrace" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Embrace</Link>
                               </li>
                               <li>
                                 <Link href="/about-ellen" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Ellen</Link>
@@ -83,11 +83,9 @@ function Header({stats}) {
                             <p className='border-b border-gray-400 p-2 poppins-light text-[18px]'>Upcoming Projects</p>
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                               <li>
-                                <p className='px-4 text-e-green poppins-light text-[18px]'>Goa</p>
+                              <Link href="/about-moira" className='px-4 text-e-green poppins-light text-[18px]'>Goa — Moira</Link>
                               </li>
-                              <li>
-                                <Link href="/about-moira" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Moira</Link>
-                              </li>
+                              
                               <li>
                                 <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">— Amora</a>
                               </li>

@@ -56,12 +56,15 @@ function Content() {
          <h4 className='text-4xl text-black poppins-light pb-6'>Truly a home for your future!</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Ekaya brings you its prestigious project, ELLEN - a premium three-storey apartment block, with a total of 11 spacious modern homes, abound with new age luxuries.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>Every floor houses just two, 2 bedroom and one, 3 bedroom home. Each unit has an open kitchen with a spacious utility area, an exclusive dining area, and a spacious balcony. All Vaastu-compliant homes are thoughtfully designed, keeping in mind the most primary need of the day - space and privacy. The residences are beautifully weaved into the very fiber of ELLEN’s design structure.</p>
-              <p className='poppins-extralight  text-[18px] text-start'>At ELLEN compromise was never an option. Only the best of everything has been utilized, right from the building material, to its 24 hrs - power back up,the gym, to the maneuver-friendly stilt ( ground level ) and basement parking , to the finish with marble and wooden flooring.</p>
+              <p className='poppins-light  text-[18px] text-start'>At ELLEN compromise was never an option. Only the best of everything has been utilized, right from the building material, to its 24 hrs - power back up,the gym, to the maneuver-friendly stilt ( ground level ) and basement parking , to the finish with marble and wooden flooring.</p>
           </div>
+          <div className='w-[80%] mx-auto pt-12'>
+              <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
+              </div>
           <div className='w-[80%] mx-auto'>
           <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="ellen.png" className='' />
+                      <img src="ellen/slide.png" className='' />
                           </div>
                           <div>
                       <img src="ellen.png" className='' />
@@ -82,7 +85,7 @@ function Content() {
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
                       
-                      <div className='text-2xl'>Structure</div>
+                      <div className='text-2xl poppins-light poppins-light'>Structure</div>
                       <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>RCC framed structure.</li>
                           <li>Concrete block masonry, wire cut clay bricks.</li>
@@ -90,7 +93,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>FLOORING</div>
+                  <div className='text-2xl poppins-light'>FLOORING</div>
                       <div>
                           <ul className="poppins-light text-[18px] list-image-[url(/right-icon.svg)] pb-1">
                           <li>Lift lobbies and wall cladding<br/> - marble Living and dining<br/> - marble Bedrooms<br/> - wooden laminate Master bedroom<br/> -wooden laminate Kitchen<br/> - Porcelene tile Balcony<br/> - Antiskid vetrified tiles. Toilet – Anti skid tile</li>
@@ -100,7 +103,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>PAINTING</div>
+                  <div className='text-2xl poppins-light'>PAINTING</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Interiors - premium acrylic/plastic emulsion Exterior<br/> - Premium exterior emulsion</li>
                           
@@ -108,7 +111,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>KITCHEN</div>
+                  <div className='text-2xl poppins-light'>KITCHEN</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Provision for modular kitchen Provision for electric chimney, hob and water purifier Utility room with private drying area along with points for dishwasher and washing machine 3 bedroom apartments will have a separate staff room with a bathroom attached</li>
                           
@@ -116,7 +119,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>DOORS</div>
+                  <div className='text-2xl poppins-light'>DOORS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>All doors with veneer on both sides and teak wood framing. Hardware used will be Godrej or equivalent. UPVC/High density aluminum windows</li>
                           
@@ -125,7 +128,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>ELECTRICAL</div>
+                  <div className='text-2xl poppins-light'>ELECTRICAL</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>- Biometric locks for all main doors<br/> - Yale or equivalent<br/> - CCTV surveillance in common areas<br/> - 24 Hour security</li>
                           
@@ -134,7 +137,7 @@ function Content() {
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>GYM</div>
+                  <div className='text-2xl poppins-light'>GYM</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>- Air Conditioned Gym with essential equipments</li>
@@ -144,7 +147,7 @@ function Content() {
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
                   <div className='grid grid-cols-2 py-4'>
-                  <div className='text-2xl'>MISCELLANEOUS</div>
+                  <div className='text-2xl poppins-light'>MISCELLANEOUS</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>- Rain water harvesting in multiple areas.<br/>- Borewells<br/> - Landscaped entrance area<br/> - Water softener<br/> - Effluent treatment plant<br/> - Multiple hose points in parking areas<br/> - Biometric locks for lobby doors</li>
@@ -170,7 +173,7 @@ function Content() {
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
         <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Floor plan 1</button>
+            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Floor plan 1</button>
         </li>
         <li class="me-2" role="presentation">
             <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Floor Plan 2</button>
