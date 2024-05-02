@@ -18,7 +18,8 @@ const config: Config = {
         'poppins': ['Poppins', 'sans-serif'],
       },
       colors: {
-        'e-green':'#5CA2B0',
+        'e-green': '#5CA2B0',
+        'e-green-light':'#E1F0F0',
       },
       fontWeight: {
         'thin': '100',
