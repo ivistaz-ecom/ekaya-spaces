@@ -2,6 +2,7 @@
 import React, { useEffect} from 'react'
 import AOS from "aos";
 import ContactBtn from '../common/ContactBtn'
+import Image from 'next/image'
 
 function Banner() {
 
@@ -15,8 +16,15 @@ function Banner() {
   }, []);
 
   return (
-    <div className="bg-center bg-no-repeat bg-cover bg-[url('/about-us.png')] bg-gray-300 bg-blend-multiply h-[70vh] relative mx-auto" data-aos='fade-down'>
-    
+    <div className="h-[70vh] relative mx-auto" data-aos='fade-down'>
+        <Image
+        src="/about-us.png"
+        alt="Banner"
+        width={1000} // Adjust width and height according to your image dimensions
+        height={500}
+        className='w-full h-full'
+        priority // Preload the image
+      />
           <div className='w-[80%] absolute bottom-0 py-12 ml-40'  data-aos="fade-down">
               <h1 className='text-8xl text-white poppins-light'>
               About<br/>Moira

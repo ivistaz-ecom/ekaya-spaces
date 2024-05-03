@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Contact from '../../components/HomePage/Contact'
+import Image from 'next/image'
 
 function Content() {
     const sliderRef = useRef(null);
@@ -66,7 +67,7 @@ function Content() {
                   <p className='text-[18px] text-white poppins-light' data-aos="fade-right">Experience the pinnacle of modern living with our spacious homes, featuring thoughtful layouts and upscale amenities.</p>
               </div>
               <div className='w-full col-span-2'>
-                  <img src="/embrace-banner.png"/>
+                  <Image src="/embrace-banner.png" className="w-full" width={800} height={500}/>
               </div>
               
           </div>
@@ -325,30 +326,30 @@ function Content() {
     </ul>
 </div>
 <div id="default-styled-tab-content">
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
                       <div>
-                          <img src="/embrace/floor-6.png"/>
+                          <Image src="/embrace/floor-6.png" className="w-full" width={800} height={500}/>
                       </div>    
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
     <div>
-                          <img src="/embrace/floor-2.png"/>
+                          <Image src="/embrace/floor-2.png" className="w-full" width={800} height={500}/>
                       </div>   
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
     <div>
-                          <img src="/embrace/floor-3.png"/>
+                          <Image src="/embrace/floor-3.png" className="w-full" width={800} height={500}/>
                       </div>   
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
     <div>
-                          <img src="/embrace/floor-41.png" />
-                          <img src="/embrace/floor-4.png"/>
+                          <Image src="/embrace/floor-41.png" className="w-full" width={800} height={500}/>
+                          <Image src="/embrace/floor-4.png" className="w-full" width={800} height={500}/>
                       </div>   
                   </div>
                   <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-feature" role="tabpanel" aria-labelledby="feature-tab">
     <div>
-                          <img src="/embrace/floor-5.png"/>
+                          <Image src="/embrace/floor-5.png" className="w-full" width={800} height={500}/>
                       </div>   
     </div>
 </div>

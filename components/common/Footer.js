@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Footer() {
     return (
@@ -23,7 +24,7 @@ function Footer() {
 
         <footer className='mx-auto bg-gray-200 p-6'>
             <div className='w-[80%] mx-auto'>
-                <img src="footer-logo.svg" className='pb-6' />
+                    <Image src="footer-logo.svg" className='pb-6' width={300} height={300} />
                 <hr className='h-px border-t border-gray-300 pb-4 mx-auto ' />
                 <div class="grid grid-cols-3">
                     <div className=''>

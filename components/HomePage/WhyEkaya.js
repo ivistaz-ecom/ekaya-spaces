@@ -1,11 +1,12 @@
 import React from 'react'
+import Image from 'next/image'
 
 function WhyEkaya() {
   return (
 <div className="w-[80%] mx-auto flex pt-32 pb-20">         
           <div className="">
               <h2 className="text-6xl font-light py-4 text-gray-700">Why Ekaya</h2>
-<img src="slide.png" className="w-[524px]"/> 
+              <Image src="/slide.png" className="w-[524px]" width={530} height={ 600} /> 
 </div>
 <div className="w-[100%]">
 <div class="mb-4 border-b-2 border-gray-200 dark:border-gray-700 mt-[0px]">

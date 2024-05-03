@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Image from 'next/image'
 // import { ReactComponent as PrevArrow } from '../../public/left-black.svg'; // Import your custom SVG arrows
 // import { ReactComponent as NextArrow } from '../../public/right-black.svg'; // Import your custom SVG arrows
 
@@ -181,10 +182,10 @@ var settings = {
 <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="slider.png" className='w-[800px] h-[400px]' />
+                      <Image src="/slider.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           <div>
-                      <img src="slider.png" className='w-[800px] h-[400px]' />
+                      <Image src="/slider.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           
                   </Slider>
@@ -203,10 +204,10 @@ var settings = {
 <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <Image src="/embrace.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           <div>
-                      <img src="embrace.png" className='w-[800px] h-[400px]' />
+                      <Image src="/embrace.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           
                   </Slider>
@@ -225,10 +226,10 @@ var settings = {
 <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="ellen.png" className='w-[800px] h-[400px]' />
+                      <Image src="/ellen.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           <div>
-                      <img src="ellen.png" className='w-[800px] h-[400px]' />
+                      <Image src="/ellen.png" className='w-[800px] h-[400px]' width={800} height={400} />
                           </div>
                           
                   </Slider>
@@ -306,10 +307,10 @@ var settings = {
                     <div className='w-[800px]'>
                     <Slider ref={sliderRef} {...settings}>
                           <div>
-                      <img src="vista-do-mar.png" className='w-[800px] h-[400px]' />
+                      <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           <div>
-                      <img src="vista-do-mar.png" className='w-[800px] h-[400px]' />
+                      <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400} />
                     </div>
                     
                          

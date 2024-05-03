@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useRef } from 'react'
-
+import Image from 'next/image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -10,7 +10,7 @@ const Blogs = [
         'id': '1',
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': 'blog-1.png',
+        'image': '/blog-1.png',
         'class': 'mt-0'
 
     },
@@ -18,7 +18,7 @@ const Blogs = [
         'id': '1',
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': 'blog-2.png',
+        'image': '/blog-2.png',
         'class': 'mt-8'
 
     },
@@ -26,7 +26,7 @@ const Blogs = [
         'id': '1',
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': 'blog-3.png',
+        'image': '/blog-3.png',
         'class': 'mt-16'
 
     }
@@ -94,7 +94,7 @@ function Insights() {
                     Blogs.map((items, index) => (
                         <div class={`z-50 max-w-sm  dark:bg-gray-800 dark:border-gray-700 ${items.class}`}>
                             <a href="#">
-                                <img class="rounded-0" src={items.image} alt="" />
+                          <Image class="rounded-0" src={items.image} alt={items.title} width={300} height={300} />
                             </a>
                             <div class="p-5">
                                 <a href="#">

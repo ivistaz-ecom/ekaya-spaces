@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Clients() {
   return (
@@ -10,7 +11,7 @@ function Clients() {
       </div>
       
       <figcaption class="flex items-center justify-center pt-8">
-            <img class="rounded-full w-14 h-14" src="richard.png" alt="profile picture"/>
+        <Image class="rounded-full w-14 h-14" src="/richard.png" alt="profile picture" width={100} height={100} />
             <div class="flex items-center space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                 <div className='text-xl poppins-medium'>Richard M</div>
                 <div class="ml-2 text-xl text-gray-700 dark:text-gray-400 poppins-light">President and CEO l Vilas Arch Pvt. Ltd.</div>

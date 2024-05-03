@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Contact from '../../components/HomePage/Contact'
+import Image from 'next/image'
 
 function Content() {
     const sliderRef = useRef(null);
@@ -64,10 +65,10 @@ function Content() {
           <div className='w-[80%] mx-auto' data-aos="fade-up">
           <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <img src="ellen/slide.png" className='' />
+                      <Image src="/ellen/slide.png" className='w-full h-[650px]' alt="ellen" width={900} height={650}/>
                           </div>
                           <div>
-                      <img src="ellen.png" className='' />
+                      <Image src="/ellen.png" className='w-full h-[650px]' alt="ellen" width={900} height={650}/>
                           </div>  
               </Slider>
          
@@ -163,7 +164,7 @@ function Content() {
               HOW TO<br/>GET THERE
               </h5>
               </div>
-              <div><img src="/ellen-map.png"/></div>
+              <div><Image src="/ellen-map.png" width={600} height={600} /></div>
 </div>
 <div className='w-[80%] mx-auto py-12' data-aos="fade-up">
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
@@ -183,24 +184,24 @@ function Content() {
     </ul>
 </div>
 <div id="default-styled-tab-content">
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
                       <div>
-                          <img src="/ellen/floor-1.png"/>
+                          <Image src="/ellen/floor-1.png" alt="ellen" className="w-full" width={800} height={500}/>
                       </div>    
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
     <div>
-                          <img src="/ellen/floor-2.png"/>
+                          <Image src="/ellen/floor-2.png" alt="ellen" className="w-full" width={800} height={500}/>
                       </div>   
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
     <div>
-                          <img src="/ellen/floor-3.png"/>
+                          <Image src="/ellen/floor-3.png" alt="ellen" className="w-full" width={800} height={500}/>
                       </div>   
     </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" className="w-full" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
     <div>
-                          <img src="/ellen/floor-4.png"/>
+                          <Image src="/ellen/floor-4.png" alt="ellen" className="w-full" width={800} height={500} />
                       </div>   
     </div>
 </div>

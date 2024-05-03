@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Content() {
     return (
@@ -11,7 +12,7 @@ function Content() {
 
 <div className='justify-items-end z-50'>  
 <div class="flex flex-col items-center bg-white md:flex-row w-[90%]" data-aos="fade-right">
-    <img class="object-cover w-[30em] mr-10"  src="/dona.png" alt=""/>
+    <Image class="object-cover w-[30em] mr-10"  src="/dona.png" alt="moira" width={300} height={500} />
     <div class="flex flex-col justify-between leading-normal">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5">Dona Paula boasts a rich historical tapestry, with tales dating back to the colonial era of Portuguese rule in Goa. Legend has it that Dona Paula de Menezes, a noblewoman of Portuguese descent, tragically fell in love with a local fisherman, only to meet her demise by plunging into the Arabian Sea from the precipice now known as the Dona Paula Viewpoint. Her love story has since become the subject of folklore and continues to intrigue visitors to this day.</p>
     </div>
@@ -21,13 +22,13 @@ function Content() {
     <div class="flex flex-col justify-between leading-normal">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5 ml-36">Furthermore, Dona Paula’s strategic location along the coast made it a significant port during the colonial era, facilitating trade and commerce between Portugal and other parts of Asia. The remnants of this maritime heritage can still be seen in the quaint fishing villages and historic landmarks that dot the coastline.</p>
                     </div>
-                    <img class="object-cover w-[30em] ml-10"  src="/dona-1.png" alt=""/>
+                    <Image class="object-cover w-[30em] ml-10"  src="/dona-1.png" alt="moira" width={300} height={500} />
                 </div>
 
 
 
 <div class="flex flex-col items-center bg-white md:flex-row w-[90%]" data-aos="fade-right">
-    <img class="object-cover w-[30em] mr-10"  src="/dona-2.png" alt=""/>
+    <Image class="object-cover w-[30em] mr-10"  src="/dona-2.png" alt="moira" width={300} height={500} />
     <div class="flex flex-col justify-between leading-normal">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5">Rich in cultural heritage, Dona Paula boasts landmarks such as the Cabo Raj Bhavan, once a Portuguese fort and now the official residence of the Governor of Goa. Its vibrant markets and proximity to renowned beaches like Miramar and Vainguinim further elevate its charm, offering a perfect blend of relaxation and exploration.</p>
     </div>
@@ -39,7 +40,7 @@ function Content() {
     <div class="flex flex-col justify-between leading-normal">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5 ml-10 ml-36">With its timeless beauty, affluent ambiance, and enchanting coastal vistas, Dona Paula continues to enchant visitors and residents alike, promising an unforgettable experience amidst the wealth and luxury of Goa’s coastal paradise.</p>
                     </div>
-                    <img class="object-cover w-[30em] ml-10"  src="/dona-3.png" alt=""/>
+                    <Image class="object-cover w-[30em] ml-10"  src="/dona-3.png" alt="moira" width={300} height={500} />
                 </div>      
         
         </div>
