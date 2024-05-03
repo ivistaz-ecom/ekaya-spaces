@@ -94,7 +94,7 @@ function Insights() {
                     Blogs.map((items, index) => (
                         <div class={`z-50 max-w-sm  dark:bg-gray-800 dark:border-gray-700 ${items.class}`}>
                             <a href="#">
-                          <Image class="rounded-0" src={items.image} alt={items.title} width={300} height={300} />
+                          <Image class="rounded-0 w-full" src={items.image} alt={items.title} width={300} height={300} />
                             </a>
                             <div class="p-5">
                                 <a href="#">
