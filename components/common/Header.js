@@ -27,7 +27,7 @@ function Header({stats}) {
   return (
 
     < >
-      <span className='absolute w-full h-screen z-20' onClick={handleClick}></span>
+      <span className='absolute w-full h-screen z-10' onClick={handleClick}></span>
       <nav class="bg-transparent bg-opacity-5 absolute w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]">
       
 
@@ -157,6 +157,7 @@ function Header({stats}) {
           </div>
         </div>
       </nav>
+
     </>
   )
 }

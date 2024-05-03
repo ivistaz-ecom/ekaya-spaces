@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <>
-            <div className='mt-[100px] grid grid-cols-3 w-[80%] mx-auto'>
+        <div className='z-50'>
+            <div className='mt-[100px] grid grid-cols-3 w-[80%] mx-auto overflow-hidden z-50'>
                 <div className='justify-center align-center flex border-t border-b border-l group border-e-green gray-400 p-4 text-xl poppins-light' style={{clipPath: 'inset(0 0 0 0 )'}}>
                 Facebook
   <div class="[grid-area:1/1] flex items-center justify-center transition ease-in-out group-hover:delay-300 translate-y-0 -translate-x-0 group-hover:-translate-y-1 group-hover:translate-x-2">↗</div>              
@@ -106,7 +106,7 @@ function Footer() {
 
             </footer>
             
-            </>
+            </div>
     )
 }
 

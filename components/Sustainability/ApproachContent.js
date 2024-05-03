@@ -1,4 +1,7 @@
-import React from 'react'
+'use client'
+import React, { useEffect} from 'react'
+import AOS from "aos";
+
 
 const blogs = [
     
@@ -28,21 +31,30 @@ const blogs = [
         'title': 'Empowering Communities: Driving Positive Change Together',
         'desc': 'Our commitment to local sourcing extends beyond economic benefits; it’s also about empowering communities. By investing in local businesses and suppliers, we help create opportunities for growth and development. Additionally, by engaging with local stakeholders, we ensure that our projects are aligned with community needs and priorities.'
     },
-
-
-
-
 ]
 
 
 
+
+
 function ApproachContent() {
+
+    useEffect(() => {
+        AOS.init({
+          // Initialize AOS with your desired configuration options
+          //   duration: 800, // Duration of the animation
+          //   easing: "ease-in-out", // Easing option
+          once: false // Whether animation should only happen once
+        });
+      }, []);
+
+
+
   return (
-    <div className='grid grid-cols-3 py-12 w-[80%] mx-auto'>
+    <div className='grid grid-cols-3 py-12 w-[80%] mx-auto' data-aos='fade-up'>
       
           {
               blogs.map((items,index) => (
-                
                 <div class="p-6 bg-white border border-gray-200  dark:bg-gray-800 dark:border-gray-700">
                       <img src={items.icon} className="py-6"/>
                           <h5 class="mb-2 h-[100px] text-2xl poppins-light tracking-tight text-gray-900 dark:text-white">{items.title}</h5>

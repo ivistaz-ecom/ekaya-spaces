@@ -53,7 +53,7 @@ function Content() {
 
     return (
         <div>
-            <div className='mt-[100px] w-[80%] mx-auto'>
+            <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
                 <h1 className='text-2xl text-e-green font-light tracking-[0.2em] pb-12'>ABOUT THE PLOT</h1>
                 <h4 className='text-4xl text-black poppins-light pb-6'>Alvit and Esmeralda’s Journey</h4>
                 <p className='poppins-light text-[18px] text-start pb-5'>In the vibrant city of Dar es Salaam, nestled in East Africa, Alvit and Esmeralda began their life together. Over the span of five years, their family blossomed with the arrival of two daughters, Siandra and Jennifer. However, as the tumultuous East African revolution unfolded in 1965, the family migrated to Bangalore, India.</p>
@@ -65,7 +65,7 @@ function Content() {
                 <p className='poppins-light text-[18px] text-start pb-5'>Today, the villa still stands proudly as a symbol of Alvit’s vision and determination. Ekaya Spaces has collaborated with the family to develop a luxury apartment project, aptly named Vista do Mar, ensuring that Alvit’s legacy lives on, even though he may no longer be with us.</p>
 
             </div>
-            <div className='w-[80%] mx-auto'>
+            <div className='w-[80%] mx-auto' data-aos="fade-down">
                 <Slider ref={sliderRef} {...settings}>
                     <div className='p-2'>
                         <img src="/VistaDoMar/part-1.png" className='' />
@@ -83,7 +83,7 @@ function Content() {
 
 
             </div>
-            <div className='text-center'>
+            <div className='text-center' data-aos="fade-down">
                 <h4 className='text-4xl text-black poppins-light pb-6'>Luxurious Amenities at Oceanfront Apartments</h4>
                 <p className='poppins-light text-[18px] pb-5 '>Indulge in the ultimate luxury living experience with a comprehensive array<br /> of amenities designed to exceed your expectations:</p>
                 <Features />
@@ -91,7 +91,7 @@ function Content() {
 
 
 
-            <div className='bg-[#D5F0F0] py-12'>
+            <div className='bg-[#D5F0F0] py-12' data-aos="fade-down">
                 <div className='w-[80%] mx-auto'>
                     <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>
                     <hr className='h-px border-t border-gray-300 mx-auto ' />
@@ -189,7 +189,7 @@ function Content() {
             </div>
 
 
-            <div className='bg-[#ABD2D3]'>
+            <div className='bg-[#ABD2D3]' data-aos="fade-down">
                 <div className='w-[80%] mx-auto'>
                     <div className='grid grid-cols-2 py-4'>
 
@@ -262,7 +262,7 @@ function Content() {
             </div>
 
 
-            <div className='w-[80%] mx-auto pt-6'>
+            <div className='w-[80%] mx-auto pt-6' data-aos="fade-down">
                 <h3 className='text-4xl text-black poppins-light pb-6'>Location Highlights</h3>
                 <div className='grid grid-flow-row-dense grid-cols-3 py-4'>
                     <div className='text-2xl '>

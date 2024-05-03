@@ -52,7 +52,7 @@ function Content() {
 
   return (
     <div>
-         <div className='mt-[100px] w-[80%] mx-auto'>
+         <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
          <h4 className='text-4xl text-black poppins-light pb-6'>Truly a home for your future!</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Ekaya brings you its prestigious project, ELLEN - a premium three-storey apartment block, with a total of 11 spacious modern homes, abound with new age luxuries.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>Every floor houses just two, 2 bedroom and one, 3 bedroom home. Each unit has an open kitchen with a spacious utility area, an exclusive dining area, and a spacious balcony. All Vaastu-compliant homes are thoughtfully designed, keeping in mind the most primary need of the day - space and privacy. The residences are beautifully weaved into the very fiber of ELLEN’s design structure.</p>
@@ -61,7 +61,7 @@ function Content() {
           <div className='w-[80%] mx-auto pt-12'>
               <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
               </div>
-          <div className='w-[80%] mx-auto'>
+          <div className='w-[80%] mx-auto' data-aos="fade-up">
           <Slider ref={sliderRef} {...settings}>
                     <div>
                       <img src="ellen/slide.png" className='' />
@@ -79,7 +79,7 @@ function Content() {
 
 
 
-          <div className='bg-[#D5F0F0] py-12'>
+          <div className='bg-[#D5F0F0] py-12' data-aos="fade-up">
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
@@ -157,7 +157,7 @@ function Content() {
                   </div>
           </div>
 </div>
-          <div className='grid grid-cols-2 w-[80%] mx-auto'>
+          <div className='grid grid-cols-2 w-[80%] mx-auto' data-aos="fade-right">
               <div className='items-center content-center p-6'>
                   <h5 className='poppins-light text-gray-900 text-6xl'>
               HOW TO<br/>GET THERE
@@ -165,11 +165,7 @@ function Content() {
               </div>
               <div><img src="/ellen-map.png"/></div>
 </div>
-          
-
-
-
-<div className='w-[80%] mx-auto py-12'>
+<div className='w-[80%] mx-auto py-12' data-aos="fade-up">
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
         <li class="me-2" role="presentation">
@@ -208,13 +204,14 @@ function Content() {
                       </div>   
     </div>
 </div>
-
-
-          </div>
- 
+</div>
 <Contact/>
-
-
+<div className='overflow-hidden z-0'>
+      <div class="vertical overflow-hidden"></div>
+        <div class="vertical-1 overflow-hidden"></div>
+        <div class="vertical-2 overflow-hidden"></div>
+        <div class="vertical-3 overflow-hidden"></div>
+        </div>
     </div>
   )
 }

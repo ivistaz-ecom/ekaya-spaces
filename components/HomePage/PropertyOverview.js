@@ -331,18 +331,8 @@ var settings = {
     </div>
 </div>
 
+        </div>
 
-
-
-
-
-
-
-
-
-            
-            
-            </div>
             </>
   )
 }

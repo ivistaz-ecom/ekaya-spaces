@@ -32,6 +32,7 @@ body {
     rgb(var(--background-start-rgb)); */
     /* font-family: "Poppins", sans-serif; */
     font-family: "Poppins", sans-serif;
+    
 }
 
 @layer utilities {
@@ -235,4 +236,42 @@ body {
   position: absolute;
   /* top: 50%; */
   left: 100%;
+}
+
+.vertical {
+  border-left: 1px solid #f8fafc7a;
+  top:75px;
+  bottom:0;
+  height: auto;
+  position:absolute;
+  left: 10.5%;
+  z-index: 5!important;
+}
+.vertical-1 {
+  border-left: 1px solid #f8fafc7a;
+  top:75px;
+  bottom:0;
+  height: auto;
+  position:absolute;
+  left: 33.5%;
+  z-index: 5 !important;
+}
+.vertical-2 {
+  border-left: 1px solid #f8fafc7a;
+  top:75px;
+  bottom:0;
+  height: auto;
+  position:absolute;
+  left: 64.5%;
+  z-index: 5 !important;
+}
+.vertical-3 {
+  border-left: 1px solid #f8fafc7a;
+  top:75px;
+  bottom:0;
+  height: auto;
+  position:absolute;
+  left: 88.9%;
+  overflow-x:inherit;
+  z-index: 5 !important;
 }

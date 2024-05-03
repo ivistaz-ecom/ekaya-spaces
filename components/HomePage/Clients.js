@@ -3,7 +3,7 @@ import React from 'react'
 function Clients() {
   return (
     <>
-    <div className='text-center mt-[100px] w-[80%] mx-auto'>
+    <div className='text-center mt-[100px] w-[80%] mx-auto z-50'>
           <h1 className='text-2xl text-e-green font-light tracking-[0.2em]'>LET’S HEAR FROM OUR CLIENTS</h1>
         <p className='poppins-light text-[18px] py-14'>“Discovering Ekaya was like finding a hidden gem. The attention to detail and personal touch they bring to every aspect of the home-buying experience is truly unparalleled.”</p>
         <hr className='border-dashed border-t-2 border-gray-300'/>

@@ -52,7 +52,7 @@ function Content() {
 
   return (
     <div>
-         <div className='mt-[100px] w-[80%] mx-auto'>
+         <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
          <h4 className='text-4xl text-black poppins-light pb-6'>Modern idyll in a three-storey block with<br/> six luxurious homes</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Located in the serene yet prestigious Ganga Nagar, Ekaya’s Embrace is a testament to modern luxury, just a gaze away from Bengaluru’s stunning Embassy One. Perfectly positioned off Bellary Main Road, this elegant abode ensures effortless connectivity to Bengaluru International Airport, the essential Columbia Asia Hospital, and vibrant market hubs. At Embrace, luxury is reimagined, offering a unique blend of comfort and elegance, designed to cater to those who aspire for a life beyond the ordinary.</p>
               
@@ -62,15 +62,15 @@ function Content() {
               <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
               </div>
           <div className='grid grid-cols-3 '>
-              <div className='bg-e-green content-center p-[3em] w-[30em]'>
-                  <p className='text-[18px] text-white poppins-light'>Experience the pinnacle of modern living with our spacious homes, featuring thoughtful layouts and upscale amenities.</p>
+              <div className='bg-e-green content-center p-[3em] w-[30em]' >
+                  <p className='text-[18px] text-white poppins-light' data-aos="fade-right">Experience the pinnacle of modern living with our spacious homes, featuring thoughtful layouts and upscale amenities.</p>
               </div>
               <div className='w-full col-span-2'>
                   <img src="/embrace-banner.png"/>
               </div>
               
           </div>
-          <div className='w-[80%] mx-auto py-12 '>
+          <div className='w-[80%] mx-auto py-12 ' data-aos="fade-up">
          <h4 className='text-4xl text-black poppins-light pb-6'>Spacious, modern homes<br/>with thoughtful layouts</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Within view of Bengaluru’s newest and hottest landmark destination - Embassy One (Four Seasons Hotel and Residences), Ekaya’s Embrace is just off Bellary Main Road, cocooned in the most sought after, premium residential neighbourhood of Ganga Nagar.</p>
               <p className='poppins-light  text-[18px] text-start pb-5'>At Embrace compromise is never an option. Only the best of everything has been utilized, Right from the building material, to its 24-power back up, to the maneuver-friendly stilt parking at ground level, to the finish with marble and wooden flooring.</p>
@@ -79,7 +79,7 @@ function Content() {
           </div>
 
 
-          <div className='bg-[#D5F0F0] py-12'>
+          <div className='bg-[#D5F0F0] py-12' data-aos="fade-up">
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
@@ -195,7 +195,7 @@ function Content() {
 
 
 
-          <div className='bg-[#CAB575] py-12 text-white'>
+          <div className='bg-[#CAB575] py-12 text-white' data-aos="fade-up">
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-white poppins-light pb-6'>Features</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />

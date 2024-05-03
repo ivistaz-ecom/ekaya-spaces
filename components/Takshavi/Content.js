@@ -51,7 +51,7 @@ function Content() {
 
   return (
     <div>
-         <div className='mt-[100px] w-[80%] mx-auto'>
+         <div className='mt-[100px] w-[80%] mx-auto' data-aos='fade-down'>
          <h4 className='text-4xl text-black poppins-light pb-6'>Tranquil Living in<br/> Frazer Town’s Spencer Road</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Ekaya Spaces proudly unveils Takshavi, a boutique residential enclave nestled in the heart of Frazer Town’s Spencer Road. With a modest yet sophisticated approach, Takshavi offers seven meticulously crafted 3-bedroom apartments, each designed to provide residents with a serene haven amidst the urban landscape.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>Positioned within the tranquil surroundings of Frazer Town, Takshavi enjoys a coveted location that grants easy access to nearby parks, esteemed educational institutions, and essential amenities. Its integration into the neighborhood fabric reflects a commitment to fostering a sense of community and belonging.</p>
@@ -60,7 +60,7 @@ function Content() {
           <div className='w-[80%] mx-auto pt-12'>
               <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
               </div>
-          <div className='w-[80%] mx-auto'>
+          <div className='w-[80%] mx-auto' data-aos='fade-down'>
           <Slider ref={sliderRef} {...settings}>
                     <div>
                       <img src="takshavi-banner-1.png" className='' />
@@ -77,7 +77,7 @@ function Content() {
               <p className='poppins-light text-[18px] text-start pb-5'>With just seven 3-bedroom apartments, Takshavi offers a sense of exclusivity and intimacy, allowing residents to enjoy a peaceful retreat from the bustling city life. Whether unwinding in the comfort of their homes or exploring the nearby amenities, residents are invited to experience a lifestyle that seamlessly integrates modern comforts with understated luxury.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>In summary, Takshavi by Ekaya Spaces presents a modest yet refined living experience in Frazer Town’s Spencer Road. With its limited collection of 3-bedroom apartments, practical amenities, and commitment to sustainability, Takshavi invites residents to embrace a tranquil urban lifestyle without extravagance. Welcome to the essence of serene living at Takshavi by Ekaya Spaces.</p>
           </div>
-          <div className='bg-[#D5F0F0] py-12'>
+          <div className='bg-[#D5F0F0] py-12' data-aos='fade-down'>
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
@@ -174,7 +174,7 @@ function Content() {
 </div>
 
           
-<div className='bg-[#ABD2D3]'>
+<div className='bg-[#ABD2D3]' data-aos='fade-down'>
               <div className='w-[80%] mx-auto'>
                   <div className='grid grid-cols-2 py-4'>
                       
@@ -255,7 +255,7 @@ function Content() {
 </div>
 
 
-<div className='w-[80%] mx-auto py-12'>
+<div className='w-[80%] mx-auto py-12' data-aos='fade-down z-50'>
 <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
         <li class="me-2" role="presentation">
