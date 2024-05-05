@@ -3,7 +3,7 @@ import React, { useEffect} from 'react'
 import AOS from "aos";
 import ContactBtn from '../common/ContactBtn'
 import Image from 'next/image'
-
+import VerticleLines from '../../components/common/VerticalLines'
 
 function Banner() {
   useEffect(() => {
@@ -49,12 +49,7 @@ function Banner() {
         </div>
           </div>
       <ContactBtn/>
-      <div className='overflow-hidden z-0'>
-      <div class="vertical overflow-hidden"></div>
-        <div class="vertical-1 overflow-hidden"></div>
-        <div class="vertical-2 overflow-hidden"></div>
-        <div class="vertical-3 overflow-hidden"></div>
-        </div>
+<VerticleLines/>
     </div>
   )
 }

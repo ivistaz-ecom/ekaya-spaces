@@ -5,6 +5,41 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Contact from '../../components/HomePage/Contact'
 import Image from 'next/image'
+import Map from '../../utils/Map'
+
+
+
+const FloorPlan = [
+    
+    {
+        'id': '1',
+        'floor': '/embrace/floor-6.png',
+        'plan_name':'3D rendered'
+    },
+    {
+        'id': '2',
+        'floor': '/embrace/floor-2.png',
+        'plan_name':'Floor plan parking'
+    },
+    {
+        'id': '3',
+        'floor': '/embrace/floor-3.png',
+        'plan_name':'Floor plan — 3 floors'
+    },
+    {
+        'id': '4',
+        'floor': '/embrace/floor-41.png',
+        'plan_name':'Unit floor plan design layout'
+    },
+    {
+        'id': '4',
+        'floor': '/embrace/floor-5.png',
+        'plan_name':'Features'
+    },
+
+]
+
+
 
 function Content() {
     const sliderRef = useRef(null);
@@ -294,7 +329,7 @@ function Content() {
                       <div className='text-2xl poppins-light'></div>
                       <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
                           <li className='text-[18px]'>Children’s Play Area.</li>
-                          <li>Gymnasium.</li>
+                          <li className='text-[18px]'>Gymnasium.</li>
                       </ul></div>
                   </div>
                  
@@ -303,59 +338,7 @@ function Content() {
 
           
 
-
-
-<div className='w-[80%] mx-auto py-12'>
-<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">3D rendered</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Floor plan parking</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Floor plan — 3 floors</button>
-        </li>
-        <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Unit floor plan design layout</button>
-                      </li>
-                      <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="feature-styled-tab" data-tabs-target="#styled-feature" type="button" role="tab" aria-controls="feature" aria-selected="false">Features</button>
-                      </li>
-    </ul>
-</div>
-<div id="default-styled-tab-content">
-    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div>
-                          <Image src="/embrace/floor-6.png" className="w-full" width={800} height={500}/>
-                      </div>    
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-    <div>
-                          <Image src="/embrace/floor-2.png" className="w-full" width={800} height={500}/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-    <div>
-                          <Image src="/embrace/floor-3.png" className="w-full" width={800} height={500}/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
-    <div>
-                          <Image src="/embrace/floor-41.png" className="w-full" width={800} height={500}/>
-                          <Image src="/embrace/floor-4.png" className="w-full" width={800} height={500}/>
-                      </div>   
-                  </div>
-                  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-feature" role="tabpanel" aria-labelledby="feature-tab">
-    <div>
-                          <Image src="/embrace/floor-5.png" className="w-full" width={800} height={500}/>
-                      </div>   
-    </div>
-</div>
-
-
-          </div>
+<Map data={FloorPlan} />
  
 <Contact/>
 

@@ -2,6 +2,7 @@
 import React, { useEffect} from 'react'
 import AOS from "aos";
 import Image from 'next/image'
+import VerticleLines from '../../components/common/VerticalLines'
 
 function Banner() {
 
@@ -30,12 +31,7 @@ function Banner() {
               Sustainability
               </h1>
       </div>
-      <div className='overflow-hidden z-0'>
-      <div class="vertical overflow-hidden"></div>
-        <div class="vertical-1 overflow-hidden"></div>
-        <div class="vertical-2 overflow-hidden"></div>
-        <div class="vertical-3 overflow-hidden"></div>
-        </div>
+<VerticleLines/>
     </div>
   )
 }

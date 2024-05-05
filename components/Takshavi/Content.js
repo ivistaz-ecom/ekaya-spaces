@@ -3,9 +3,37 @@ import React, { useState, useRef } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Map from '../../utils/Map'
+
+
+const FloorPlan = [
+    
+    {
+        'id': '1',
+        'floor': '/takshavi/floor-1.png',
+        'plan_name':'Floor plan 1'
+    },
+    {
+        'id': '2',
+        'floor': '/takshavi/floor-2.png',
+        'plan_name':'Floor Plan 2'
+    },
+    {
+        'id': '3',
+        'floor': '/takshavi/floor-3.png',
+        'plan_name':'3D Design 1'
+    },
+    {
+        'id': '4',
+        'floor': '/takshavi/floor-4.png',
+        'plan_name':'3D Design 2'
+    },
+
+]
+
 
 function Content() {
-    const sliderRef = useRef(null);
+const sliderRef = useRef(null);
 
   const NextArrow = ({onClick}) => (
     <div className="arrow next-arrow" onClick={onClick}>
@@ -254,49 +282,8 @@ function Content() {
           </div>
 </div>
 
+          <Map data={FloorPlan} />
 
-<div className='w-[80%] mx-auto py-12' data-aos='fade-down z-50'>
-<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Floor plan 1</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Floor Plan 2</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">3D Design 1</button>
-        </li>
-        <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">3D Design 2</button>
-        </li>
-    </ul>
-</div>
-<div id="default-styled-tab-content">
-    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div>
-                          <img src="/takshavi/floor-1.png"/>
-                      </div>    
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-    <div>
-                          <img src="/takshavi/floor-2.png"/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-    <div>
-                          <img src="/takshavi/floor-3.png"/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
-    <div>
-                          <img src="/takshavi/floor-4.png"/>
-                      </div>   
-    </div>
-</div>
-
-
-</div>
 
     </div>
   )

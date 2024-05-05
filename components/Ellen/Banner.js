@@ -3,6 +3,7 @@ import React, { useEffect} from 'react'
 import AOS from "aos";
 import ContactBtn from '../common/ContactBtn'
 import Image from 'next/image'
+import VerticleLines from '../../components/common/VerticalLines'
 
 function Banner() {
 
@@ -48,7 +49,8 @@ function Banner() {
           </div>
         </div>
           </div>
-<ContactBtn/>
+      <ContactBtn />
+      <VerticleLines/>
     </div>
   )
 }

@@ -5,6 +5,35 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Contact from '../../components/HomePage/Contact'
 import Image from 'next/image'
+import Map from '../../utils/Map'
+import VerticleLines from '../../components/common/VerticalLines'
+
+
+const FloorPlan = [
+    
+    {
+        'id': '1',
+        'floor': '/ellen/floor-1.png',
+        'plan_name':'Floor plan 1'
+    },
+    {
+        'id': '2',
+        'floor': '/ellen/floor-2.png',
+        'plan_name':'Floor plan 2'
+    },
+    {
+        'id': '3',
+        'floor': '/ellen/floor-3.png',
+        'plan_name':'3D Design 1'
+    },
+    {
+        'id': '4',
+        'floor': '/ellen/floor-4.png',
+        'plan_name':'3D Design 2'
+    },
+
+
+]
 
 function Content() {
     const sliderRef = useRef(null);
@@ -166,53 +195,10 @@ function Content() {
               </div>
               <div><Image src="/ellen-map.png" width={600} height={600} /></div>
 </div>
-<div className='w-[80%] mx-auto py-12' data-aos="fade-up">
-<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-e-green hover:text-e-green dark:text-purple-500 dark:hover:text-purple-500 border-e-green dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Floor plan 1</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Floor Plan 2</button>
-        </li>
-        <li class="me-2" role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">3D Design 1</button>
-        </li>
-        <li role="presentation">
-            <button class="inline-block p-4 border-b-2 rounded-t-lg text-xl poppins-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">3D Design 2</button>
-        </li>
-    </ul>
-</div>
-<div id="default-styled-tab-content">
-    <div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div>
-                          <Image src="/ellen/floor-1.png" alt="ellen" className="w-full" width={800} height={500}/>
-                      </div>    
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-    <div>
-                          <Image src="/ellen/floor-2.png" alt="ellen" className="w-full" width={800} height={500}/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-    <div>
-                          <Image src="/ellen/floor-3.png" alt="ellen" className="w-full" width={800} height={500}/>
-                      </div>   
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" className="w-full" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
-    <div>
-                          <Image src="/ellen/floor-4.png" alt="ellen" className="w-full" width={800} height={500} />
-                      </div>   
-    </div>
-</div>
-</div>
+
+<Map data={FloorPlan} />          
 <Contact/>
-<div className='overflow-hidden z-0'>
-      <div class="vertical overflow-hidden"></div>
-        <div class="vertical-1 overflow-hidden"></div>
-        <div class="vertical-2 overflow-hidden"></div>
-        <div class="vertical-3 overflow-hidden"></div>
-        </div>
+<VerticleLines/>
     </div>
   )
 }
