@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
+  <g id="fireplace_black_24dp" transform="translate(0 0.541)">
+    <g id="Group_49502" data-name="Group 49502" transform="translate(0 -0.349)">
+      <rect id="Rectangle_13416" data-name="Rectangle 13416" width="43" height="43" transform="translate(0 -0.192)" fill="none"/>
+    </g>
+    <g id="Group_49503" data-name="Group 49503" transform="translate(3.534 3.588)">
+      <path id="Path_71687" data-name="Path 71687" d="M2,2V37.337H37.337V2ZM19.421,28.432a4.43,4.43,0,0,0,2.7-2.88,6.749,6.749,0,0,0-.353-2.827,4.262,4.262,0,0,1,.141-2.262c.954,2.138,3.8,2.9,3.5,5.619A3.62,3.62,0,0,1,19.421,28.432ZM33.8,33.8H30.27V30.27H26.7a8.8,8.8,0,0,0,1.8-5.3,6.854,6.854,0,0,0-3.269-5.954c-5.212-3.569-3.8-8.18-3.8-8.18-11.891,6.308-10.636,13.2-10.6,14.135a9.458,9.458,0,0,0,2.173,5.3H9.067V33.8H5.534V5.534H33.8Z" transform="translate(-2 -2)" fill="#5ca2b0"/>
+    </g>
+  </g>
+</svg>

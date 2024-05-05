@@ -1,0 +1,11 @@
+<svg id="chair_black_24dp" xmlns="http://www.w3.org/2000/svg" width="48.456" height="48.457" viewBox="0 0 48.456 48.457">
+  <g id="Group_49499" data-name="Group 49499">
+    <path id="Path_71681" data-name="Path 71681" d="M0,0H48.456V48.456H0Z" fill="none"/>
+  </g>
+  <g id="Group_49501" data-name="Group 49501" transform="translate(2.019 6.057)">
+    <g id="Group_49500" data-name="Group 49500">
+      <path id="Path_71682" data-name="Path 71682" d="M10.057,19.152V23.19h20.19V19.152A8.076,8.076,0,0,1,36.3,11.359v-2.3A6.075,6.075,0,0,0,30.247,3H10.057A6.075,6.075,0,0,0,4,9.057v2.3A8.076,8.076,0,0,1,10.057,19.152Z" transform="translate(2.057 -3)" fill="#5ca2b0"/>
+      <path id="Path_71683" data-name="Path 71683" d="M41.38,9a4.05,4.05,0,0,0-4.038,4.038v8.076H9.076V13.038a4.038,4.038,0,0,0-8.076,0v10.1A6.075,6.075,0,0,0,7.057,29.19v2.019a2.019,2.019,0,0,0,4.038,0V29.19H35.323v2.019a2.019,2.019,0,0,0,4.038,0V29.19a6.075,6.075,0,0,0,6.057-6.057v-10.1A4.05,4.05,0,0,0,41.38,9Z" transform="translate(-1 3.114)" fill="#5ca2b0"/>
+    </g>
+  </g>
+</svg>

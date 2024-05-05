@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.337" height="72.376" viewBox="0 0 108.337 72.376">
+  <g id="Group_49462" data-name="Group 49462" transform="translate(-0.268)">
+    <g id="Group_49463" data-name="Group 49463" transform="translate(1.268 0)">
+      <line id="Line_95" data-name="Line 95" y1="19.08" transform="translate(11.598 52.485)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_71630" data-name="Path 71630" d="M30.124,10.612a11.3,11.3,0,1,1-11.3,11.3A11.3,11.3,0,0,1,30.124,10.612Z" transform="translate(-6.041 -2.782)" fill="#d5cbb1" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_71631" data-name="Path 71631" d="M1.5,74.743V52.728A13.9,13.9,0,0,1,15.4,38.836h.012c3.854,0,7.23-.006,8.1-.044,2.293-.1,9.76.4,16.63-4.88,4.724-3.629,8.273-12.625,10.029-17.892a4.656,4.656,0,0,1,8.947,2.543q-.016.066-.033.133C52.8,42.868,39.542,45.961,39.542,45.961l.1,28.781Z" transform="translate(-1.5 -3.367)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_71632" data-name="Path 71632" d="M108.963,10.612a11.3,11.3,0,1,1-11.3,11.3A11.3,11.3,0,0,1,108.963,10.612Z" transform="translate(-26.71 -2.782)" fill="#abd2d3" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_71633" data-name="Path 71633" d="M73.434,31.168C80.017,44.018,88.35,45.963,88.35,45.963l-.1,28.781h38.138V52.729a13.9,13.9,0,0,0-13.9-13.893h-.01c-3.855,0-7.23-.005-8.1-.043-2.294-.1-9.759.4-16.632-4.881-4.724-3.629-8.272-12.624-10.028-17.892a4.646,4.646,0,0,0-5.445-3.058" transform="translate(-20.055 -3.367)" fill="#e5e8eb" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_96" data-name="Line 96" y1="19.08" transform="translate(95.191 52.296)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_97" data-name="Line 97" y1="4.852" transform="translate(52.813)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_98" data-name="Line 98" x1="1.873" y1="4.476" transform="translate(47.056 1.218)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_99" data-name="Line 99" y1="4.425" x2="1.991" transform="translate(56.807 1.218)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_100" data-name="Line 100" x2="30.124" transform="translate(38.106 53.288)" fill="none" stroke="#b69169" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
