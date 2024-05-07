@@ -30,7 +30,7 @@ function Footer() {
                     <div className=''>
                         <h3 className='text-xl font-medium pb-5 poppins-medium'>Contact Details</h3>
                         <hr className='h-px border-t-2 border-gray-300 pb-4 mx-auto ' />
-                        <p className='text-xl font-light text-gray-600 pb-6 poppins-light'>#36, 4th Cross, Nandidurg Road,<br /> Jayamahal, Bengaluru 560046</p>
+                        <p className='text-xl font-light text-gray-600 pb-6 poppins-light'># C 2, Shanthi Kiran APartments, Nandhi Durga Road, Bengaluru 560046</p>
                         <p className='text-xl font-light text-gray-600 poppins-light'><span className="font-medium">Phone:</span> +91 98452 47374
                         </p>
                         <p className='text-xl font-light text-gray-600 poppins-light pb-6'><span className="ml-[72px]"></span> +91 98452 47374

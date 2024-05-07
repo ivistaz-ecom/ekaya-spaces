@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from 'next/image'
+import Link from 'next/link'
 // import { ReactComponent as PrevArrow } from '../../public/left-black.svg'; // Import your custom SVG arrows
 // import { ReactComponent as NextArrow } from '../../public/right-black.svg'; // Import your custom SVG arrows
 
@@ -191,8 +192,8 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Takshavi</h3>
-                        <p className='text-xl px-4 py-2 font-light'>Ekaya Spaces proudly unveils Takshavi, a boutique residential enclave nestled in the heart of Frazer Town’s Spencer Road.</p>
-                        <button className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</button>
+                        <p className='text-xl px-4 py-2 font-light mb-6'>Ekaya Spaces proudly unveils Takshavi, a boutique residential enclave nestled in the heart of Frazer Town’s Spencer Road.</p>
+                        <Link href="/takshavi" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
 
@@ -213,8 +214,8 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Embrace</h3>
-                        <p className='text-xl px-4 py-2 font-light'>Modern Idyll in a Three-Storey Block with six Luxurious Homes</p>
-                        <button className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</button>
+                        <p className='text-xl px-4 py-2 font-light mb-6'>Modern Idyll in a Three-Storey Block with six Luxurious Homes</p>
+                        <Link href="/about-embrace" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
 
@@ -235,8 +236,8 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Ellen</h3>
-                        <p className='text-xl px-4 py-2 font-light'>A premium three-storey apartment block, with a total of 11 spacious modern homes,</p>
-                        <button className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</button>
+                        <p className='text-xl px-4 py-2 font-light mb-6'>A premium three-storey apartment block, with a total of 11 spacious modern homes,</p>
+                        <Link href="/about-ellen" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
 
@@ -317,8 +318,8 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Vista Do Mar</h3>
-                        <p className='text-xl px-4 py-2 font-light'>A luxury apartment project in Dona Paula -Goa</p>
-                        <button className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</button>
+                        <p className='text-xl px-4 py-2 font-light mb-6'>A luxury apartment project in Dona Paula -Goa</p>
+                        <Link href="/vista-do-mar" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     
                     </div>
