@@ -17,7 +17,7 @@ function Banner() {
 
 
   return (
-    <div className="h-[70vh] relative mx-auto" data-aos='fade-down'>
+    <div className="lg:h-[70vh] h-[50vh] relative mx-auto" data-aos='fade-down'>
        <Image
         src="/sustainability.png"
         alt="Banner"
@@ -26,8 +26,8 @@ function Banner() {
         className='w-full h-full'
         priority // Preload the image
       />
-          <div className='w-[80%] absolute bottom-0 py-12 ml-40' data-aos='fade-down'>
-              <h1 className='text-8xl text-white poppins-light'>
+          <div className='w-[80%] absolute lg:bottom-40 sm:bottom-40 bottom-10 lg:py-12 lg:ml-40 ml-4' data-aos='fade-down'>
+              <h1 className='lg:text-7xl md:text-5xl text-3xl text-white poppins-light'>
               Sustainability
               </h1>
       </div>

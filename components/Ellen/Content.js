@@ -83,25 +83,25 @@ function Content() {
   return (
     <div>
          <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
-         <h4 className='text-4xl text-black poppins-light pb-6'>Truly a home for your future!</h4>
+         <h4 className='lg:text-4xl text-3xl text-black poppins-light pb-6'>Truly a home for your future!</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Ekaya brings you its prestigious project, ELLEN - a premium three-storey apartment block, with a total of 11 spacious modern homes, abound with new age luxuries.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>Every floor houses just two, 2 bedroom and one, 3 bedroom home. Each unit has an open kitchen with a spacious utility area, an exclusive dining area, and a spacious balcony. All Vaastu-compliant homes are thoughtfully designed, keeping in mind the most primary need of the day - space and privacy. The residences are beautifully weaved into the very fiber of ELLEN’s design structure.</p>
               <p className='poppins-light  text-[18px] text-start'>At ELLEN compromise was never an option. Only the best of everything has been utilized, right from the building material, to its 24 hrs - power back up,the gym, to the maneuver-friendly stilt ( ground level ) and basement parking , to the finish with marble and wooden flooring.</p>
           </div>
           <div className='w-[80%] mx-auto pt-12'>
-              <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
+              <p className='bg-[#DFF3F4] p-4 poppins-light lg:w-[337px] text-center'>Project Gallery</p>
               </div>
           <div className='w-[80%] mx-auto' data-aos="fade-up">
           <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <Image src="/ellen/slide.png" className='w-full h-[650px]' alt="ellen" width={900} height={650}/>
+                      <Image src="/ellen/slide.png" className='w-full lg:h-[650px]' alt="ellen" width={900} height={650}/>
                           </div>
                           <div>
-                      <Image src="/ellen.png" className='w-full h-[650px]' alt="ellen" width={900} height={650}/>
+                      <Image src="/ellen.png" className='w-full lg:h-[650px]' alt="ellen" width={900} height={650}/>
                           </div>  
               </Slider>
          
-              <h6 className='poppins-light text-4xl text-start pb-5 pt-10'>LOCATION</h6>
+              <h6 className='poppins-light lg:text-4xl text-3xl text-start pb-5 pt-10'>LOCATION</h6>
               <p className='poppins-light text-[18px] text-start pb-5'>Within a few minutes drive of Bengaluru’s hottest landmark destinations – UB city, Bangalore club, Ritz Carlton hotel, JW Marriot, Lalbagh Botanical Gardens, Cubbon park and many more, Ekaya’s ELLEN is just off Langford Main Road, cocooned in the most sought after, premium residential neighbourhood of Richmond town in central bangalore.</p>
               <p className='poppins-light text-[18px] text-start pb-5'>It is strategically situated in the Central Business District (CBD) and just about 5 minutes from the upcoming metro station at Vellara junction.</p>
               
@@ -113,16 +113,16 @@ function Content() {
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                       
                       <div className='text-2xl poppins-light poppins-light'>Structure</div>
-                      <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
-                          <li className='text-[18px]'>RCC framed structure.</li>
+                      <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
+                          <li className=''>RCC framed structure.</li>
                           <li>Concrete block masonry, wire cut clay bricks.</li>
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>FLOORING</div>
                       <div>
                           <ul className="poppins-light text-[18px] list-image-[url(/right-icon.svg)] pb-1">
@@ -132,7 +132,7 @@ function Content() {
                          </div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>PAINTING</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Interiors - premium acrylic/plastic emulsion Exterior<br/> - Premium exterior emulsion</li>
@@ -140,7 +140,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>KITCHEN</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Provision for modular kitchen Provision for electric chimney, hob and water purifier Utility room with private drying area along with points for dishwasher and washing machine 3 bedroom apartments will have a separate staff room with a bathroom attached</li>
@@ -148,7 +148,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>DOORS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>All doors with veneer on both sides and teak wood framing. Hardware used will be Godrej or equivalent. UPVC/High density aluminum windows</li>
@@ -157,7 +157,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>ELECTRICAL</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>- Biometric locks for all main doors<br/> - Yale or equivalent<br/> - CCTV surveillance in common areas<br/> - 24 Hour security</li>
@@ -166,7 +166,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>GYM</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -176,7 +176,7 @@ function Content() {
                       
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>MISCELLANEOUS</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -187,13 +187,13 @@ function Content() {
                   </div>
           </div>
 </div>
-          <div className='grid grid-cols-2 w-[80%] mx-auto' data-aos="fade-right">
+          <div className='grid lg:grid-cols-2 w-[80%] mx-auto' data-aos="fade-right">
               <div className='items-center content-center p-6'>
-                  <h5 className='poppins-light text-gray-900 text-6xl'>
+                  <h5 className='poppins-light text-gray-900 lg:text-6xl'>
               HOW TO<br/>GET THERE
               </h5>
               </div>
-              <div><Image src="/ellen-map.png" width={600} height={600} /></div>
+              <div><Image src="/ellen-map.png"  className="w-full" width={600} height={600} /></div>
 </div>
 
 <Map data={FloorPlan} />          

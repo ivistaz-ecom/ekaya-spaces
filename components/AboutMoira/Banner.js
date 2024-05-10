@@ -18,7 +18,7 @@ function Banner() {
   return (
     <div className="h-[70vh] relative mx-auto" data-aos='fade-down'>
         <Image
-        src="/about-us.png"
+        src="/moira/banner.png"
         alt="Banner"
         width={1000} // Adjust width and height according to your image dimensions
         height={500}

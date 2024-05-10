@@ -46,7 +46,25 @@ function Content() {
         slidesToScroll: 1,
         autoplay: true,
         prevArrow: <PrevArrow onClick={() => sliderRef.current.slickPrev()} />, // Pass onClick handler to prev arrow
-        nextArrow: <NextArrow onClick={() => sliderRef.current.slickNext()} />, // Pass onClick handler to next arrow
+          nextArrow: <NextArrow onClick={() => sliderRef.current.slickNext()} />, // Pass onClick handler to next arrow
+        
+          responsive: [
+            {
+              breakpoint: 1024, // Adjust this value based on your design breakpoints
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 768, // Adjust this value based on your design breakpoints
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+            // You can add more breakpoints and adjust settings as needed
+          ]
       };    
 
   return (
@@ -72,7 +90,7 @@ function Content() {
                         <img src="/amora/amora-2.png" className='' />
                     </div>
                 </Slider>
-                <div className='text-[18px] poppins-light border border-e-green w-[490px] p-6 my-12 mx-auto'>
+                <div className='text-[18px] poppins-light border border-e-green lg:w-[490px] p-6 my-12 mx-auto'>
                     <a href="#" class="text-black dark:text-black underline hover:underline">Click here</a> to fill the form for the project brochure
               </div>
               
@@ -81,25 +99,25 @@ function Content() {
             </div>
 
 
-<div className='justify-between z-50 mt-16'>  
-<div class="flex flex-col items-center bg-white md:flex-row w-[90%]" data-aos="fade-right">
-    <Image class="object-cover w-[30em] mr-10"  src="/amora-blog.png" alt="moira" width={500} height={700} />
-    <div class="flex flex-col justify-between leading-normal">
+<div className='justify-between z-50 mt-16 mx-auto w-[80%] lg:w-full'>  
+<div class="lg:flex flex-col items-center bg-white md:flex-row mx-auto" data-aos="fade-right">
+    <Image class="object-cover lg:w-[30em] mr-10 sm:w-[20em]"  src="/amora-blog.png" alt="moira" width={500} height={700} />
+    <div class="flex flex-col justify-between leading-normal lg:pt-0 pt-6">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5">The commitment to ensuring utmost convenience and comfort extends to the practical aspects of vacation living as well. Each villa is fully air-conditioned, providing a respite from the tropical heat, and comes equipped with two spacious car parks, providing guests with ample parking space for their vehicles during their stay. Moreover, with 100% power backup, guests can rest assured of uninterrupted enjoyment of their vacation, enhancing their peace of mind.</p>
     </div>
                 </div>
                 
-    <div class="flex flex-col items-center bg-white md:flex-row w-[90%] justify-items-end float-right" data-aos="fade-left">
+    <div class="flex lg:flex-row flex-col-reverse lg:items-center items-end bg-white md:flex-col-reverse  justify-items-end" data-aos="fade-left">
     <div class="flex flex-col justify-between leading-normal">
-        <p class="mb-3 poppins-light text-[18px] text-start pb-5 ml-36">One of the most remarkable features of Amora Villas is the emphasis on privacy. Each villa is thoughtfully designed to ensure seclusion and exclusivity, allowing vacationers to enjoy their holiday retreat without any intrusion. Whether lounging by the poolside or unwinding in the tranquil confines of their bedrooms, guests can revel in the luxury of privacy afforded by this exceptional vacation home.</p>
+        <p class="mb-3 poppins-light text-[18px] text-start pb-5 lg:ml-36">One of the most remarkable features of Amora Villas is the emphasis on privacy. Each villa is thoughtfully designed to ensure seclusion and exclusivity, allowing vacationers to enjoy their holiday retreat without any intrusion. Whether lounging by the poolside or unwinding in the tranquil confines of their bedrooms, guests can revel in the luxury of privacy afforded by this exceptional vacation home.</p>
                     </div>
-                    <Image class="object-cover w-[30em] ml-10"  src="/amora-blog-1.png" alt="moira" width={500} height={700} />
+                    <Image class="object-cover lg:w-[30em] ml-10 sm:w-[20em]"  src="/amora-blog-1.png" alt="moira" width={500} height={700} />
                 </div>
 
 
 
-<div class="flex flex-col items-center bg-white md:flex-row w-[90%]" data-aos="fade-right">
-    <Image class="object-cover w-[30em] mr-10"  src="/amora-blog-2.png" alt="moira" width={500} height={700} />
+<div class="lg:flex flex-col items-center bg-white md:flex-row mx-auto" data-aos="fade-right">
+    <Image class="object-cover lg:w-[30em] mr-10 sm:w-[20em]"  src="/amora-blog-2.png" alt="moira" width={500} height={700} />
     <div class="flex flex-col justify-between leading-normal">
         <p class="mb-3 poppins-light text-[18px] text-start pb-5">Moreover, the strategic location of Amora Villas further enhances its allure. Surrounded by some of the finest residential projects in Moira, guests benefit from a vibrant community atmosphere while enjoying the tranquility and exclusivity of their vacation abode.</p>
     </div>
@@ -117,7 +135,7 @@ function Content() {
         priority // Preload the image
       />
 
-              <div className=' bg-white border absolute -mt-40 ml-[50%] mr-[10%] p-10'>
+              <div className=' bg-white border absolute -mt-40 lg:ml-[50%] lg:mr-[10%] p-10'>
               <p class="mb-3 poppins-light text-[18px] text-start pb-5">In essence, Amora Villas stands as a testament to unparalleled luxury and sophistication, offering discerning vacationers a rare opportunity to experience the epitome of coastal living in the idyllic setting of Moira, Goa. With its impeccable craftsmanship, exquisite amenities, and unparalleled attention to detail, Amora Villas sets a new benchmark for luxury vacation living in the heart of Goa’s coastal paradise.</p>
               </div>         
           
@@ -126,12 +144,14 @@ function Content() {
           <div className='h-[20vh]'></div>
           <div className='w-[80%] mx-auto pt-6' data-aos="fade-down">
                 <h3 className='text-4xl text-black poppins-light pb-6'>Location Highlights</h3>
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4'>
-                    <div className='text-2xl '>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[280px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[280px] py-6 flex justify-center items-center">
                         Hotels & Resorts
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>
@@ -149,17 +169,19 @@ function Content() {
                     </div>
                 </div>
 
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4 '>
-                    <div className='text-2xl'>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[200px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[200px] py-6 flex justify-center items-center">
                         Beaches &<br/> Popular Areas
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>
                     <div className='col-span-2'>
-                    <div className='grid grid-cols-2'>
+                    <div className='grid lg:grid-cols-2 grid-col-1'>
                         <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
                               <li className='text-[18px]'>Mapusa: 4.6 Km</li>
                               <li className='text-[18px]'>Assagao: 8Km</li>
@@ -183,12 +205,14 @@ function Content() {
                 </div>
                 
 
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4 '>
-                    <div className='text-2xl'>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[100px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[100px] py-6 flex justify-center items-center">
                         Hospitals
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>
@@ -202,12 +226,14 @@ function Content() {
                 </div>
 
 
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4 '>
-                    <div className='text-2xl'>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[100px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[100px] py-6 flex justify-center items-center">
                         Schools
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>
@@ -219,12 +245,14 @@ function Content() {
                     </div>
                 </div>
 
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4 '>
-                    <div className='text-2xl'>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[100px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[100px] py-6 flex justify-center items-center">
                         Airports
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>
@@ -236,12 +264,14 @@ function Content() {
                     </div>
                 </div>
 
-                <div className='grid grid-flow-row-dense grid-cols-3 py-4 '>
-                    <div className='text-2xl'>
+                <div className='grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1 py-4'>
+                    <div className='text-2xl lg:py-0 py-6 '>
                         
-                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] h-[100px] flex justify-center items-center">
+                        <p className="text-black poppins-light relative bg-[#ABD2D3] w-[300px] lg:h-[100px] py-6 flex justify-center items-center">
                         Railway Stations
-                            <span className='triangle-right'></span>
+                        <span className='triangle-right lg:block hidden'></span>
+                            <span className='triangle-bottom block sm:hidden lg:hidden'></span>
+                            <span className='triangle-left sm:block lg:hidden hidden'></span>
                         </p>
                         
                     </div>

@@ -52,12 +52,12 @@ function ApproachContent() {
 
 
   return (
-    <div className='grid grid-cols-3 py-12 w-[80%] mx-auto' data-aos='fade-up'>
+    <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-12 w-[80%] mx-auto' data-aos='fade-up'>
           {
               blogs.map((items,index) => (
                 <div class="p-6 bg-white border border-gray-200  dark:bg-gray-800 dark:border-gray-700">
                       <Image src={items.icon} className="py-6" width={100} height={100} />
-                          <h5 class="mb-2 h-[100px] text-2xl poppins-light tracking-tight text-gray-900 dark:text-white">{items.title}</h5>
+                          <h5 class="mb-2 lg:h-[100px] text-2xl poppins-light tracking-tight text-gray-900 dark:text-white">{items.title}</h5>
                       <p class="mb-3 poppins-light text-[18px] text-gray-500 dark:text-gray-400">{items.desc}</p>
 
 </div>  

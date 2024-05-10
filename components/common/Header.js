@@ -1,6 +1,9 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { initFlowbite } from 'flowbite'
+import { FaBarsStaggered } from "react-icons/fa6";
+
 function Header({stats}) {
 
 
@@ -24,16 +27,27 @@ function Header({stats}) {
     // alert('hello')
   };
 
+  useEffect(() => {
+    initFlowbite();
+
+},[])
+
+
   return (
 
     < >
       <span className='absolute w-full h-screen z-10' onClick={handleClick}></span>
       <nav class="bg-transparent bg-opacity-5 absolute w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]">
-      
-
-      <div class="flex justify-between p-4 w-[80%] mx-auto  items-center z-50">
+<div class="flex justify-between p-4 lg:w-[80%] mx-auto  items-center z-50 ">
+          
+<div class="text-center lg:hidden">
+   <button class="text-white bg-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-2 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+    <FaBarsStaggered size={23} color='black' />
+   </button>
+</div>
           <div className=''>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <div class="hidden w-full lg:block md:w-auto" id="navbar-dropdown">
+
               <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                 <li>
                   <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center text-white justify-between text-[18px] poppins-light hover:text-white"
@@ -117,10 +131,10 @@ function Header({stats}) {
                                 <Link href="/about-us" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Story</Link>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a>
+                                <Link href="/our-team" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</Link>
                               </li>
                               <li>
-                                <a href="#" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why Ekaya</a>
+                                <Link href="why-ekaya" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why Ekaya</Link>
                               </li>
                               <li>
                                 <Link href="/sustainability" class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sustainability</Link>
@@ -139,7 +153,7 @@ function Header({stats}) {
 
 
           </div>
-          <div className='mr-[200px]'>
+          <div className='lg:mr-[200px] w-40 lg:w-60 md:w-96'>
 
             <Link href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="/logo.svg" class="h-8" alt="Ekaya" />
@@ -155,8 +169,163 @@ function Header({stats}) {
               </svg>
             </button>
           </div>
+
+
+
+<div id="drawer-navigation" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+    <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+    <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+      </svg>
+      <span class="sr-only">Close menu</span>
+   </button>
+  <div class="py-12 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <button type="button" class="flex items-center poppins-light w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-ongoing" data-collapse-toggle="dropdown-ongoing">
+                  
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Ongoing Projects</span>
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+            <ul id="dropdown-ongoing" class="hidden py-2 space-y-2">
+                  <li>
+                     
+                  <Link href="/about-dona-paula" class="flex poppins-light items-center w-full p-2 text-base text-white transition duration-75 rounded-lg group bg-e-green dark:text-white dark:hover:bg-gray-700">
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Goa - Dona Paula</span>
+            </Link>
+            <ul class="py-2 space-y-2">
+                  <li>
+                     <Link href="/vista-do-mar" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">— Vista Do Mar</Link>
+                  </li>
+        
+                      </ul>
+                <button type="button" class="flex items-center poppins-light w-full p-2 text-base text-white bg-e-green transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" >
+                 <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Bangalore</span>
+                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                 </svg>
+                      </button>
+                      <ul class="py-2 space-y-2">
+                  <li>
+                     <Link href="/takshavi" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">— Takshavi</Link>
+                  </li>
+                      </ul>
+                    </li>
+            </ul>
+                </li>
+                <li>
+            <button type="button" class="flex items-center w-full p-2 poppins-light text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-completed" data-collapse-toggle="dropdown-completed">
+                  
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Completed Projects</span>
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+            <ul id="dropdown-completed" class="hidden py-2 space-y-2">
+                  <li>
+                <button type="button" class="flex poppins-light items-center w-full p-2 text-base text-white bg-e-green transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" >
+                 <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Bangalore</span>
+                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                 </svg>
+                      </button>
+                      <ul class="py-2 space-y-2">
+                  <li>
+                     <Link href="/about-embrace" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">— Embrace</Link>
+                        </li>
+                        <li>
+                     <Link href="/about-ellen" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">— Ellen</Link>
+                        </li>
+                        
+                      </ul>
+                    </li>
+            </ul>
+         </li>
+        
+         <li>
+            <button type="button" class="flex items-center poppins-light w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-upcoming" data-collapse-toggle="dropdown-upcoming">
+                  
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Upcoming Projects</span>
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+            <ul id="dropdown-upcoming" class="hidden py-2 space-y-2">
+                  <li>
+                     
+                  <button type="button" class="flex items-center w-full p-2 text-base poppins-light text-white transition duration-75 rounded-lg group bg-e-green dark:text-white dark:hover:bg-gray-700">
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Goa — Moira</span>
+            </button>
+            <ul class="py-2 space-y-2">
+                  <li>
+                     <Link href="/about-amora" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">— Amora</Link>
+                  </li>
+                      </ul>
+                    </li>
+            </ul>
+                </li>  
+                
+
+                <li>
+            <button type="button" class="flex items-center poppins-light w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-about" data-collapse-toggle="dropdown-about">
+                  
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">About Ekaya</span>
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+            </button>
+            <ul id="dropdown-about" class="hidden py-2 space-y-2">
+                  <li>
+            <ul class="py-2 space-y-2">
+                  <li>
+                     <Link href="/about-us" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Our Story</Link>
+                        </li>
+                        <li>
+                     <Link href="/our-team" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Our Team</Link>
+                        </li>
+                        <li>
+                     <Link href="/why-ekaya" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Why Ekaya</Link>
+                        </li>
+                        <li>
+                     <Link href="/sustainability" class="flex items-center poppins-light w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sustainability</Link>
+                  </li>
+        
+                      </ul>
+          
+                    </li>
+            </ul>
+         </li> 
+     
+       
+      </ul>
+   </div>
+</div>
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
+
+
+        
       </nav>
+
+
+
+
+
+
 
     </>
   )

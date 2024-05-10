@@ -89,7 +89,7 @@ function Content() {
   return (
     <div>
          <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
-         <h4 className='text-4xl text-black poppins-light pb-6'>Modern idyll in a three-storey block with<br/> six luxurious homes</h4>
+         <h4 className='lg:text-4xl text-2xl text-black poppins-light pb-6'>Modern idyll in a three-storey block with<br/> six luxurious homes</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Located in the serene yet prestigious Ganga Nagar, Ekaya’s Embrace is a testament to modern luxury, just a gaze away from Bengaluru’s stunning Embassy One. Perfectly positioned off Bellary Main Road, this elegant abode ensures effortless connectivity to Bengaluru International Airport, the essential Columbia Asia Hospital, and vibrant market hubs. At Embrace, luxury is reimagined, offering a unique blend of comfort and elegance, designed to cater to those who aspire for a life beyond the ordinary.</p>
               
               <p className='poppins-light  text-[18px] text-start'>Our homes are designed to create a harmonious flow between interior luxury<br/>and the beauty of the outdoors.</p>
@@ -97,8 +97,8 @@ function Content() {
           <div className='w-[80%] mx-auto pt-12'>
               <p className='bg-[#DFF3F4] p-4 poppins-light w-[337px] text-center'>Project Gallery</p>
               </div>
-          <div className='grid grid-cols-3 '>
-              <div className='bg-e-green content-center p-[3em] w-[30em]' >
+          <div className='grid lg:grid-cols-3 sm:grid-cols-3 '>
+              <div className='bg-e-green content-center p-[3em] lg:w-[30em]' >
                   <p className='text-[18px] text-white poppins-light' data-aos="fade-right">Experience the pinnacle of modern living with our spacious homes, featuring thoughtful layouts and upscale amenities.</p>
               </div>
               <div className='w-full col-span-2'>
@@ -107,7 +107,7 @@ function Content() {
               
           </div>
           <div className='w-[80%] mx-auto py-12 ' data-aos="fade-up">
-         <h4 className='text-4xl text-black poppins-light pb-6'>Spacious, modern homes<br/>with thoughtful layouts</h4>
+         <h4 className='lg:text-4xl text-3xl text-black poppins-light pb-6'>Spacious, modern homes<br/>with thoughtful layouts</h4>
           <p className='poppins-light text-[18px] text-start pb-5'>Within view of Bengaluru’s newest and hottest landmark destination - Embassy One (Four Seasons Hotel and Residences), Ekaya’s Embrace is just off Bellary Main Road, cocooned in the most sought after, premium residential neighbourhood of Ganga Nagar.</p>
               <p className='poppins-light  text-[18px] text-start pb-5'>At Embrace compromise is never an option. Only the best of everything has been utilized, Right from the building material, to its 24-power back up, to the maneuver-friendly stilt parking at ground level, to the finish with marble and wooden flooring.</p>
               <p className='poppins-light  text-[18px] text-start'>Ideally located, merely a half hour away from the Bengaluru International Airport, via NH7, Embrace also boasts of an easy and hurdle-free access to the area’s prime market place and health care facilities, such as the Columbia Asia hospital. It is strategically situated near the CBD and just about 10 to 15 minutes from Cantonment.</p>
@@ -119,16 +119,16 @@ function Content() {
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-black poppins-light pb-6'>Specifications</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                       
                       <div className='text-2xl poppins-light'>Structure</div>
-                      <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
-                          <li className='text-[18px]'>RCC structure with concrete/block masonry walls.</li>
+                      <div> <ul className='poppins-light  text-[18px] list-image-[url(/right-icon.svg)]'>
+                          <li className=''>RCC structure with concrete/block masonry walls.</li>
                           <li>Open surface parking on Stilt floor.</li>
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Finishes</div>
                       <div>
                       <p className='poppins-medium text-[18px]'>LIVING / DINING</p>
@@ -149,7 +149,7 @@ function Content() {
                          </div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Toilets</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Matt finish vitrified Tile Flooring.</li>
@@ -159,7 +159,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Kitchen</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Vitrified Tile flooring.</li>
@@ -170,7 +170,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Balconies/Utilities</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Matt finishVitrified tile flooring and skirting.</li>
@@ -182,7 +182,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Common Staircase</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Granite for landing, treads & risers from Basement to Fourth floor.</li>
@@ -193,7 +193,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Common Areas</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -206,7 +206,7 @@ function Content() {
                       
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>Joinery</div>
                       <div>
                       <p className='poppins-medium text-[18px]'>Main Door</p>
@@ -235,16 +235,16 @@ function Content() {
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-white poppins-light pb-6'>Features</h4>  
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                       
                       <div className='text-2xl poppins-light'>SANITARY & PLUMBING</div>
-                      <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>
-                          <li className='text-[18px]'>CP Fittings: Kohler or Equivalent make.</li>
+                      <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
+                          <li className=''>CP Fittings: Kohler or Equivalent make.</li>
                           <li>Ceramic Fittings: Kohler or Equivalent make.</li>
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>ELECTRICAL</div>
                       <div>
                       
@@ -256,7 +256,7 @@ function Content() {
                          </div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>AIR CONDITIONG</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>All Products such as switch & accessories, PVC conduit, Switchgear,</li>
@@ -266,7 +266,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>TELEPHONE POINTS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>Provision for Electrical conduit, Drain pipe and outdoor unit space for split type</li>
@@ -275,7 +275,7 @@ function Content() {
                       </ul></div>
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>TELEPHONE POINTS</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>In Living Room and in all Bedrooms.</li>
@@ -285,7 +285,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>D.G</div>
                       <div> <ul className='poppins-light text-[18px] list-image-[url(/right-icon.svg)]'>
                           <li>For common area lighting, lifts and pumps.</li>
@@ -296,7 +296,7 @@ function Content() {
                   </div>
 
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>ELEVATORS</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -307,7 +307,7 @@ function Content() {
                       
                   </div>
                   <hr className='h-px border-t border-gray-300 mx-auto ' />
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                   <div className='text-2xl poppins-light'>SECURITY</div>
                       <div>
                       <ul className='poppins-light list-image-[url(/right-icon.svg)]'>
@@ -324,7 +324,7 @@ function Content() {
               <div className='w-[80%] mx-auto'>
                   <h4 className='text-4xl text-white poppins-light pb-6'>Amenities</h4>  
                   
-                  <div className='grid grid-cols-2 py-4'>
+                  <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-4'>
                       
                       <div className='text-2xl poppins-light'></div>
                       <div> <ul className='poppins-light  list-image-[url(/right-icon.svg)]'>

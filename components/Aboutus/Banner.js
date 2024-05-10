@@ -15,9 +15,9 @@ function Banner() {
 
 
   return (
-    <div className="bg-center bg-no-repeat bg-cover bg-[url('/about-us.png')] bg-gray-300 bg-blend-multiply h-[70vh] relative mx-auto" data-aos='fade-down'>
-          <div className='w-[80%] absolute bottom-0 py-12 ml-40' data-aos='fade-down'>
-              <h1 className='text-8xl text-white poppins-light'>
+    <div className="bg-center h-[50vh] bg-no-repeat bg-cover bg-[url('/about-us.png')] bg-gray-300 bg-blend-multiply lg:h-[70vh] relative mx-auto" data-aos='fade-down'>
+          <div className='w-[80%] absolute bottom-0 py-12 lg:ml-40 ml-20' data-aos='fade-down'>
+              <h1 className='lg:text-7xl md:text-7xl text-3xl text-white poppins-light'>
               Our Story
               </h1>
       </div>    

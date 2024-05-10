@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123.427" height="106.7" viewBox="0 0 123.427 106.7">
+  <g id="Group_49630" data-name="Group 49630" transform="translate(0 0)">
+    <g id="Group_49631" data-name="Group 49631" transform="translate(0.7 0)">
+      <path id="Path_71735" data-name="Path 71735" d="M83.141,38.453l18.275-18.874s5.385-3.809,10.122,0c1.717,1.8,4.033,4.89,1.717,9.694S89.4,57.672,89.4,57.672a23.711,23.711,0,0,1-16.9,6.433c-10.9-.084-31.66,0-31.66,0A15.687,15.687,0,0,0,30.13,70.554L6.192,47.463l.334-.946S18.368,23.867,46.637,32.79l29.211.087a8.322,8.322,0,0,1,7.293,8.408c0,4.033-3.089,7.464-6.52,7.635H47.752" transform="translate(7.818 27.74)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <path id="Path_71736" data-name="Path 71736" d="M41.369,56.647h0a16.618,16.618,0,0,1-23.5.423L.7,40.5,12.238,28.546Z" transform="translate(-0.7 44.272)" fill="none" stroke="#3f4445" stroke-linejoin="round" stroke-width="1.4"/>
+      <line id="Line_106" data-name="Line 106" x1="3.844" y1="3.844" transform="translate(24.248 95.549)" fill="#fff" stroke="#3f4445" stroke-width="1"/>
+      <line id="Line_107" data-name="Line 107" x1="3.844" y1="3.844" transform="translate(24.248 95.549)" fill="none" stroke="#3f4445" stroke-linejoin="round" stroke-width="1.4"/>
+      <path id="Path_71737" data-name="Path 71737" d="M36.408,5.883l3.319,6.724a1.836,1.836,0,0,0,1.383,1.005l7.423,1.079a1.838,1.838,0,0,1,1.018,3.135l-5.37,5.235a1.834,1.834,0,0,0-.528,1.625l1.268,7.393a1.837,1.837,0,0,1-2.666,1.936l-6.64-3.49a1.84,1.84,0,0,0-1.709,0l-6.638,3.49A1.837,1.837,0,0,1,24.6,32.079l1.268-7.393a1.841,1.841,0,0,0-.528-1.625L19.97,17.827a1.839,1.839,0,0,1,1.018-3.135l7.423-1.079a1.832,1.832,0,0,0,1.383-1.005l3.319-6.724A1.838,1.838,0,0,1,36.408,5.883Z" transform="translate(28.324 7.537)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <circle id="Ellipse_181" data-name="Ellipse 181" cx="25.532" cy="25.532" r="25.532" transform="translate(37.553 2.569)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <line id="Line_108" data-name="Line 108" y1="14.257" transform="translate(30.114 9.367)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <line id="Line_109" data-name="Line 109" y1="9.367" transform="translate(37.554)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <line id="Line_110" data-name="Line 110" y1="14.257" transform="translate(96.058 9.367)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+      <line id="Line_111" data-name="Line 111" y1="9.367" transform="translate(88.618)" fill="none" stroke="#3f4445" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

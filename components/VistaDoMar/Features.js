@@ -82,7 +82,7 @@ const blogs = [
 
 function ApproachContent() {
   return (
-    <div className='grid grid-cols-3 py-12 w-[80%] mx-auto'>
+    <div className='grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 py-12 lg:w-[80%] mx-auto w-full'>
       
           {
               blogs.map((items,index) => (

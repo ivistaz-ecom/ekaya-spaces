@@ -11,7 +11,7 @@ const Blogs = [
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
         'image': '/blog-1.png',
-        'class': 'mt-0'
+        'class': 'lg:mt-0'
 
     },
     {
@@ -19,7 +19,7 @@ const Blogs = [
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
         'image': '/blog-2.png',
-        'class': 'mt-8'
+        'class': 'lg:mt-8'
 
     },
     {
@@ -27,7 +27,7 @@ const Blogs = [
         'title': 'Spaces that connect inside and outside',
         'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
         'image': '/blog-3.png',
-        'class': 'mt-16'
+        'class': 'lg:mt-16'
 
     }
 
@@ -41,7 +41,7 @@ function Insights() {
     const sliderRef = useRef(null);
 
     const NextArrow = ({onClick}) => (
-  <div className="in-arrow next-arrow" onClick={onClick}>
+  <div className="in-arrow w-[60%] lg:w-[90%] absolute  next-arrow" onClick={onClick}>
   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
     <g id="Group_49400" data-name="Group 49400" transform="translate(-1167 -1988)">
       <circle id="Ellipse_133" data-name="Ellipse 133" cx="24" cy="24" r="24" transform="translate(1167 1988)" fill="#1d1d1d"/>
@@ -57,7 +57,7 @@ function Insights() {
   
   
     const PrevArrow = ({onClick}) => (
-      <div className="in-arrow prev-arrow" onClick={onClick}>
+      <div className="in-arrow w-[60%] lg:w-[90%] absolute -bottom-10 prev-arrow" onClick={onClick}>
   <svg id="Group_49401" data-name="Group 49401" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
     <circle id="Ellipse_133" data-name="Ellipse 133" cx="24" cy="24" r="24" fill="#1d1d1d"/>
     <g id="Group_13142" data-name="Group 13142" transform="translate(18.112 15.112)">
@@ -77,17 +77,34 @@ function Insights() {
         slidesToScroll: 3,
         autoplay: true,
         prevArrow: <PrevArrow onClick={() => sliderRef.current.slickPrev()} />, // Pass onClick handler to prev arrow
-        nextArrow: <NextArrow onClick={() => sliderRef.current.slickNext()} />, // Pass onClick handler to next arrow
+      nextArrow: <NextArrow onClick={() => sliderRef.current.slickNext()} />, // Pass onClick handler to next arrow
+      responsive: [
+        {
+          breakpoint: 1024, // Adjust this value based on your design breakpoints
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 768, // Adjust this value based on your design breakpoints
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+        // You can add more breakpoints and adjust settings as needed
+      ]
       };
 
 
     return (
         <>
             <div className="text-center mt-[0px] w-[70%] mx-auto z-96">
-                <h2 className='text-5xl poppins-regular py-10'>Insights</h2>
+                <h2 className='lg:text-5xl text-4xl poppins-regular py-10'>Insights</h2>
                 <p className='poppins-light text-[18px]'>Gain valuable insights into the world of luxury real estate and what makes an Ekaya home the right choice for discerning buyers.</p>
             </div>
-            <div className="mx-auto mt-10 justify-center w-[80%] z-96">
+            <div className="mx-auto mt-10 justify-center lg:w-[80%] px-4 lg:px-0 z-96">
 
             <Slider  {...settings} className='z-96'>
             {
@@ -109,7 +126,7 @@ function Insights() {
                   </Slider>
                
             </div>
-            <div className="z-0 -mt-40 bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-gray-300 bg-blend-multiply h-screen relative">
+            <div className="z-0 -mt-[15em] bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-gray-300 bg-blend-multiply h-screen relative">
         </div>
         </>
     )

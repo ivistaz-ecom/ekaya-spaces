@@ -17,7 +17,7 @@ function Banner() {
   }, []);
 
   return (
-    <div className="h-screen relative" data-aos='fade-down'>
+    <div className="lg:h-screen h-[50vh] relative" data-aos='fade-down'>
       <Image
         src="/Banner.png"
         alt="Banner"

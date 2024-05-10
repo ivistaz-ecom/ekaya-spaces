@@ -16,9 +16,9 @@ function Banner() {
 
 
   return (
-    <div className="h-[70vh] relative mx-auto" data-aos='fade-down'>
+    <div className="lg:h-[70vh] h-[50vh] relative mx-auto" data-aos='fade-down'>
  <Image
-        src="/dona-paula-banner.png"
+        src="/dona-paula/banner.png"
         alt="Banner"
         width={1000} // Adjust width and height according to your image dimensions
         height={500}
@@ -27,8 +27,8 @@ function Banner() {
       />
 
 
-          <div className='w-[80%] absolute bottom-0 py-12 ml-40' data-aos="fade-down">
-              <h1 className='text-8xl text-white poppins-light'>
+          <div className='lg:w-[80%] w-full absolute bottom-0 py-12 lg:ml-40' data-aos="fade-down">
+              <h1 className='lg:text-8xl md:text-8xl text-5xl  text-white poppins-light'>
               About<br/>Dona Paula
               </h1>
       </div>

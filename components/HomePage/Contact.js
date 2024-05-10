@@ -7,7 +7,7 @@ import server from '../../config.json'
 function Contact() {
 
   const Locations = [
-    {'name':'Embrace'},
+    { 'name': 'Embrace' },
     { 'name': 'Ellen' },
     { 'name': 'Takshavi' },
     { 'name': 'Vista Do Mar' },
@@ -25,7 +25,7 @@ function Contact() {
   const handleCheckboxChange = () => {
     setIsCheckboxChecked(!isCheckboxChecked);
     setAcceptance('agree');
-    
+
   };
   const nameRegex = /^[a-zA-Z\s]*$/
   const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
@@ -69,91 +69,91 @@ function Contact() {
     const name = e.target.name;
     //alert(e.target.value)
 
-      if (name === 'floating_first_name') {
-        if (!nameRegex.test(value)) {
-          console.log('invalid character')
-          const fieldErrors = {}
-          const { field, message } = nameErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
+    if (name === 'floating_first_name') {
+      if (!nameRegex.test(value)) {
+        console.log('invalid character')
+        const fieldErrors = {}
+        const { field, message } = nameErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
       }
-      if (name === 'floating_last_name') {
-        if (!nameRegex.test(value)) {
-          console.log('invalid character')
-          const fieldErrors = {}
-          const { field, message } = lastErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
+      else {
+        console.log('valid character')
+        setErrors('')
       }
-
-      if (name === 'floating_email') {
-
-        if (!emailRegex.test(value)) {
-          console.log('invalid Email')
-          const fieldErrors = {}
-          const { field, message } = emailErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
-        if (isValidEmail(value)) {
-          console.log('invalid Email')
-          const fieldErrors = {}
-          const { field, message } = customDomainErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
-
-      }
-
-      if (name === 'floating_phone') {
-        if (!phoneRegex.test(value)) {
-          console.log('invalid character')
-          const fieldErrors = {}
-          const { field, message } = customPhoneErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
-      }
-    if (name === 'floating_location') {
-        if (!nameRegex.test(value)) {
-          console.log('invalid character')
-          const fieldErrors = {}
-          const { field, message } = locationErrors;
-          fieldErrors[field] = message;
-          setErrors(fieldErrors);
-        }
-        else {
-          console.log('valid character')
-          setErrors('')
-        }
     }
-    
-      setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
-    });  
+    if (name === 'floating_last_name') {
+      if (!nameRegex.test(value)) {
+        console.log('invalid character')
+        const fieldErrors = {}
+        const { field, message } = lastErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
+      }
+      else {
+        console.log('valid character')
+        setErrors('')
+      }
+    }
+
+    if (name === 'floating_email') {
+
+      if (!emailRegex.test(value)) {
+        console.log('invalid Email')
+        const fieldErrors = {}
+        const { field, message } = emailErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
+      }
+      else {
+        console.log('valid character')
+        setErrors('')
+      }
+      if (isValidEmail(value)) {
+        console.log('invalid Email')
+        const fieldErrors = {}
+        const { field, message } = customDomainErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
+      }
+      else {
+        console.log('valid character')
+        setErrors('')
+      }
+
+    }
+
+    if (name === 'floating_phone') {
+      if (!phoneRegex.test(value)) {
+        console.log('invalid character')
+        const fieldErrors = {}
+        const { field, message } = customPhoneErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
+      }
+      else {
+        console.log('valid character')
+        setErrors('')
+      }
+    }
+    if (name === 'floating_location') {
+      if (!nameRegex.test(value)) {
+        console.log('invalid character')
+        const fieldErrors = {}
+        const { field, message } = locationErrors;
+        fieldErrors[field] = message;
+        setErrors(fieldErrors);
+      }
+      else {
+        console.log('valid character')
+        setErrors('')
+      }
+    }
+
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
 
 
 
@@ -166,8 +166,8 @@ function Contact() {
     floating_phone: '',
     project_select: '',
     floating_location: '',
-    agree:'',
-});
+    agree: '',
+  });
 
   const handleForm = async (event) => {
     // 👇️ prevent page refresh
@@ -176,36 +176,36 @@ function Contact() {
     setIsSubmitting(true)
     try {
       const response = await axios.post(`${server.SERVER_FROM}contact-form-7/v1/contact-forms/7/feedback`,
-          formData,
-          {
-              headers: {
-                  "Content-Type": 'multipart/form-data',
-              }
-          });
+        formData,
+        {
+          headers: {
+            "Content-Type": 'multipart/form-data',
+          }
+        });
       console.log(response.data);
       if (response.data.status === 'mail_sent') {
-        
-        
+
+
       } else {
-          const fieldErrors = {};
-          const { status, invalid_fields } = response.data;
-          invalid_fields.forEach((field) => {
-              fieldErrors[field.field] = field.message;
-          });
+        const fieldErrors = {};
+        const { status, invalid_fields } = response.data;
+        invalid_fields.forEach((field) => {
+          fieldErrors[field.field] = field.message;
+        });
         setErrors(fieldErrors);
         setIsSubmitting(false)
       }
-      
-  } catch (err) {
-      setError('An error occurred. Please try again.');
-  }
 
-  
+    } catch (err) {
+      setError('An error occurred. Please try again.');
+    }
+
+
   }
 
   return (
-    <div className='mt-[100px] w-[80%] mx-auto bg-gray-200 p-6'>
-      <h3 className='text-[46px]'>Get in touch</h3>
+    <div className='lg:mt-[100px] lg:w-[80%] mx-auto bg-gray-200 p-6'>
+      <h3 className='lg:text-[46px] text-4xl'>Get in touch</h3>
       <h4 className='text-2xl font-light text-gray-600'>*Required fields</h4>
       <form class="py-6">
         <div class="grid md:grid-cols-2 md:gap-6">
@@ -259,16 +259,16 @@ function Contact() {
             >
               <option selected></option>
               {
-                                            Locations.map((items,index) => (
-                                                <option value={items.name} key={index}>{items.name}</option>
-                                            ))
-                                            
-                                        }
-          
+                Locations.map((items, index) => (
+                  <option value={items.name} key={index}>{items.name}</option>
+                ))
+
+              }
+
             </select>
-            <div className='absolute right-0 -mt-[34px]'><IoMdArrowDropdown size={28} /></div>
+            {/* <div className='absolute right-0 -mt-[34px] hidden lg:block'><IoMdArrowDropdown size={28} /></div> */}
             {errors && errors.project_select && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.project_select}</p>}
-            
+
           </div>
           <div class="relative z-0 w-full mb-5 group">
             <input type="text" name="floating_location" id="floating_location" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
@@ -283,15 +283,15 @@ function Contact() {
 
 
 
-          <input id="link-checkbox" type="checkbox" class={`checkbox-round border-4 bg-gray-100 border-red-500 rounded-full focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ${errors && errors.agree?'border-4 border-red-500':'text-gray-500' }`}
+          <input id="link-checkbox" type="checkbox" class={`checkbox-round border-4 bg-gray-100 border-red-500 rounded-full focus:ring-gray-500 dark:focus:ring-gray-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ${errors && errors.agree ? 'border-4 border-red-500' : 'text-gray-500'}`}
             name="agree"
             value={formData.agree}
             onChange={handleCheckboxChange}
           />
-          <label for="link-checkbox" class={`ms-2 text-[18px] font-light  dark:text-gray-300 ${errors && errors.agree?'text-red-500':'text-gray-500' }`}>I declare that I have read, understood and accept the <a href="#" class="text-black dark:text-black hover:underline">privacy policy</a>.</label>
-          
+          <label for="link-checkbox" class={`ms-2 text-[18px] font-light  dark:text-gray-300 ${errors && errors.agree ? 'text-red-500' : 'text-gray-500'}`}>I declare that I have read, understood and accept the <a href="#" class="text-black dark:text-black hover:underline">privacy policy</a>.</label>
+
         </div>
-        <button type="submit" class="flex items-center my-6 text-white bg-gray-900 font-light text-[18px] w-full sm:w-auto px-10 py-2.5 text-center hover:bg-black"
+        <button type="submit" class="justify-center flex items-center my-6 text-white bg-gray-900 font-light text-[18px] w-full sm:w-auto px-10 py-2.5 text-center hover:bg-black"
           onClick={handleForm}
           disabled={submitting && 'disabled'}
         >Submit&nbsp;
@@ -304,7 +304,7 @@ function Contact() {
 
         </button>
       </form>
-      <div class="flex flex-col content-between gap-x-2 sm:flex-row sm:justify-center sm:space-y-0">
+      <div class="flex lg:flex-row items-center content-between gap-x-2 flex-col sm:flex-col sm:justify-center sm:space-y-0">
         <div class="block">
           <h5 class="mb-2 text-2xl font-light tracking-tight text-w-blue"><span className="text-e-green">Call:</span> +91 98440 32022</h5>
         </div>

@@ -85,9 +85,9 @@ var settings = {
 
     return (
       <>
-    <div className='text-center mt-[100px] w-[80%]  mx-auto'>
+    <div className='text-center mt-[100px] lg:w-[80%]  mx-auto'>
           <h1 className='text-2xl text-e-green font-light tracking-[0.2em]'>PROPERTY OVERVIEW</h1>
-          <h2 className='text-5xl poppins-regular py-10'>Strategically located<br/>masterpieces</h2>
+          <h2 className='lg:text-5xl text-3xl poppins-regular py-10'>Strategically located<br/>masterpieces</h2>
           
                      
 
@@ -95,26 +95,26 @@ var settings = {
 
 
     <div class="mb-4 mx-auto">
-    <ul class="justify-center flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white" data-tabs-inactive-classes="text-white" role="tablist">
+    <ul class="justify-center flex lg:flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white" data-tabs-inactive-classes="text-white" role="tablist">
         <li class="me-2 mx-2 bg-gray-800 text-white w-[200px]" role="presentation">
-                <button class="inline-block p-4 text-2xl font-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
+                <button class="inline-block p-4 text-[18px] font-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
                   Bengaluru</button>
         </li>
         <li class="me-2 mx-2 bg-gray-800 text-white w-[200px]" role="presentation">
-                <button class="inline-block p-4 text-2xl font-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                <button class="inline-block p-4 text-[18px] font-light hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
                 Goa</button>
         </li>
        
     </ul>
 </div>
-<div id="default-styled-tab-content">
-    <div class="hidden p-4  dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div className='flex gap-4'>
+<div id="default-styled-tab-content ">
+    <div class="hidden p-4" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div className='lg:flex gap-4'>
                     
-                    <div className='w-[380px]'>
+                    <div className='lg:w-[380px] w-full'>
                     <div id="accordion-collapse1" data-accordion="collapse">
                       <h2 id="accordion-collapse-heading-11">
-                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 gap-3 poppins-light text-xl" data-accordion-target="#accordion-collapse-body-11" aria-expanded="true" aria-controls="accordion-collapse-body-11">
+                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 gap-3 poppins-light text-[18px]" data-accordion-target="#accordion-collapse-body-11" aria-expanded="true" aria-controls="accordion-collapse-body-11">
                           <span>Ongoing Projects</span>
                           <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -123,7 +123,7 @@ var settings = {
                       </h2>
                       <div id="accordion-collapse-body-11" class="hidden" aria-labelledby="accordion-collapse-heading-11">
                         <div class=" border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <button className='bg-e-green w-full font-light text-start p-4 text-2xl text-white flex justify-between items-center'
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white flex justify-between items-center'
                           onClick={handletakshavi}
                         >
                           Takshavi
@@ -138,7 +138,7 @@ var settings = {
                         </div>
                       </div>
                       <h2 id="accordion-collapse-heading-22" className='mt-5'>
-                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200  gap-3 poppins-light text-xl" data-accordion-target="#accordion-collapse-body-22" aria-expanded="false" aria-controls="accordion-collapse-body-22">
+                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200  gap-3 poppins-light text-[18px]" data-accordion-target="#accordion-collapse-body-22" aria-expanded="false" aria-controls="accordion-collapse-body-22">
                           <span>Completed Projects</span>
                           <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -148,7 +148,7 @@ var settings = {
                       <div id="accordion-collapse-body-22" class="hidden" aria-labelledby="accordion-collapse-heading-22">
                         <div class=" border-gray-200 dark:border-gray-700">
                       
-                        <button className='bg-e-green w-full font-light text-start p-4 text-2xl text-white flex justify-between items-center'
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white flex justify-between items-center'
                         onClick={handleembrace}
                         >
                         Embrace
@@ -156,7 +156,7 @@ var settings = {
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
                         </button>
-                        <button className='bg-e-green w-full border-t border-white font-light text-start p-4 text-2xl text-white flex justify-between items-center'
+                        <button className='bg-e-green w-full border-t border-white font-light text-start p-4 text-[18px] text-white flex justify-between items-center'
                         onClick={handleellen}
                         >
                         Ellen
@@ -174,13 +174,14 @@ var settings = {
                     
                     </div>
                     
-</div>
-<div className='w-[800px]'>
+                </div>
+                
+<div className='lg:w-[800px] w-full'>
 
                   {/* takshavi card                   */}
                   {
                     takshavi &&(
-<div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+<div class="mt-4 lg:mt-0 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image src="/slider.png" className='w-[800px] h-[400px]' width={800} height={400}/>
@@ -192,7 +193,7 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Takshavi</h3>
-                        <p className='text-xl px-4 py-2 font-light mb-6'>Ekaya Spaces proudly unveils Takshavi, a boutique residential enclave nestled in the heart of Frazer Town’s Spencer Road.</p>
+                        <p className='text-[18px] px-4 py-2 font-light mb-6'>Ekaya Spaces proudly unveils Takshavi, a boutique residential enclave nestled in the heart of Frazer Town’s Spencer Road.</p>
                         <Link href="/takshavi" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
@@ -202,7 +203,7 @@ var settings = {
                 
                 {
                     embrace &&(
-<div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+<div class="mt-4 lg:mt-0 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image src="/embrace.png" className='w-[800px] h-[400px]' width={800} height={400}/>
@@ -214,7 +215,7 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Embrace</h3>
-                        <p className='text-xl px-4 py-2 font-light mb-6'>Modern Idyll in a Three-Storey Block with six Luxurious Homes</p>
+                        <p className='text-[18px] px-4 py-2 font-light mb-6'>Modern Idyll in a Three-Storey Block with six Luxurious Homes</p>
                         <Link href="/about-embrace" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
@@ -224,7 +225,7 @@ var settings = {
 
 {
                     ellen &&(
-<div class="p-4 rounded-lg bg-gray-50 dark:bg-gray-800">
+<div class="mt-4 lg:mt-0 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image src="/ellen.png" className='w-[800px] h-[400px]' width={800} height={400}/>
@@ -236,7 +237,7 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Ellen</h3>
-                        <p className='text-xl px-4 py-2 font-light mb-6'>A premium three-storey apartment block, with a total of 11 spacious modern homes,</p>
+                        <p className='text-[18px] px-4 py-2 font-light mb-6'>A premium three-storey apartment block, with a total of 11 spacious modern homes,</p>
                         <Link href="/about-ellen" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     </div>              
@@ -258,18 +259,13 @@ var settings = {
             </div>
             
 
-
-
-
-
-
     <div class="hidden p-4"  id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-    <div className='flex gap-4'>
+    <div className='lg:flex gap-4'>
                     
-                    <div className='w-[480px]'>
+                    <div className='lg:w-[480px]'>
                     <div id="accordion-collapse" data-accordion="collapse">
                       <h2 id="accordion-collapse-heading-10">
-                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 gap-3 poppins-light text-xl" data-accordion-target="#accordion-collapse-body-10" aria-expanded="true" aria-controls="accordion-collapse-body-10">
+                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 gap-3 poppins-light text-[18px]" data-accordion-target="#accordion-collapse-body-10" aria-expanded="true" aria-controls="accordion-collapse-body-10">
                           <span>Ongoing Projects</span>
                           <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -278,7 +274,7 @@ var settings = {
                       </h2>
                       <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
                         <div class=" border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <button className='bg-e-green w-full font-light text-start p-4 text-2xl text-white flex justify-between items-center'>
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white flex justify-between items-center'>
                         Vista Do Mar
                           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -287,7 +283,7 @@ var settings = {
                         </div>
                       </div>
                       <h2 id="accordion-collapse-heading-2" className='mt-5'>
-                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200  gap-3 poppins-light text-xl" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                        <button type="button" class="bg-gray-800 text-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200  gap-3 poppins-light text-[18px]" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
                           <span>Upcoming Projects</span>
                           <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -296,7 +292,7 @@ var settings = {
                       </h2>
                       <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                         <div class="border border-b-0 border-gray-200 dark:border-gray-700">
-                        <button className='bg-e-green w-full font-light text-start p-4 text-2xl text-white'>
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white'>
                         Amora
                          </button>
                         </div>
@@ -305,7 +301,7 @@ var settings = {
                     </div>
                     
                                         </div>
-                    <div className='w-[800px]'>
+                    <div className='lg:mt-0 mt-4 lg:w-[800px]'>
                     <Slider ref={sliderRef} {...settings}>
                           <div>
                       <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400}/>
@@ -318,19 +314,14 @@ var settings = {
                   </Slider>
                   <div className='text-start'>
                         <h3 className='text-[34px] py-2 px-4 font-regular'>Vista Do Mar</h3>
-                        <p className='text-xl px-4 py-2 font-light mb-6'>A luxury apartment project in Dona Paula -Goa</p>
+                        <p className='text-[18px] px-4 py-2 font-light mb-6'>A luxury apartment project in Dona Paula -Goa</p>
                         <Link href="/vista-do-mar" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     
                     </div>
                     </div>
     </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-    </div>
-    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-    </div>
+
 </div>
 
         </div>

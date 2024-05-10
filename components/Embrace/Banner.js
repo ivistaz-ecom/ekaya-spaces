@@ -16,7 +16,7 @@ function Banner() {
   }, []);
 
   return (
-    <div className="h-screen relative z-19" data-aos='fade-down'>
+    <div className="lg:h-screen h-[50vh] relative z-19" data-aos='fade-down'>
        <Image
         src="/embrace-banner-1.png"
         alt="Banner"
@@ -25,26 +25,26 @@ function Banner() {
         className='w-full h-full'
         priority // Preload the image
       />
-            <div className='w-[80%] absolute bottom-0 py-12 ml-40'  data-aos="fade-down">
-              <h1 className='text-7xl text-white poppins-light'>
+            <div className='lg:w-[80%] w-full absolute bottom-0 lg:py-12 lg:ml-40 md:ml-20 ml-5 pb-28 mt-40'  data-aos="fade-down">
+              <h1 className='lg:text-7xl md:text-5xl text-3xl text-white poppins-light'>
               Embrace
               </h1>
-              <h2 className='text-7xl text-[#BBC6C9] poppins-light'>
+              <h2 className='lg:text-7xl md:text-5xl text-3xl text-[#BBC6C9] poppins-light'>
               by Ekaya Spaces
               </h2>
-            <div class="flex flex-col py-12 content-between gap-x-2 sm:flex-row sm:justify-start sm:space-y-0">
+            <div class="flex lg:py-12 content-between gap-x-2 sm:flex-row sm:justify-start sm:space-y-0">
           <div class="block">
-            <h5 class="mb-2 text-2xl font-light tracking-tight text-white">Ganga Nagar</h5>
+            <h5 class="mb-2 lg:text-2xl text-[18px] font-light tracking-tight text-white">Ganga Nagar</h5>
           </div>
-          <div class="inline-block h-[28px] min-h-[0.20em] w-[0.15em] self-stretch bg-white lg:block hidden"></div>
-          <hr className='h-px border-t w-9/12 border-whitepb-4 mx-auto lg:hidden block'/>
+          <div class="inline-block h-[28px] min-h-[0.20em] w-[0.15em] self-stretch bg-white lg:block md:block "></div>
+          <hr className='h-px border-t w-9/12 border-white pb-4 mx-auto lg:hidden hidden'/>
           <div class="block">
-            <h5 class="mb-2 text-2xl font-light tracking-tight text-white poppins-light">Bengaluru</h5>
+            <h5 class="mb-2 lg:text-2xl text-[18px] font-light tracking-tight text-white">Bengaluru</h5>
                   </div>
-                  <div class="inline-block h-[28px] min-h-[0.20em] w-[0.15em] self-stretch bg-white lg:block hidden"></div>
-          <hr className='h-px border-t w-9/12 border-white pb-4 mx-auto lg:hidden block'/>
+                  <div class="inline-block h-[28px] min-h-[0.20em] w-[0.15em] self-stretch bg-white lg:block md:block"></div>
+          <hr className='h-px border-t w-9/12 border-white pb-4 mx-auto lg:hidden hidden'/>
           <div class="block">
-            <h5 class="mb-2 text-2xl font-light tracking-tight text-white poppins-light">India</h5>
+            <h5 class="mb-2 lg:text-2xl text-[18px] font-light tracking-tight text-white">India</h5>
           </div>
         </div>
           </div>

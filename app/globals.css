@@ -196,9 +196,8 @@ body {
 }
 .in-arrow {
   position: absolute;
-  bottom: -10%;
   transform: translateY(-50%);
-  width: 93%;
+  /* width: 93%; */
   /*Adjustwidthasneeded*/height: 40px;
   /*Adjustheightasneeded*/cursor: pointer;
   z-index: 200;
@@ -238,6 +237,33 @@ body {
   left: 100%;
 }
 
+
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-top: 16px solid #ABD2D3;
+  border-left: 14px solid #abd2d300;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  top: 100%;
+  /* bottom: 100%; */
+  border-right: 12px solid #ff000000;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 16px solid #ABD2D3;
+  border-left: 14px solid #ff010100;
+  border-bottom: 4px solid rgba(255, 166, 0, 0);
+  position: absolute;
+  top: 100%;
+  left:30px;
+  /* bottom: 100%; */
+  border-right: 12px solid #ff000000;
+}
+
+
 .vertical {
   border-left: 1px solid #f8fafc7a;
   top:75px;
@@ -274,4 +300,7 @@ body {
   left: 88.9%;
   overflow-x:inherit;
   z-index: 5 !important;
+}
+.center{
+  text-align: -webkit-center;
 }
