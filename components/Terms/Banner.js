@@ -1,9 +1,7 @@
 'use client'
 import React, { useEffect} from 'react'
 import AOS from "aos";
-import ContactBtn from '../common/ContactBtn'
-import Image from 'next/image'
-import VerticleLines from '../../components/common/VerticalLines'
+
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from '../../components/terms/Banner'
-import Content from '../../components/terms/Content'
+import Banner from '../../components/Terms/Banner'
+import Content from '../../components/Terms/Content'
 
 
 function AboutUs() {
