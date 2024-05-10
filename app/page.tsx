@@ -6,11 +6,19 @@ import Clients from '../components/HomePage/Clients'
 import WhyEkaya from '../components/HomePage/WhyEkaya'
 import Insights from '../components/HomePage/Insights'
 import Contact from '../components/HomePage/Contact'
+import Seo from '../components/common/Seo'
 
 export default function Home() {
+
+  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
+  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const MetaImage=''
+  const url='https://ekaya-spaces.com/'
+
+
   return (
     <>
-      
+      < Seo pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
       <Banner/>
       <Crafted />
       <Overview />
