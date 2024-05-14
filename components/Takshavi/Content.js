@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Map from '../../utils/Map'
+import Link from 'next/link'
 
 
 const FloorPlan = [
