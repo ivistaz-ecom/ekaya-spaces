@@ -47,6 +47,8 @@ function Crafted() {
   const [takshavi, setTakshavi] = useState(true)
   const [embrace, setEmbrace] = useState(false)
   const [ellen, setEllen] = useState(false)
+  const [vista, setVista] = useState(true)
+  const [amora, setAmora] = useState(false)
 //     const [goa, setGoa] = useState(false)
 
     const handletakshavi = () => {
@@ -66,6 +68,19 @@ function Crafted() {
       setTakshavi(false)
       setEllen(true)
         // setGoa(false)
+    }
+  
+    const handlevista = () => {
+      setVista(true)
+      setAmora(false)
+      //setTakshavi(false)
+      //setEllen(true)
+      // setGoa(false)
+      
+    }
+    const handleamora = () => {
+      setVista(false)
+      setAmora(true)
     }
     
 //     const handleGoa = () => {
@@ -274,7 +289,9 @@ var settings = {
                       </h2>
                       <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10">
                         <div class=" border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white flex justify-between items-center'>
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white flex justify-between items-center'
+                        onClick={handlevista}
+                        >
                         Vista Do Mar
                           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -292,7 +309,9 @@ var settings = {
                       </h2>
                       <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                         <div class="border border-b-0 border-gray-200 dark:border-gray-700">
-                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white'>
+                        <button className='bg-e-green w-full font-light text-start p-4 text-[18px] text-white'
+                        onClick={handleamora}
+                        >
                         Amora
                          </button>
                         </div>
@@ -300,8 +319,35 @@ var settings = {
                     
                     </div>
                     
-                                        </div>
-                    <div className='lg:mt-0 mt-4 lg:w-[800px]'>
+                </div>
+                {vista && (
+                  
+                  <div className='lg:mt-0 mt-4 lg:w-[800px]'>
+                  <Slider ref={sliderRef} {...settings}>
+                        <div>
+                    <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400}/>
+                        </div>
+                        <div>
+                    <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400} />
+                  </div>
+                  
+                       
+                </Slider>
+                <div className='text-start'>
+                      <h3 className='text-[34px] py-2 px-4 font-regular'>Vista Do Mar</h3>
+                      <p className='text-[18px] px-4 py-2 font-light mb-6'>A luxury apartment project in Dona Paula -Goa</p>
+                      <Link href="/vista-do-mar" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
+                    </div>
+                  
+                  </div>
+
+                )
+
+                }
+
+{amora && (
+                  
+                  <div className='lg:mt-0 mt-4 lg:w-[800px]'>
                     <Slider ref={sliderRef} {...settings}>
                           <div>
                       <Image src="/vista-do-mar.png" className='w-[800px] h-[400px]' width={800} height={400}/>
@@ -313,12 +359,18 @@ var settings = {
                          
                   </Slider>
                   <div className='text-start'>
-                        <h3 className='text-[34px] py-2 px-4 font-regular'>Vista Do Mar</h3>
-                        <p className='text-[18px] px-4 py-2 font-light mb-6'>A luxury apartment project in Dona Paula -Goa</p>
-                        <Link href="/vista-do-mar" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
+                        <h3 className='text-[34px] py-2 px-4 font-regular'>Amora</h3>
+                        <p className='text-[18px] px-4 py-2 font-light mb-6'>Located in the serene coastal town of Moira,</p>
+                        <Link href="/about-amora" className='p-4 px-12 mt-4 ml-4 bg-e-green text-white'>Know more</Link>
                       </div>
                     
                     </div>
+
+                )
+
+                }
+
+                   
                     </div>
     </div>
 

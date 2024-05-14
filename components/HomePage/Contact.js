@@ -204,7 +204,7 @@ function Contact() {
   }
 
   return (
-    <div className='lg:mt-[100px] lg:w-[80%] mx-auto bg-gray-200 p-6'>
+    <div className='lg:mt-[100px] lg:w-[80%] mx-auto bg-gray-200 p-6' id="contactpage">
       <h3 className='lg:text-[46px] text-4xl'>Get in touch</h3>
       <h4 className='text-2xl font-light text-gray-600'>*Required fields</h4>
       <form class="py-6">

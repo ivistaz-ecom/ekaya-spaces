@@ -26,7 +26,7 @@ function WhyEkaya() {
             <button class="text-xl text-start inline-block p-4 border-b-4 rounded-t-lg hover:text-gray-600 hover:border-gray-600 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Elite<br/>Sanctuaries</button>
         </li>
         <li class="me-2" role="presentation">
-            <button class="text-xl text-start inline-block p-4 border-b-4 rounded-t-lg hover:text-gray-600 hover:border-gray-600 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Personalized<br/>elegance</button>
+            <button class="text-xl text-start inline-block p-4 border-b-4 rounded-t-lg hover:text-gray-600 hover:border-gray-600 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Personalized<br/>Elegance</button>
         </li>
        
     </ul>

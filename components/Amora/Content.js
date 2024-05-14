@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Contact from '../HomePage/Contact'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Content() {
     const sliderRef = useRef(null);
@@ -91,7 +92,7 @@ function Content() {
                     </div>
                 </Slider>
                 <div className='text-[18px] poppins-light border border-e-green lg:w-[490px] p-6 my-12 mx-auto'>
-                    <a href="#" class="text-black dark:text-black underline hover:underline">Click here</a> to fill the form for the project brochure
+                    <Link href="/#contactpage" class="text-black dark:text-black underline hover:underline">Click here</Link> to fill the form for the project brochure
               </div>
               
               <p className='poppins-light  text-[18px] text-start pb-5'>The spacious bathrooms, adorned with luxurious fittings and fixtures, evoke a sense of indulgence and relaxation, adding to the overall vacation experience. Stepping outside, vacationers are greeted by lush green gardens that provide a serene backdrop for leisurely strolls and moments of relaxation. The private pool beckons guests to unwind and rejuvenate amidst the tranquil surroundings, offering a perfect retreat from the hustle and bustle of everyday life.</p>
