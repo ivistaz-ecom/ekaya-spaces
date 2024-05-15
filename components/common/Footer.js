@@ -25,7 +25,7 @@ function Footer() {
 
             <footer className='mx-auto bg-gray-200 p-6'>
                 <div className='lg:w-[80%] mx-auto'>
-                    <Image src="footer-logo.svg" className='pb-6' width={300} height={300} />
+                    <Image src="/footer-logo.svg" className='pb-6' width={300} height={300} />
                     <hr className='h-px border-t border-gray-300 pb-4 mx-auto ' />
                     <div class="grid lg:grid-cols-3 grid-1">
                         <div className=''>

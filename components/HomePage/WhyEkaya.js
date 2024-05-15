@@ -34,13 +34,13 @@ function WhyEkaya() {
 
 <div id="default-tab-content">
     <div class="hidden p-4 lg:h-[350px] content-center poppins-regular" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
+        <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Discover the essence of tranquil living where nature seamlessly intertwines with luxury. At Ekaya, every property is a testament to the harmonious relationship between architecture and the natural world. From lush gardens to panoramic views, immerse yourself in a sanctuary where every corner is a celebration of nature's beauty. Let the symphony of birdsong and rustling leaves be your soundtrack as you embrace the serenity surrounding you. </p>
     </div>
     <div class="hidden p-4 lg:h-[350px] content-center poppins-regular" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-    <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
+    <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Step into a realm of unparalleled exclusivity where luxury knows no bounds. Ekaya presents elite sanctuaries that redefine luxury and sophistication. Each property is a masterpiece, meticulously crafted to cater to the most discerning tastes. From lavish amenities to bespoke finishes, experience the epitome of luxury living. </p>
     </div>
     <div class="hidden p-4 lg:h-[350px] content-center poppins-regular" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-    <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Every property we craft is a symphony of exclusivity and grandeur, designed to cater to the most refined tastes. From opulent interiors to breathtaking exteriors, each element is meticulously curated to ensure an ambiance of unparalleled sophistication. We pay attention to the minutest details, creating spaces that epitomize the height of elegance and comfort.</p>
+    <p class="text-[18px] font-light text-gray-600 lg:ml-20 text-start">Elevate your living experience with Ekaya's signature blend of personalised elegance. We understand that true luxury lies in the details, so every aspect of our properties is tailored to reflect your unique style and preferences. From custom-designed interiors to exclusive amenities, immerse yourself in a world where luxury is curated especially for you. Experience the joy of living in a home that resonates with your personality, where every corner exudes sophistication and charm. </p>
     </div>
     
 </div>

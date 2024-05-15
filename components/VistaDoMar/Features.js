@@ -43,8 +43,8 @@ const blogs = [
     {
         'id': '7',
         'icon': '/icon-domar-6.svg',
-        'title': 'Central Heating',
-        'desc': 'Stay cozy year-round with centralized heating, providing consistent warmth and energy efficiency.'
+        'title': 'Centralised Water Heating',
+        'desc': 'Offering centralised water heating as an amenity provides residents with consistent hot water, cost efficiency, and space-saving benefits. This amenity enhances the overall living experience for residents while streamlining operations for property management.'
     },
     {
         'id': '8',

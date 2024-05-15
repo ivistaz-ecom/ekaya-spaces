@@ -1,46 +1,45 @@
 'use client'
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-const Blogs = [
-    {
-        'id': '1',
-        'title': 'Spaces that connect inside and outside',
-        'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': '/blog-1.png',
-        'class': 'lg:mt-0'
-
-    },
-    {
-        'id': '1',
-        'title': 'Spaces that connect inside and outside',
-        'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': '/blog-2.png',
-        'class': 'lg:mt-8'
-
-    },
-    {
-        'id': '1',
-        'title': 'Spaces that connect inside and outside',
-        'excerpt': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.',
-        'image': '/blog-3.png',
-        'class': 'lg:mt-16'
-
-    }
-
-
-]
-
-
+import configData from '../../config.json'
+import Link from 'next/link'
 
 function Insights() {
+  const [Blogs, setData] = useState([]);
+  const sliderRef = useRef(null);
 
-    const sliderRef = useRef(null);
+  const fetchPost = async () => {
+    try {
+      const postResponse = await fetch(`${configData.SERVER_URL}posts?_embed&categories[]=2&&production[]=${configData.SERVER}&status[]=publish&per_page=3`);
+      const postData = await postResponse.json();
+      
+      if (postResponse.ok) {
+        setData(postData);
+        console.log(postData)
+      } else {
+        console.error(`Failed to fetch post. Status: ${postResponse.status}`);
+      }
+    } catch (error) {
+      console.error('Error fetching post:', error);
+    } finally {
+      //setLoading(false);
+    }
+  };
+    
+  useEffect(()=>{
+    fetchPost()
 
-    const NextArrow = ({onClick}) => (
+
+  },[])
+
+
+
+
+
+  const NextArrow = ({onClick}) => (
   <div className="in-arrow w-[60%] lg:w-[90%] absolute  next-arrow" onClick={onClick}>
   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
     <g id="Group_49400" data-name="Group 49400" transform="translate(-1167 -1988)">
@@ -109,24 +108,21 @@ function Insights() {
             <Slider  {...settings} className='z-96'>
             {
                     Blogs.map((items, index) => (
-                        <div class={`z-50 max-w-sm  dark:bg-gray-800 dark:border-gray-700 ${items.class}`}>
-                            <a href="#">
-                          <Image class="rounded-0 w-full" src={items.image} alt={items.title} width={300} height={300} />
-                            </a>
+                      <div class={`z-50 max-w-sm  dark:bg-gray-800 dark:border-gray-700 ${items.acf.css}`} key={index}>
+                        <Link href={`/blogs/${items.slug}`}>      
+                          <Image class="rounded-0 w-full" src={items['_embedded']['wp:featuredmedia'][0]['source_url']} alt={items.title.rendered} width={300} height={300} />
                             <div class="p-5">
-                                <a href="#">
-                                    <h5 class="mb-2 text-start text-2xl font-light tracking-tight poppins-regular text-gray-900 dark:text-white">{items.title}</h5>
-                                </a>
-                                <p class="mb-3 text-start font-normal text-base poppins-regular text-gray-700 dark:text-gray-400">{items.excerpt}</p>
-                            </div>
+                                <h5 class="mb-2 text-start text-2xl font-light tracking-tight poppins-regular text-gray-900 dark:text-white">{items.title.rendered}</h5>
+                                <p class="mb-3 text-start font-normal text-base poppins-regular text-gray-700 dark:text-gray-400" dangerouslySetInnerHTML={{__html:items.excerpt.rendered}}/>
+                          </div>
+                          </Link>
                         </div>
                     ))
                     }
         
                   </Slider>
-               
             </div>
-            <div className="z-0 -mt-[15em] bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-gray-300 bg-blend-multiply h-screen relative">
+            <div className="z-0 -mt-[15em] bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-blend-multiply h-screen relative">
         </div>
         </>
     )
