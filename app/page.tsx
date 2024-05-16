@@ -22,7 +22,7 @@ export default function Home() {
       <Banner/>
       <Crafted />
       <Overview />
-      <Clients />
+      {/* <Clients /> */}
       <WhyEkaya />
       <Insights />
       <Contact/>
