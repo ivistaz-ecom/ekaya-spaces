@@ -199,10 +199,10 @@ var settings = {
 <div class="mt-4 lg:mt-0 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
                     <div>
-                      <Image src="/slider.png" className='w-[800px] h-[400px]' width={800} height={400}/>
+                      <Image src="/takshavi/takshavi-comp2.jpg" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           <div>
-                      <Image src="/slider.png" className='w-[800px] h-[400px]' width={800} height={400}/>
+                      <Image src="/takshavi/takshavi-comp.jpg" className='w-[800px] h-[400px]' width={800} height={400}/>
                           </div>
                           
                   </Slider>

@@ -24,7 +24,7 @@ function Banner() {
 
     <div className="lg:h-[70vh] relative mx-auto" data-aos='fade-down'>
     <Image
-           src="/takshavi-banner-1.png"
+           src="/takshavi/takshavi-comp2.jpg"
            alt="Banner"
            width={1000} // Adjust width and height according to your image dimensions
            height={500}

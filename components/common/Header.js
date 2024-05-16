@@ -27,10 +27,10 @@ function Header({stats}) {
     // alert('hello')
   };
 
-  useEffect(() => {
-    initFlowbite();
+//   useEffect(() => {
+//     initFlowbite();
 
-},[])
+// },[])
 
 
   return (

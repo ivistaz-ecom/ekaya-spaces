@@ -92,10 +92,10 @@ function Content() {
             <div className='w-[80%] mx-auto' data-aos='fade-down'>
                 <Slider ref={sliderRef} {...settings}>
                     <div>
-                        <img src="takshavi-banner-1.png" className='' />
+                        <img src="/takshavi/takshavi-comp2.jpg" className='' />
                     </div>
                     <div>
-                        <img src="takshavi-banner-1.png" className='' />
+                        <img src="/takshavi/takshavi-comp.jpg" className='' />
                     </div>
                 </Slider>
                 <div className='text-[18px] poppins-light border border-e-green lg:w-[490px] p-6 my-12'>
