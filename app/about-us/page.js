@@ -4,10 +4,10 @@ import Content from '../../components/Aboutus/Content'
 import Seo from '../../components/common/Seo'
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Ekaya Spaces: Pioneering Luxury Real Estate with Surbhi Sharma and Chethan Puvannaa'
+  const pageDescription = 'Discover Ekaya Spaces, founded by Surbhi Sharma and Chethan Puvannaa in 2014, a leader in luxury real estate development in sought-after locations. Explore our journey of excellence and innovation in creating unique, high-quality properties that offer not just luxury but lasting value'
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/about-us'
 
 
   return (

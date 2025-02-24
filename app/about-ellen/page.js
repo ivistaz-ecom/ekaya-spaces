@@ -5,8 +5,8 @@ import Seo from '../../components/common/Seo'
 
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Luxury Apartments at ELLEN by Ekaya - Premium Living in Bengaluru'
+  const pageDescription = 'Discover ELLEN by Ekaya, your next home in Bengaluru. This exclusive three-storey development features 11 spacious, Vaastu-compliant apartments, each designed with privacy, space, and luxury in mind'
   const MetaImage=''
   const url='https://ekaya-spaces.com/'
 

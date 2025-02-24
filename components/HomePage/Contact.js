@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
 import axios from 'axios';
 import server from '../../config.json'
+import Link from 'next/link';
 
 function Contact() {
 
@@ -306,12 +307,12 @@ function Contact() {
       </form>
       <div class="flex lg:flex-row items-center content-between gap-x-2 flex-col sm:flex-col sm:justify-center sm:space-y-0">
         <div class="block">
-          <h5 class="mb-2 text-2xl font-light tracking-tight text-w-blue"><span className="text-e-green">Call:</span> +91 98440 32022</h5>
+         <a href="tel:+91 98440 32022"> <h5 class="mb-2 text-2xl font-light tracking-tight text-w-blue"><span className="text-e-green">Call:</span> +91 98440 32022</h5></a>
         </div>
         <div class="inline-block h-[31px] min-h-[0.20em] w-[0.15em] self-stretch bg-e-green lg:block hidden"></div>
         <hr className='h-px border-t w-9/12 border-e-green pb-4 mx-auto lg:hidden block' />
         <div class="block">
-          <h5 class="mb-2 text-2xl font-light tracking-tight text-w-green poppins-light"><span className="text-e-green">Email:</span> contact@ekaya.in</h5>
+          <a href="mailto:contact@ekaya.in"><h5 class="mb-2 text-2xl font-light tracking-tight text-w-green poppins-light"><span className="text-e-green">Email:</span> contact@ekaya.in</h5></a>
         </div>
       </div>
     </div>

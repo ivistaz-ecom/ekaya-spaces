@@ -5,10 +5,10 @@ import Seo from '../../components/common/Seo'
 
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Luxury Oceanfront Apartments in Dona Paula, Goa - Vista Do Mar by Ekaya Spaces'
+  const pageDescription = 'Discover unparalleled luxury at Vista Do Mar by Ekaya Spaces, located in the prestigious Dona Paula, Goa. Our oceanfront apartments offer a wide array of luxurious amenities designed to enhance your living experience.'
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/vista-do-mar'
 
 
   return (

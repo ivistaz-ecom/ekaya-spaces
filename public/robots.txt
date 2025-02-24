@@ -1,3 +1,5 @@
+robots.txt: 
 User-agent: *
-Disallow: /
+Allow: 
 Disallow: /cgi-bin/
+Sitemap: https://ekaya-spaces.com/sitemap.xml

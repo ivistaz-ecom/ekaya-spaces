@@ -5,10 +5,10 @@ import Seo from '../../components/common/Seo'
 
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Moira, Goa: A Luxurious Retreat in a Tranquil Village Setting'
+  const pageDescription = 'Discover Moira in Goa, a serene village with a rich Portuguese heritage. Nestled among lush landscapes, Moira offers a peaceful retreat with its charming architecture and luxurious living'
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/about-moira'
 
 
   return (

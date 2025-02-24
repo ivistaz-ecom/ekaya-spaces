@@ -5,10 +5,10 @@ import Seo from '../../components/common/Seo'
 
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Takshavi by Ekaya Spaces - Tranquil 3-Bedroom Apartments in Frazer Town, Bengaluru'
+  const pageDescription = 'Discover Takshavi by Ekaya Spaces, a boutique residential development in Frazer Town’s Spencer Road, Bengaluru. Offering exclusive 3-bedroom apartments designed for tranquility and luxury, enjoy proximity to parks, schools, and amenities in a serene community setting'
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/takshavi'
 
 
   return (

@@ -5,10 +5,10 @@ import Seo from '../../components/common/Seo'
 
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Luxurious Homes at Ekaya’s Embrace in Ganga Nagar, Bengaluru - Near Embassy One'
+  const pageDescription = "Discover modern luxury at Ekaya’s Embrace, offering six exclusive three-storey homes in Bengaluru's prestigious Ganga Nagar, near Embassy One. Enjoy seamless connectivity and unparalleled elegance with close proximity to essential amenities and vibrant market hubs"
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/about-embrace'
 
 
   return (

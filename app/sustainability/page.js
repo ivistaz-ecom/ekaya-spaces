@@ -6,10 +6,10 @@ import Blogs from '../../components/Sustainability/ApproachContent'
 import Seo from '../../components/common/Seo'
 
 function AboutUs() {
-  const pageTitle = 'Luxury apartments for sale in Bangalore | Best holiday home in Goa | Ekaya Spaces'
-  const pageDescription = 'Explore exquisite premium luxury apartments for sale in Goa and Bangalore. Find your dream home in these prime locations with top-notch amenities'
+  const pageTitle = 'Embracing Sustainability: Ekaya’s Commitment to the Environment'
+  const pageDescription = 'Discover how Ekaya champions sustainability with initiatives like rainwater harvesting and ecosystem preservation to ensure a harmonious balance between business practices and environmental care'
   const MetaImage=''
-  const url='https://ekaya-spaces.com/'
+  const url='https://ekaya-spaces.com/sustainability'
 
 
   return (

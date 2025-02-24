@@ -5,7 +5,7 @@ function Content() {
     return (
       <>
     <div className='mt-[100px] w-[80%] mx-auto' data-aos='fade-down'>
-          <h1 className='lg:text-5xl text-3xl sm:text-4xl text-e-green font-light poppins-light pb-6'>Embracing Sustainability:</h1>
+          <h2 className='lg:text-5xl text-3xl sm:text-4xl text-e-green font-light poppins-light pb-6'>Embracing Sustainability:</h2>
           <h2 className='lg:text-5xl text-3xl text-black font-light pb-12 leading-[1.3em] poppins-light'>Our Company’s Environmental<br/> Commitment</h2>
           <p className='poppins-light text-[18px] text-start pb-5'>At our company, we take sustainability seriously. We understand the importance of minimizing our ecological footprint while maximizing positive impacts on the environment. From rainwater harvesting systems to preserving local ecosystems, we’re dedicated to creating a future where business and nature coexist harmoniously.</p>
             </div>

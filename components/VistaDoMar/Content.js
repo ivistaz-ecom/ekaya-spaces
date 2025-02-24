@@ -71,7 +71,7 @@ function Content() {
     return (
         <div>
             <div className='mt-[100px] w-[80%] mx-auto' data-aos="fade-up">
-                <h1 className='text-2xl text-e-green font-light tracking-[0.2em] pb-12'>ABOUT THE PLOT</h1>
+                <h2 className='text-2xl text-e-green font-light tracking-[0.2em] pb-12'>ABOUT THE PLOT</h2>
                 <h4 className='lg:text-4xl text-2xl text-black poppins-light pb-6'>Alvit and Esmeralda’s Journey</h4>
                 <p className='poppins-light text-[18px] text-start pb-5'>In the vibrant city of Dar es Salaam, nestled in East Africa, Alvit and Esmeralda began their life together. Over the span of five years, their family blossomed with the arrival of two daughters, Siandra and Jennifer. However, as the tumultuous East African revolution unfolded in 1965, the family migrated to Bangalore, India.</p>
                 <p className='poppins-light text-[18px] text-start pb-5'>In Bangalore, amidst the bustling streets and new beginnings, Alvit and Esmeralda found themselves embracing fresh opportunities. When an enticing offer came from Oman, they eagerly seized it. Alvit was tasked with spearheading the establishment of the modern Marine patrol police division, while Esmeralda took on the responsibility of landscaping the vast Royal Oman Police establishments across the country.</p>
