@@ -99,11 +99,11 @@ function Insights() {
 
     return (
         <>
-            <div className="text-center mt-[0px] w-[70%] mx-auto z-96">
+            <div className="text-center mt-[0px] container mx-auto z-96">
                 <h2 className='lg:text-5xl text-4xl poppins-regular py-10'>Insights</h2>
                 <p className='poppins-light text-[18px]'>Gain valuable insights into the world of luxury real estate and what makes an Ekaya home the right choice for discerning buyers.</p>
             </div>
-            <div className="mx-auto mt-10 justify-center lg:w-[80%] px-4 lg:px-0 z-96">
+            <div className="mx-auto mt-10 justify-center container mx-auto px-4 lg:px-0 z-96">
 
             <Slider  {...settings} className='z-96'>
             {
