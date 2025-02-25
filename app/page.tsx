@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      < Seo pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
+      <Seo pageTitle={pageTitle} pageDescription={pageDescription} MetaImage={MetaImage} url={url} />
       <Banner/>
       <Crafted />
       <Overview />

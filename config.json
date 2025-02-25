@@ -1,6 +1,7 @@
 {
     "SERVER_URL": "https://docs.ekaya-spaces.com/wp-json/wp/v2/",
     "SERVER_FROM": "https://docs.ekaya-spaces.com/wp-json/",
-    "SERVER":3 
+    "SERVER":3 ,
+    "WEBSITE_URL": "https://ekaya-spaces.com/"
     
 }

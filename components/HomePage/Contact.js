@@ -38,28 +38,28 @@ function Contact() {
   }
 
   const nameErrors = {
-    field: 'floating_first_name',
+    field: 'first_name',
     message: 'invalid character'
   }
   const lastErrors = {
-    field: 'floating_last_name',
+    field: 'last_name',
     message: 'invalid character'
   }
   const locationErrors = {
-    field: 'floating_location',
+    field: 'location',
     message: 'invalid character'
   }
   const emailErrors = {
-    field: 'floating_email',
+    field: 'email',
     message: 'Please enter a valid email address.'
   }
 
   const customDomainErrors = {
-    field: 'floating_email',
+    field: 'email',
     message: 'This email domain is not allowed.'
   }
   const customPhoneErrors = {
-    field: 'floating_phone',
+    field: 'phone',
     message: 'Please enter only numbers.'
   }
 
@@ -70,7 +70,7 @@ function Contact() {
     const name = e.target.name;
     //alert(e.target.value)
 
-    if (name === 'floating_first_name') {
+    if (name === 'first_name') {
       if (!nameRegex.test(value)) {
         console.log('invalid character')
         const fieldErrors = {}
@@ -83,7 +83,7 @@ function Contact() {
         setErrors('')
       }
     }
-    if (name === 'floating_last_name') {
+    if (name === 'last_name') {
       if (!nameRegex.test(value)) {
         console.log('invalid character')
         const fieldErrors = {}
@@ -97,7 +97,7 @@ function Contact() {
       }
     }
 
-    if (name === 'floating_email') {
+    if (name === 'email') {
 
       if (!emailRegex.test(value)) {
         console.log('invalid Email')
@@ -124,7 +124,7 @@ function Contact() {
 
     }
 
-    if (name === 'floating_phone') {
+    if (name === 'phone') {
       if (!phoneRegex.test(value)) {
         console.log('invalid character')
         const fieldErrors = {}
@@ -137,7 +137,7 @@ function Contact() {
         setErrors('')
       }
     }
-    if (name === 'floating_location') {
+    if (name === 'location') {
       if (!nameRegex.test(value)) {
         console.log('invalid character')
         const fieldErrors = {}
@@ -161,12 +161,12 @@ function Contact() {
   }
 
   const [formData, setFormData] = useState({
-    floating_first_name: '',
-    floating_last_name: '',
-    floating_email: '',
-    floating_phone: '',
+    first_name: '',
+    last_name: '',
+    email: '',
+    phone: '',
     project_select: '',
-    floating_location: '',
+    location: '',
     agree: '',
   });
 
@@ -211,40 +211,40 @@ function Contact() {
       <form class="py-6">
         <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_first_name" id="floating_first_name" class={`font-light block py-2.5 px-0 w-full text-xl bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer text-gray-900 `}
-              value={formData.floating_first_name}
+            <input type="text" name="first_name" id="first_name" class={`font-light block py-2.5 px-0 w-full text-xl bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer text-gray-900 `}
+              value={formData.first_name}
               onChange={handleInput}
             // value={formData.contactNo}
             />
-            {errors && errors.floating_first_name && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.floating_first_name}</p>}
-            <label for="floating_first_name" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.floating_first_name ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>First name*</label>
+            {errors && errors.first_name && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.first_name}</p>}
+            <label for="first_name" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.first_name ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>First name*</label>
           </div>
           <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_last_name" id="floating_last_name" class={`font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer ${errors && errors.floating_last_name ? 'text-red-600' : ' text-gray-900'}`}
-              value={formData.floating_last_name}
+            <input type="text" name="last_name" id="last_name" class={`font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer ${errors && errors.last_name ? 'text-red-600' : ' text-gray-900'}`}
+              value={formData.last_name}
               onChange={handleInput}
             />
-            {errors && errors.floating_last_name && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.floating_last_name}</p>}
-            <label for="floating_last_name" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.floating_last_name ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Last name*</label>
+            {errors && errors.last_name && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.last_name}</p>}
+            <label for="last_name" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.last_name ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Last name*</label>
           </div>
         </div>
         <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
-            <input type="email" name="floating_email" id="floating_email" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
-              value={formData.floating_email}
+            <input type="email" name="email" id="email" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
+              value={formData.email}
               onChange={handleInput}
             />
-            {errors && errors.floating_email && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.floating_email}</p>}
-            <label for="floating_email" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.floating_email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Email*</label>
+            {errors && errors.email && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.email}</p>}
+            <label for="email" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Email*</label>
           </div>
 
           <div class="relative z-0 w-full mb-5 group">
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxLength={11} name="floating_phone" id="floating_phone" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
-              value={formData.floating_phone}
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxLength={11} name="phone" id="phone" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
+              value={formData.phone}
               onChange={handleInput}
             />
-            {errors && errors.floating_phone && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.floating_phone}</p>}
-            <label for="floating_phone" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.floating_email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Telephone*</label>
+            {errors && errors.phone && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.phone}</p>}
+            <label for="phone" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Telephone*</label>
           </div>
         </div>
 
@@ -252,7 +252,7 @@ function Contact() {
         <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
             {/* <label for="underline_select" class="sr-only">Underline select</label> */}
-            <label for="project_select" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.floating_email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Choose project*</label>
+            <label for="project_select" class={`peer-focus:font-light font-light absolute text-xl  dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${errors && errors.email ? 'text-red-600 peer-focus:text-black peer-focus:dark:text-black' : ' text-gray-500 peer-focus:text-black peer-focus:dark:text-black'}`}>Choose project*</label>
             {/* <label for="project_select" class="peer-focus:font-light font-light absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Choose project</label> */}
             <select id="project_select" name="project_select" class="block py-2.5 px-0 w-full text-xl font-light text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-black peer "
               value={formData.project_select}
@@ -272,12 +272,12 @@ function Contact() {
 
           </div>
           <div class="relative z-0 w-full mb-5 group">
-            <input type="text" name="floating_location" id="floating_location" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
-              value={formData.floating_location}
+            <input type="text" name="location" id="location" class="font-light block py-2.5 px-0 w-full text-xl text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-black focus:outline-none focus:ring-0 focus:border-black peer"
+              value={formData.location}
               onChange={handleInput}
             />
-            {errors && errors.floating_location && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.floating_location}</p>}
-            <label for="floating_location" class="peer-focus:font-light font-light absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your location</label>
+            {errors && errors.location && <p id="filled_error_help" class="mt-2 text-xs text-red-600 dark:text-red-400">{errors.location}</p>}
+            <label for="location" class="peer-focus:font-light font-light absolute text-xl text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your location</label>
           </div>
         </div>
         <div class="flex items-center">
@@ -320,3 +320,4 @@ function Contact() {
 }
 
 export default Contact
+
