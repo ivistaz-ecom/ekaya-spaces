@@ -304,3 +304,22 @@ body {
 .center{
   text-align: -webkit-center;
 }
+
+
+.post-content {
+  min-height: 3rem; /* Adjust this based on your design */
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-content-title {
+  min-height: 3rem; /* Adjust this based on your design */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

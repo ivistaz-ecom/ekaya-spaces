@@ -92,14 +92,17 @@ function Content() {
             <div className='w-[80%] mx-auto' data-aos='fade-down'>
                 <Slider ref={sliderRef} {...settings}>
                     <div>
-                        <img src="/takshavi/takshavi-comp2.jpg" className='' />
+                        <img src="/takshavi/gallery-1.png" className='' />
                     </div>
                     <div>
-                        <img src="/takshavi/takshavi-comp.jpg" className='' />
+                        <img src="/takshavi/gallery-2.png" className='' />
+                    </div>
+                    <div>
+                        <img src="/takshavi/gallery-3.png" className='' />
                     </div>
                 </Slider>
                 <div className='text-[18px] poppins-light border border-e-green lg:w-[490px] p-6 my-12'>
-                    <Link href="/#contactpage" class="text-black dark:text-black underline hover:underline">Click here</Link> to fill the form for the project brochure
+                    <Link href="#contactpage" class="text-black dark:text-black underline hover:underline">Click here</Link> to fill the form for the project brochure
                 </div>
                 <p className='poppins-light text-[18px] text-start pb-5'>In a practical gesture, Takshavi ensures convenience for its residents by providing two dedicated parking spots per apartment, alleviating the common urban concern of parking scarcity. Additionally, the project incorporates essential features such as 100% generator backup and rainwater harvesting systems, prioritizing uninterrupted living and environmental consciousness without ostentation.</p>
                 <p className='poppins-light text-[18px] text-start pb-5'>Takshavi’s architectural design embodies a harmonious blend of contemporary elegance and sustainable principles. Through thoughtful planning, each apartment maximizes space and natural light, creating a welcoming ambiance conducive to relaxation and rejuvenation.</p>

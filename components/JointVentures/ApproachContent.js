@@ -30,7 +30,7 @@ const blogs = [
         'id': '4',
         'icon': '/icon-4.svg',
         'title': 'Empowering Communities: Driving Positive Change Together',
-        'desc': 'Our commitment to local sourcing extends beyond economic benefits; it’s also about empowering communities. By investing in local businesses and suppliers, we help create opportunities for growth and development. Additionally, by engaging with local stakeholders, we ensure that our projects are aligned with community needs and priorities.'
+        'desc': 'mitment to local sourcing extends beyond economic benefits; it’s also about empowering communities. By investing in local businesses and suppliers, we help create opportunities for growth and development. Additionally, by engaging with local stakeholders, we ensure that our projects are aligned with community needs and priorities.'
     },
 ]
 

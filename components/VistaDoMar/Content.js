@@ -92,7 +92,7 @@ function Content() {
                     </div>
                 </Slider>
                 <div className='text-[18px] poppins-light border border-e-green lg:w-[490px] p-6 my-12 mx-auto'>
-                    <a href="#" class="text-black dark:text-black underline hover:underline">Click here</a> to fill the form for the project brochure
+                    <a href="#contactpage" class="text-black dark:text-black underline hover:underline">Click here</a> to fill the form for the project brochure
                 </div>
             </div>
             <div>

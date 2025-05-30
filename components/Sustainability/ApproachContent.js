@@ -52,7 +52,7 @@ function ApproachContent() {
 
 
   return (
-    <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-12 w-[80%] mx-auto' data-aos='fade-up'>
+    <div className='grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 py-12 w-[80%] mx-auto' data-aos='fade-up'>
           {
               blogs.map((items,index) => (
                 <div class="p-6 bg-white border border-gray-200  dark:bg-gray-800 dark:border-gray-700">

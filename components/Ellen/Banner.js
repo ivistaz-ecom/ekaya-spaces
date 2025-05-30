@@ -17,9 +17,9 @@ function Banner() {
   }, []);
 
   return (
-    <div className="lg:h-[70vh] relative mx-auto" data-aos='fade-down'>
+    <div className="lg:h-[100vh] relative mx-auto" data-aos='fade-down'>
        <Image
-        src="/ellen-banner-1.png"
+        src="/ellen/ellen-banner.png"
         alt="Banner"
         width={1000} // Adjust width and height according to your image dimensions
         height={500}

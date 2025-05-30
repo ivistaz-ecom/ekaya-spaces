@@ -46,7 +46,7 @@ function Content({ slug }) {
           <p>Please check the address and try again.</p>
         </div>
       ) : (
-        <div className="mt-[100px] w-[80%] mx-auto" data-aos="fade-up">
+        <div className="mt-10 lg:mt-[100px] w-[80%] mx-auto" data-aos="fade-up">
           <p
             className="poppins-light text-[18px] text-start pb-5"
             dangerouslySetInnerHTML={{ __html: Page }}

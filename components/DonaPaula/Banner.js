@@ -28,7 +28,7 @@ function Banner() {
 
 
           <div className='lg:w-[80%] w-full absolute bottom-0 py-12 lg:ml-40' data-aos="fade-down">
-              <h1 className='lg:text-8xl md:text-8xl text-5xl  text-white poppins-light'>
+              <h1 className='lg:text-8xl md:text-8xl text-5xl  text-white poppins-light px-9 lg:px-0'>
               About<br/>Dona Paula
               </h1>
       </div>

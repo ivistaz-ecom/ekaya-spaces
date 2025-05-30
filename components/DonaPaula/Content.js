@@ -62,7 +62,7 @@ function Content() {
               </p>
             </div>
             <Image
-              className={`object-cover lg:w-[30em] lg:ml-10 sm:w-[20em] ${item.reverse ? "lg:mr-10" : ""}`}
+              className={`object-cover lg:w-[30em]  sm:w-[20em] ${item.reverse ? "lg:mr-10" : ""}`}
               src={item.imgSrc}
               alt={item.imgAlt}
               width={600}

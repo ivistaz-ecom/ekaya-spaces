@@ -358,18 +358,26 @@ function Crafted() {
                 {takshavi && (
                   <div class="mt-4 lg:mt-0 dark:bg-gray-800">
                     <Slider ref={sliderRef} {...settings}>
-                      <div>
+                      {/* <div>
                         <Image
                           src="/takshavi/takshavi-comp2.jpg"
-                          className="w-[800px] h-[400px]"
+                          className="w-full h-[400px]"
+                          width={800}
+                          height={400}
+                        />
+                      </div> */}
+                      <div>
+                        <Image
+                          src="/takshavi/takshavi-comp.jpg"
+                          className="w-full h-[400px]"
                           width={800}
                           height={400}
                         />
                       </div>
                       <div>
                         <Image
-                          src="/takshavi/takshavi-comp.jpg"
-                          className="w-[800px] h-[400px]"
+                          src="/home/takshavi-3.png"
+                          className="w-full h-[400px]"
                           width={800}
                           height={400}
                         />
@@ -407,7 +415,15 @@ function Crafted() {
                       </div>
                       <div>
                         <Image
-                          src="/embrace.png"
+                          src="/home/embrace/embrace-1.png"
+                          className="w-[800px] h-[400px]"
+                          width={800}
+                          height={400}
+                        />
+                      </div>
+                      <div>
+                        <Image
+                          src="/home/embrace/embrace-2.png"
                           className="w-[800px] h-[400px]"
                           width={800}
                           height={400}
@@ -437,16 +453,16 @@ function Crafted() {
                     <Slider ref={sliderRef} {...settings}>
                       <div>
                         <Image
-                          src="/ellen.png"
-                          className="w-[800px] h-[400px]"
+                          src="/home/ellen/ellen-1.png"
+                          className="w-full h-[400px]"
                           width={800}
                           height={400}
                         />
                       </div>
                       <div>
                         <Image
-                          src="/ellen.png"
-                          className="w-[800px] h-[400px]"
+                          src="/home/ellen/ellen-2.png"
+                          className="w-full h-[400px]"
                           width={800}
                           height={400}
                         />
@@ -588,7 +604,7 @@ function Crafted() {
                   <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image
-                        src="/vista-do-mar.png"
+                        src="/home/vista-do-mar/vista-1.png"
                         className="w-[800px] h-[400px]"
                         width={800}
                         height={400}
@@ -596,7 +612,7 @@ function Crafted() {
                     </div>
                     <div>
                       <Image
-                        src="/vista-do-mar.png"
+                        src="/home/vista-do-mar/vista-2.png"
                         className="w-[800px] h-[400px]"
                         width={800}
                         height={400}
