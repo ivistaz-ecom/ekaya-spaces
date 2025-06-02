@@ -337,7 +337,7 @@ function Header({ stats }) {
                   className="text-gray-700 text-2xl font-bold p-2"
                 >
               <div>
-              <AiOutlineClose className="bg-white text-gray-700 rounded-full mx-20 p-2" size={35}/>
+              <AiOutlineClose className="bg-white text-gray-700 rounded-full mx-16 p-2" size={35}/>
               </div>
 
                 </button>
@@ -358,7 +358,7 @@ function Header({ stats }) {
           </ul>
           <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white">Bangalore</h3>
           <ul className="pl-4 space-y-2 text-">
-            <li className="pt-3"><Link href="/about-dona-paula" onClick={handleMobileClick}>— Takshavi</Link></li>
+            <li className="pt-3"><Link href="/takshavi" onClick={handleMobileClick}>— Takshavi</Link></li>
           </ul>
           </>
         )}

@@ -16,19 +16,19 @@ function Banner() {
   }, []);
 
   return (
-    <div className="lg:h-[100vh] relative mx-auto" data-aos="fade-down">
+    <div className="lg:h-[100vh] h-[60vh] relative mx-auto" data-aos="fade-down">
       <Image
         src="/takshavi/banner.png"
         alt="Banner"
         width={1000} // Adjust width and height according to your image dimensions
         height={500}
-        className="w-full h-full"
+        className="w-full h-full object-cover"
         priority // Preload the image
       />
 
       <div
-        className="lg:w-[80%] w-full absolute bottom-0 lg:py-12 lg:ml-40 md:ml-20 ml-5 pb-28"
-        data-aos="fade-down"
+        className="lg:w-[80%] w-full absolute bottom-0 lg:py-12 lg:pl-40 md:pl-20 pl-10 pb-28"
+        
       >
        <div>
        <h1 className="lg:text-7xl md:text-5xl text-3xl text-white poppins-light">
@@ -37,7 +37,7 @@ function Banner() {
         <h2 className="lg:text-7xl md:text-5xl text-3xl text-[#BBC6C9] poppins-light">
           by Ekaya Spaces
         </h2>
-        <div class="flex py-12 content-between gap-x-2 sm:flex-row sm:justify-start sm:space-y-0">
+        <div class="flex lg:py-12 content-between gap-x-2 sm:flex-row sm:justify-start sm:space-y-0">
           <div class="block">
             <h5 class="mb-2 lg:text-2xl text-[18px] font-light tracking-tight text-white">
               Frazer Town

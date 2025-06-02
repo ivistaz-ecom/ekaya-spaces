@@ -138,7 +138,7 @@ function Content() {
 
   return (
     <div>
-      <div className="mt-[100px] w-[80%] mx-auto">
+      <div className="lg:mt-[100px] mt-10 lg:w-[80%] mx-auto lg:p-0 p-5">
         <h4 className="lg:text-4xl text-2xl text-black poppins-light pb-6">
           Modern idyll in a three-storey block with
           <br /> six luxurious homes
@@ -169,7 +169,7 @@ function Content() {
       <div>
       <ProjectGallery />
       </div>
-      <div className="w-[80%] mx-auto py-12 ">
+      <div className="lg:w-[80%] mx-auto py-12 lg:p-0 p-5">
         <h4 className="lg:text-4xl text-3xl text-black poppins-light pb-6">
           Spacious, modern homes
           <br />

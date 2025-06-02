@@ -134,7 +134,7 @@ function Content() {
 
   return (
     <div>
-      <div className="mt-[100px] w-[80%] mx-auto">
+      <div className="lg:mt-[100px] mt-10 lg:w-[80%] lg:px-0 px-5 mx-auto">
         <h4 className="lg:text-4xl text-3xl text-black poppins-light pb-6">
           Truly a home for your future!
         </h4>

@@ -31,7 +31,7 @@ const contentData = [
 function Content() {
   return (
     <div className="z-50 overflow-hidden w-full ">
-      <div className="mt-[100px] w-[80%] mx-auto" data-aos="fade-up">
+      <div className="lg:mt-[100px] mt-10 lg:w-[80%] mx-auto px-4 lg:px-0">
         <p className="poppins-light text-[18px] text-start pb-5">
           Nestled along the picturesque coastline of Goa, Dona Paula stands as a
           testament to the region’s timeless allure and natural beauty. Named

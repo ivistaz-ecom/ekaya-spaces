@@ -16,9 +16,9 @@ function Content() {
 
   return (
     <>
-      <div className="mt-[100px] w-[80%] mx-auto pb-16" data-aos="fade-up">
+      <div className="lg:mt-[100px] mt-10 lg:w-[80%] lg:p-0 p-5 mx-auto pb-16">
         {/* <h1 className='text-2xl text-e-green font-light tracking-[0.2em] pb-12'>ABOUT US</h1> */}
-        <p className="poppins-light text-[18px] text-start pb-5">
+        <p className="poppins-light text-[18px] text-start lg:pb-5">
           Moira, a serene village nestled in the verdant landscapes of Goa,
           holds a rich historical tapestry woven with Portuguese influence.
           Initially known as ‘Moiro’ during the colonial era, it stands as a
@@ -31,18 +31,18 @@ function Content() {
       </div>
 
       <div
-        class="flex flex-col items-center bg-e-green-light md:flex-row w-[90%]"
-        data-aos="fade-right"
+        className="flex flex-col items-center bg-e-green-light md:flex-row lg:w-[90%]"
+        
       >
         <Image
-          class="object-cover w-[30em] mr-6"
+          className="object-cover lg:w-[30em] w-full p-5 lg:p-0 lg:mr-6"
           src="/moira/1.png"
           alt="moira"
           width={300}
           height={500}
         />
-        <div class="flex flex-col justify-between leading-normal p-10">
-          <p class="mb-3 poppins-light text-[18px] text-start pb-5">
+        <div className="flex flex-col justify-between leading-normal lg:p-10 p-5">
+          <p className="mb-3 poppins-light text-[18px] text-start pb-5">
             In recent years, Moira has emerged as the new real estate hub for
             the affluent seeking a retreat from bustling city life. The
             village’s rustic allure, adorned with winding lanes, lush greenery,
@@ -55,11 +55,11 @@ function Content() {
       </div>
 
       <div
-        class="flex flex-col items-center bg-e-green-light my-10 md:flex-row w-[90%] float-right"
-        data-aos="fade-left"
+        className="flex flex-col items-center bg-e-green-light my-10 md:flex-row lg:w-[90%]"
+        
       >
-        <div class="flex flex-col justify-between leading-normal">
-          <p class="mb-3 poppins-light text-[18px] text-start pb-5 ml-36">
+        <div className="flex flex-col justify-between leading-normal">
+          <p className="mb-3 poppins-light text-[18px] text-start pb-5 lg:ml-36 lg:p-0 p-5">
             One of Moira’s irresistible charms is its proximity to Goa’s
             renowned beaches. Just a short drive away, residents and visitors
             can revel in the sun-kissed shores of Calangute, Baga, and Anjuna
@@ -69,7 +69,7 @@ function Content() {
           </p>
         </div>
         <Image
-          class="object-cover w-[30em] ml-10"
+          className="object-cover lg:w-[30em] w-full p-5 lg:p-0 lg:mr-6"
           src="/moira/2.png"
           alt="moira"
           width={300}
@@ -78,18 +78,18 @@ function Content() {
       </div>
 
       <div
-        class="flex flex-col items-center bg-e-green-light my-10 md:flex-row  justify-items-end w-[90%] "
-        data-aos="fade-right"
+        className="flex flex-col items-center bg-e-green-light my-10 md:flex-row  justify-items-end lg:w-[90%] "
+        
       >
         <Image
-          class="object-cover w-[30em] mr-10"
+          className="object-cover lg:w-[30em] w-full p-5 lg:p-0 lg:mr-6"
           src="/moira/3.png"
           alt="moira"
           width={300}
           height={500}
         />
-        <div class="flex flex-col justify-between leading-normal">
-          <p class="mb-3 poppins-light text-[18px] text-start ">
+        <div className="flex flex-col justify-between leading-normal lg:p-10 p-5">
+          <p className="mb-3 poppins-light text-[18px] text-start ">
             Moreover, Moira’s strategic location near Assagao adds to its
             allure. Assagao, a neighboring village known for its bohemian vibe,
             hosts an array of chic cafes, boutique stores, and gourmet
@@ -101,11 +101,11 @@ function Content() {
       </div>
 
       <div
-        class="flex flex-col items-center bg-e-green-light md:flex-row w-[90%] float-right mb-20"
-        data-aos="fade-left"
+        className="flex flex-col items-center bg-e-green-light md:flex-row lg:w-[90%] float-right mb-20"
+        
       >
-        <div class="flex flex-col justify-between leading-normal">
-          <p class="mb-3 poppins-light text-[18px] text-start pb-5 ml-10 ml-36">
+        <div className="flex flex-col justify-between leading-normal lg:p-10 p-5">
+          <p className="mb-3 poppins-light text-[18px] text-start pb-5 lg:ml-36">
             Additionally, Moira’s accessibility is enhanced by its proximity to
             the newly constructed Mopa Airport. The airport, situated in Pernem
             taluka, significantly reduces travel time for residents and
@@ -116,7 +116,7 @@ function Content() {
           </p>
         </div>
         <Image
-          class="object-cover w-[30em] ml-10"
+           className="object-cover lg:w-[30em] w-full p-5 lg:p-0 lg:mr-6"
           src="/moira/4.png"
           alt="moira"
           width={300}
