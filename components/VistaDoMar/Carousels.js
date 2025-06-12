@@ -105,7 +105,7 @@ const GymCarousel = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded"
+                  className=""
                 />
                 {/* Arrows */}
                 <div className="absolute inset-0 flex justify-between items-center px-4 z-10 pointer-events-none">
