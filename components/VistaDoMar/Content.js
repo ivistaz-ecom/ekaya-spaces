@@ -1,13 +1,16 @@
-"use client";
-import React, { useState, useRef } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import Features from "../../components/VistaDoMar/Features";
-import Contact from "../../components/HomePage/Contact";
+"use client"
+import React, { useState, useRef } from "react"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import Features from "../../components/VistaDoMar/Features"
+import Carousels from "../../components/VistaDoMar/Carousels"
+import Contact from "../../components/HomePage/Contact"
+
+import { Carousel } from "flowbite"
 
 function Content() {
-  const sliderRef = useRef(null);
+  const sliderRef = useRef(null)
 
   const NextArrow = ({ onClick }) => (
     <div
@@ -58,7 +61,7 @@ function Content() {
         </g>
       </svg>
     </div>
-  );
+  )
 
   const PrevArrow = ({ onClick }) => (
     <div
@@ -100,7 +103,7 @@ function Content() {
         </g>
       </svg>
     </div>
-  );
+  )
 
   var settings = {
     dots: false,
@@ -128,7 +131,7 @@ function Content() {
       },
       // You can add more breakpoints and adjust settings as needed
     ],
-  };
+  }
 
   return (
     <div>
@@ -209,7 +212,7 @@ function Content() {
           to fill the form for the project brochure
         </div>
       </div>
-      <div></div>
+
       <div className="text-center w-[80%] mx-auto" data-aos="fade-down">
         <h4 className="lg:text-4xl md:text-4xl text-2xl text-black poppins-light pb-6">
           Luxurious Amenities at Oceanfront Apartments
@@ -219,6 +222,11 @@ function Content() {
           array
           <br /> of amenities designed to exceed your expectations:
         </p>
+      </div>
+      <div className="">
+        <Carousels />
+      </div>
+      <div className="text-center  w-[80%]   mx-auto" data-aos="fade-down">
         <Features />
       </div>
 
@@ -575,7 +583,7 @@ function Content() {
 
       <Contact />
     </div>
-  );
+  )
 }
 
-export default Content;
+export default Content
