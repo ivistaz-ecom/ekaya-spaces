@@ -20,6 +20,10 @@ const seo = ({ pageTitle, pageDescription, MetaImage, url }) => {
         <meta name="description" content={pageDescription}></meta>
         <meta name="robots" content="index,follow"></meta>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/app/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="canonical" href={url} />
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content={pageTitle}></meta>
