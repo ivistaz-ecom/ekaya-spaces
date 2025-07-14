@@ -19,25 +19,25 @@ const seo = ({ pageTitle, pageDescription, MetaImage, url }) => {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription}></meta>
         <meta name="robots" content="index,follow"></meta>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href={url} />
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop="name" content={pageTitle}></meta>
         <meta itemprop="description" content={pageDescription}></meta>
-        <meta itemprop="image" content=""></meta>
+        <meta itemprop="image" content={MetaImage}></meta>
   
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content={url}></meta>
         <meta property="og:type" content="website"></meta>
         <meta property="og:title" content={pageTitle}></meta>
         <meta property="og:description" content={pageDescription}></meta>
-        <meta property="og:image" content=""></meta>
+        <meta property="og:image" content={MetaImage}></meta>
   
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:title" content={pageTitle}></meta>
         <meta name="twitter:description" content={pageDescription}></meta>
-        <meta name="twitter:image" content=""></meta>
+        <meta name="twitter:image" content={MetaImage}></meta>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
