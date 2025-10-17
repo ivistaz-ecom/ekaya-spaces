@@ -5,6 +5,7 @@ import Link from "next/link";
 function Footer() {
   const socialLinks = [
     { href: "https://www.facebook.com/profile.php?id=61559578016047", label: "Facebook" },
+    { href: "https://www.instagram.com/ekayaspaces?igsh=NzQ5bW41bmU5bnpn", label: "Instagram" },
     { href: "https://www.linkedin.com/company/ekaya-spaces/", label: "LinkedIn" },
     { href: "https://www.youtube.com/@ekayaspaces", label: "YouTube" }
   ];
@@ -34,9 +35,9 @@ function Footer() {
 
   return (
     <div className="z-50">
-      <div className="lg:mt-[100px] mt-[30px] grid grid-cols-3 lg:w-[80%] mx-auto overflow-hidden z-5 container mx-auto">
+      <div className="lg:mt-[100px] mt-[30px] grid grid-cols-4 lg:w-[80%] mx-auto overflow-hidden z-5 container mx-auto">
         {socialLinks.map((link, index) => (
-          <Link key={index} href={link.href} className="justify-center align-center flex border group border-e-green p-4 text-xl poppins-light">
+          <Link target="_blank" key={index} href={link.href} className="justify-center align-center flex border group border-e-green p-4 text-xl poppins-light">
             {link.label}
             <div className="[grid-area:1/1] flex items-center justify-center transition ease-in-out group-hover:delay-300 translate-y-0 -translate-x-0 group-hover:-translate-y-1 group-hover:translate-x-2">
               ↗
@@ -55,7 +56,7 @@ function Footer() {
               <hr className="h-px border-t-2 border-gray-300 pb-4 mx-auto" />
               <p className="text-xl font-light text-gray-600 pb-6 poppins-light"># C 2, Shanthi Kiran apartments, Nandhi Durga Road, Bengaluru 560046</p>
               <p className="text-xl font-light text-gray-600 poppins-light">
-                <span className="font-medium">Phone:</span> <Link href="tel:+91 98452 47374">+91 98452 47374</Link>
+                <span className="font-medium">Phone:</span> <Link href="tel:++91 8217479108">+91 8217479108</Link>
               </p>
               <p className="text-xl font-light text-gray-600 poppins-light">
                 <span className="font-medium">Email:</span> <Link href="mailto:info@ekaya-spaces.com">info@ekaya-spaces.com</Link>

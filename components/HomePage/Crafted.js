@@ -7,16 +7,23 @@ function Crafted() {
         ABOUT EKAYA
       </h2>
       <h2 className="lg:text-5xl text-4xl poppins-regular py-10">
-        Homes crafted
-        <br /> with passion
+        Luxury that speaks softly
       </h2>
-      <p className="poppins-light text-[18px]">
-        At Ekaya, we don’t just build homes; we craft experiences. Nestled in
-        the heart of Bangalore, Ekaya stands as a beacon of luxury and precision
-        in real estate. Our ethos is woven around the artistry of construction,
-        creating not just buildings, but sanctuaries that resonate with elegance
-        and sophistication.
+      <div className="flex flex-col gap-1">
+      <p className="poppins-medium text-[18px]">
+        Homes that speak softly — timeless in design, deliberate in detail, and
+        composed to outlast trends.
       </p>
+      <p className="poppins-light text-[18px] pt-5">
+      At Ekaya Spaces, we believe luxury isn’t loud — it’s felt.
+      </p>
+      <p className="poppins-light text-[18px]">
+      It’s in the way light filters through a window, the way a space breathes, the way materials age with grace.
+      </p>
+      <p className="poppins-light text-[18px]">
+      Every home we craft is a quiet dialogue between design and purpose — intimate in scale, enduring in spirit, and deeply human in the way it’s lived.
+      </p>
+      </div>
     </div>
   );
 }
