@@ -35,7 +35,7 @@ function Footer() {
 
   return (
     <div className="z-50">
-      <div className="lg:mt-[100px] mt-[30px] grid grid-cols-4 lg:w-[80%] mx-auto overflow-hidden z-5 container mx-auto">
+      <div className="lg:mt-[100px] mt-[30px] grid lg:grid-cols-4 grid-cols-2 lg:w-[80%] overflow-hidden z-5 container mx-auto">
         {socialLinks.map((link, index) => (
           <Link target="_blank" key={index} href={link.href} className="justify-center align-center flex border group border-e-green p-4 text-xl poppins-light">
             {link.label}
