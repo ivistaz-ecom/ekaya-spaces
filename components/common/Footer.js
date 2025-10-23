@@ -56,7 +56,7 @@ function Footer() {
               <hr className="h-px border-t-2 border-gray-300 pb-4 mx-auto" />
               <p className="text-xl font-light text-gray-600 pb-6 poppins-light"># C 2, Shanthi Kiran apartments, Nandhi Durga Road, Bengaluru 560046</p>
               <p className="text-xl font-light text-gray-600 poppins-light">
-                <span className="font-medium">Phone:</span> <Link href="tel:++91 8217479108">+91 8217479108</Link>
+                <span className="font-medium">Phone:</span> <Link href="tel:++91 8217479108">+91 82174 79108</Link>
               </p>
               <p className="text-xl font-light text-gray-600 poppins-light">
                 <span className="font-medium">Email:</span> <Link href="mailto:info@ekaya-spaces.com">info@ekaya-spaces.com</Link>

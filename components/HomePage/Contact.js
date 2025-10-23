@@ -862,10 +862,10 @@ function Contact() {
         </form>
         <div class="flex lg:flex-row items-center content-between gap-x-2 flex-col sm:flex-col sm:justify-center sm:space-y-0">
           <div class="block">
-            <a href="tel:+91 98440 32022">
+            <a href="tel:+91 82174 79108">
               {" "}
               <h5 class="mb-2 text-2xl font-light tracking-tight text-w-blue">
-                <span className="text-e-green">Call:</span> +91 98440 32022
+                <span className="text-e-green">Call:</span> +91 82174 79108
               </h5>
             </a>
           </div>
