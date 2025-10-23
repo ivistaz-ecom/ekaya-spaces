@@ -860,20 +860,20 @@ function Contact() {
             )}
           </button>
         </form>
-        <div class="flex lg:flex-row items-center content-between gap-x-2 flex-col sm:flex-col sm:justify-center sm:space-y-0">
+        <div class="flex lg:flex-row lg:items-center content-between gap-x-2 flex-col sm:flex-col sm:justify-center sm:space-y-0">
           <div class="block">
             <a href="tel:+91 82174 79108">
               {" "}
-              <h5 class="mb-2 text-2xl font-light tracking-tight text-w-blue">
+              <h5 class="mb-2 lg:text-2xl text-xl font-light tracking-tight text-w-blue">
                 <span className="text-e-green">Call:</span> +91 82174 79108
               </h5>
             </a>
           </div>
           <div class="inline-block h-[31px] min-h-[0.20em] w-[0.15em] self-stretch bg-e-green lg:block hidden"></div>
-          <hr className="h-px border-t w-9/12 border-e-green pb-4 mx-auto lg:hidden block" />
+          <hr className="h-px border-t lg:w-9/12 w-[75%] border-e-green pb-4 lg:mx-auto lg:hidden block" />
           <div class="block">
             <a href="mailto:contact@ekaya.in">
-              <h5 class="mb-2 text-2xl font-light tracking-tight text-w-green poppins-light">
+              <h5 class="mb-2 lg:text-2xl text-xl font-light tracking-tight text-w-green poppins-light">
                 <span className="text-e-green">Email:</span> contact@ekaya.in
               </h5>
             </a>
