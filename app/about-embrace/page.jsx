@@ -19,10 +19,10 @@ const Page = () => {
         MetaImage={MetaImage}
         url={url}
       />
-      <Suspense fallback={<div>Loading banner...</div>}>
+      <Suspense fallback={<div></div>}>
         <Banner />
       </Suspense>
-      <Suspense fallback={<div>Loading content...</div>}>
+      <Suspense fallback={<div></div>}>
         <Content />
       </Suspense>
     </>

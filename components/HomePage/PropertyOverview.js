@@ -154,11 +154,11 @@ function Crafted() {
 
   return (
     <>
-      <div className="text-center mt-[100px] lg:w-[80%]  mx-auto">
+      <div className="text-center lg:mt-[100px] mt-5 lg:w-[80%]  mx-auto">
         <h1 className="text-2xl text-e-green font-light tracking-[0.2em]">
           PROPERTY OVERVIEW
         </h1>
-        <h2 className="lg:text-5xl text-3xl poppins-regular py-10">
+        <h2 className="lg:text-5xl text-3xl poppins-regular lg:py-10 py-5">
           Strategically located
           <br />
           masterpieces

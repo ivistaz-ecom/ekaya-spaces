@@ -3,7 +3,7 @@ import ContactUS from "../../components/ContactUs";
 
 const Page = () => {
   return (
-    <Suspense fallback={<div>Loading Contact Form...</div>}>
+    <Suspense fallback={<div></div>}>
       <ContactUS />
     </Suspense>
   );

@@ -27,7 +27,7 @@ function Banner() {
   };
 
   return (
-    <div className="relative w-full lg:h-screen h-[50vh] overflow-hidden z-0">
+    <div className="relative w-full lg:h-screen h-[80vh] object-contain overflow-hidden z-0">
       {/* Carousel Track */}
       <div
         className={`flex transition-transform duration-700 ease-in-out`}

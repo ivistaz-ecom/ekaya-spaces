@@ -24,7 +24,7 @@ export default function Home() {
         MetaImage={MetaImage}
         url={url}
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Banner />
         <Crafted />
         <Overview />
