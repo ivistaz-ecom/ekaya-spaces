@@ -78,6 +78,7 @@ function Footer() {
               <h3 className="text-xl font-medium pb-5 poppins-medium">
                 Our Projects
               </h3>
+              
             </div>
             <div className="mt-14 lg:mt-0">
               <h3 className="text-xl font-medium pb-5 poppins-medium">
