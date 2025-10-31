@@ -15,6 +15,7 @@ function Header({ stats }) {
   const [showUpcoming, setShowUpcoming] = useState(false);
   const [showEkaya, setShowEkaya] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleDropdown = (type) => {
     setOpenDropdown((prev) => (prev === type ? null : type));
@@ -40,6 +41,16 @@ function Header({ stats }) {
     // alert('hello')
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   //   useEffect(() => {
   //     initFlowbite();
 
@@ -47,8 +58,8 @@ function Header({ stats }) {
 
   return (
     <>
-      <span className="absolute w-full z-10" onClick={handleClick}></span>
-      <nav class="bg-transparent bg-opacity-5 absolute w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]">
+      <span className="absolute w-full z-0" onClick={handleClick}></span>
+      <nav class={`${isScrolled ? 'bg-[#5CA2B0]' : 'bg-transparent bg-opacity-5'} transition-all duration-300 fixed w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]`}>
         <div class="flex justify-between p-4 lg:w-[80%] mx-auto  items-center z-50 ">
           <div class="text-center lg:hidden">
             <button
@@ -87,7 +98,7 @@ function Header({ stats }) {
                     </svg>
                   </button>
                   {status && (
-                    <div class="z-10 top-20 absolute font-normal bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700 dark:divide-gray-600 w-[600px]">
+                    <div class="z-50 top-20 absolute font-normal bg-white divide-y divide-gray-100  shadow dark:bg-gray-700 dark:divide-gray-600 w-[600px]">
                       <div className="flex justify-between p-0">
                         <div className="p-0 w-full">
                           <p className="border-b border-gray-400 p-2 poppins-light text-[18px]">
@@ -234,7 +245,7 @@ function Header({ stats }) {
                   </button>
 
                   {ekaya && (
-                    <div class="z-10 top-20 absolute font-normal bg-white divide-y divide-gray-100  shadow w-44 dark:bg-gray-700 dark:divide-gray-600 w-[200px]">
+                    <div class="z-50 top-20 absolute font-normal bg-white divide-y divide-gray-100  shadow dark:bg-gray-700 dark:divide-gray-600 w-[200px]">
                       <div className="flex justify-between p-0">
                         <div className="p-0 w-full">
                           <ul
@@ -286,7 +297,7 @@ function Header({ stats }) {
               </ul>
             </div>
           </div>
-          <div className="lg:mr-[200px] w-40 lg:w-60 md:w-96">
+          <div className="lg:mr-[00px] w-40 lg:w-60 md:w-96">
             <Link
               href="/"
               class="flex items-center space-x-3 rtl:space-x-reverse"
@@ -300,7 +311,7 @@ function Header({ stats }) {
           >
             <button
               type="button"
-              class="text-e-green bg-white hover:bg-black hover:border-white hover:text-white poppins-normal rounded-full text- px-5 py-2.5 text-center inline-flex items-center"
+              class="text-e-green bg-white hover:bg-black hover:border-white hover:text-white poppins-normal rounded-full text- lg:px-20 px-5 py-2.5 text-center inline-flex items-center"
             >
               INQUIRE
               <svg
@@ -337,7 +348,7 @@ function Header({ stats }) {
                   className="text-gray-700 text-2xl font-bold p-2"
                 >
               <div>
-              <AiOutlineClose className="bg-white text-gray-700 rounded-full mx-16 p-2" size={35}/>
+              <AiOutlineClose className="bg-[#5CA2B0] text-white rounded-full -mx-64 md:-mx-[680px] p-2 mt-3" size={35}/>
               </div>
 
                 </button>

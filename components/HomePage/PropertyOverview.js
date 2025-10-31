@@ -154,7 +154,7 @@ function Crafted() {
 
   return (
     <>
-      <div className="text-center lg:mt-[100px] mt-5 lg:w-[80%]  mx-auto">
+      <div className="text-center lg:mt-[100px] mt-5 lg:w-[80%] mx-auto z-10 relative">
         <h1 className="text-2xl text-e-green font-light tracking-[0.2em]">
           PROPERTY OVERVIEW
         </h1>
@@ -207,7 +207,7 @@ function Crafted() {
             </li>
           </ul>
         </div>
-        <div id="default-styled-tab-content ">
+        <div id="default-styled-tab-content" className="z-10 relative">
           <div
             class="hidden p-4"
             id="styled-profile"
@@ -356,7 +356,7 @@ function Crafted() {
               <div className="lg:w-[800px] w-full">
                 {/* takshavi card                   */}
                 {takshavi && (
-                  <div class="mt-4 lg:mt-0 dark:bg-gray-800">
+                  <div class="mt-4 lg:mt-0 dark:bg-gray-800 z-10 relative">
                     <Slider ref={sliderRef} {...settings}>
                       {/* <div>
                         <Image
@@ -403,7 +403,7 @@ function Crafted() {
                 )}
 
                 {embrace && (
-                  <div class="mt-4 lg:mt-0 dark:bg-gray-800">
+                  <div class="mt-4 lg:mt-0 dark:bg-gray-800 z-10 relative">
                     <Slider ref={sliderRef} {...settings}>
                       <div>
                         <Image
@@ -449,7 +449,7 @@ function Crafted() {
                 )}
 
                 {ellen && (
-                  <div class="mt-4 lg:mt-0 dark:bg-gray-800">
+                  <div class="mt-4 lg:mt-0 dark:bg-gray-800 z-10 relative">
                     <Slider ref={sliderRef} {...settings}>
                       <div>
                         <Image
@@ -600,7 +600,7 @@ function Crafted() {
                 </div>
               </div>
               {vista && (
-                <div className="lg:mt-0 mt-4 lg:w-[800px]">
+                <div className="lg:mt-0 mt-4 lg:w-[800px] z-10 relative">
                   <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image
@@ -637,7 +637,7 @@ function Crafted() {
               )}
 
               {amora && (
-                <div className="lg:mt-0 mt-4 lg:w-[800px]">
+                <div className="lg:mt-0 mt-4 lg:w-[800px] z-10 relative">
                   <Slider ref={sliderRef} {...settings}>
                     <div>
                       <Image

@@ -46,7 +46,7 @@ function Insights() {
 
   const NextArrow = ({ onClick }) => (
     <div
-      className="in-arrow absolute -bottom-10  right-5 z-10 cursor-pointer pe-20"
+      className="in-arrow absolute -bottom-10  right-5  cursor-pointer pe-20"
       onClick={onClick}
     >
       <IoIosArrowForward className="text-5xl rounded-full"/>
@@ -55,7 +55,7 @@ function Insights() {
 
   const PrevArrow = ({ onClick }) => (
     <div
-      className="in-arrow absolute -bottom-10  left-5 pl-20 z-10 cursor-pointer flex justify-center items-center"
+      className="in-arrow absolute -bottom-10  left-5 pl-20  cursor-pointer flex justify-center items-center"
       onClick={onClick}
     >
       <IoIosArrowBack className="text-5xl  rounded-full" />
@@ -91,18 +91,18 @@ function Insights() {
 
   return (
     <>
-      <div className="text-center mt-[0px] container mx-auto z-96">
+      <div className="text-center mt-[0px] container mx-auto">
         <h2 className="lg:text-5xl text-4xl poppins-regular py-10">Insights</h2>
         <p className="poppins-light text-[18px]">
           Gain valuable insights into the world of luxury real estate and what
           makes an Ekaya home the right choice for discerning buyers.
         </p>
       </div>
-      <div className="mx-auto mt-10 justify-center container px-4 lg:px-0 z-96">
-        <Slider {...settings} ref={sliderRef} className="z-96">
+      <div className="mx-auto mt-10 justify-center container px-4 lg:px-0 z-10">
+        <Slider {...settings} ref={sliderRef} className="z-10">
           {Blogs.map((items, index) => (
             <div
-              className={`z-50 lg:max-w-sm dark:bg-gray-800 dark:border-gray-700 ${items.acf.css}`}
+              className={`z-10 lg:max-w-sm dark:bg-gray-800 dark:border-gray-700 ${items.acf.css}`}
               key={index}
             >
               <Link href={`/blogs/${items.slug}`}>

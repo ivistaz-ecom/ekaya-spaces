@@ -224,8 +224,8 @@ useEffect(() => {
       className="mt-[100px] lg:w-[80%] mx-auto bg-gray-200 p-6 container"
       id="contactpage"
     >
-      <h3 className="lg:text-[46px] text-4xl">Get in touch</h3>
-      <h4 className="text-2xl font-light text-gray-600">*Required fields</h4>
+      <h3 className="lg:text-[46px] text-4xl lg:pb-3 pb-1">Get in touch</h3>
+      <h4 className="text-2xl font-light text-gray-600 pb-5">*Required fields</h4>
       <form class="py-6">
         <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
