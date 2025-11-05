@@ -73,7 +73,7 @@ function Banner({ slug }) {
             {/* {pageTitle} */}
 
             <h1
-              className="lg:text-6xl md:text-5xl text-2xl lg:px-0 px-10 text-white poppins-light"
+              className="lg:!text-6xl md:text-5xl text-2xl lg:px-0 px-10 text-white poppins-light !font-light"
               dangerouslySetInnerHTML={{ __html: pageTitle }}
             />
 

@@ -34,6 +34,52 @@ function Content({ slug }) {
 
   return (
     <>
+      <style>
+        {`
+        h1, h2, h3, h4, h5, h6 {
+          margin-bottom: 1rem !important;
+        }
+        h1, h2, h3, h4, h5, h6, p {
+          margin-top: 1rem !important;
+        }
+        
+        ul li {
+          margin-bottom: 1rem !important;
+        }
+
+        ul {
+          padding-left: 20px !important;
+          margin-top: 1rem !important;
+          // list-style-type: disc;
+          
+        }
+
+        h4 {
+          font-size: 24px !important;
+        }
+
+        h3 {
+          font-size: 24px !important;
+        }
+        
+        h2 {
+          font-size: 24px !important;
+        }
+        h1 {
+          font-size: 40px !important;
+          font-weight: 600 !important;
+        }
+
+        b {
+          font-weight: 600 !important;
+          font-style: normal !important;
+        }
+          .wb-marker-red::marker {
+  color: #ed2225 !important;
+}
+
+      `}
+      </style>
       <Seo
         pageTitle={pageTitle}
         pageDescription={pageDescription}
