@@ -44,6 +44,7 @@ function Footer() {
     { href: "/about-us", label: "Our Story" },
     { href: "/our-team", label: "Our Team" },
     { href: "/why-ekaya", label: "Why Ekaya" },
+    { href: "/blogs", label: "Blogs" },
     { href: "/sustainability", label: "Sustainability" },
   ];
 
@@ -78,7 +79,6 @@ function Footer() {
               <h3 className="text-xl font-medium pb-5 poppins-medium">
                 Our Projects
               </h3>
-              
             </div>
             <div className="mt-14 lg:mt-0">
               <h3 className="text-xl font-medium pb-5 poppins-medium">
@@ -88,7 +88,7 @@ function Footer() {
           </div>
           <div className="grid lg:grid-cols-3 grid-1 py-5 lg:items-stretch lg:space-x-32 md:space-x-0">
             <div className="flex flex-col h-full">
-            <div className="lg:hidden">
+              <div className="lg:hidden">
                 <h3 className="text-xl font-medium pb-3 poppins-medium">
                   Contact Details
                 </h3>
@@ -98,9 +98,10 @@ function Footer() {
               <div className="flex flex-col h-full">
                 <div className="flex flex-col gap-2">
                   <p className="text-xl font-light text-gray-600 pb-6 poppins-light">
-                  NO.136, RESIDENCY ROAD SHANTHALA NAGAR, <br className="hidden lg:block"/>
-                  G.5 CEARS PLAZA
-                  BANGALORE-560025
+                  Ekaya Spaces <br />
+                    No.136, Residency Road, {" "}
+                    <br />
+                    Shanthala Nagar, <br />G.5 Cears Plaza, <br /> Bangalore - 560025
                   </p>
                   <p className="text-xl font-light text-gray-600 poppins-light">
                     <span className="font-medium">Phone:</span>{" "}
@@ -124,7 +125,7 @@ function Footer() {
               </div>
             </div>
             <div className="mt-5 lg:mt-0">
-            <div className="lg:hidden">
+              <div className="lg:hidden">
                 <h3 className="text-xl font-medium pb-3 poppins-medium">
                   Our Projects
                 </h3>
