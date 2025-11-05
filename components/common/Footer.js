@@ -49,7 +49,7 @@ function Footer() {
 
   return (
     <div className="z-50">
-      <div className="lg:mt-[100px] mt-[30px] grid lg:grid-cols-4 grid-cols-2 lg:w-[80%] overflow-hidden z-5 container mx-auto ">
+      <div className="lg:mt-[100px] mt-[30px] grid lg:grid-cols-4 grid-cols-2 overflow-hidden z-5 max-w-7xl mx-auto ">
         {socialLinks.map((link, index) => (
           <Link
             target="_blank"
@@ -66,7 +66,7 @@ function Footer() {
       </div>
 
       <footer className="mx-auto bg-gray-200 lg:pt-6 p-6 lg:p-0">
-        <div className="max-w-7xl lg:w-[80%] mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="lg:grid lg:grid-cols-3 grid-1 border-b border-gray-300 justify-between items-center hidden lg:space-x-44 md:space-x-0">
             <div>
               <h3 className="text-xl font-medium pb-5 poppins-medium">
@@ -98,8 +98,9 @@ function Footer() {
               <div className="flex flex-col h-full">
                 <div className="flex flex-col gap-2">
                   <p className="text-xl font-light text-gray-600 pb-6 poppins-light">
-                    # C 2, Shanthi Kiran apartments, Nandhi Durga Road,
-                    Bengaluru 560046
+                  NO.136, RESIDENCY ROAD SHANTHALA NAGAR, <br className="hidden lg:block"/>
+                  G.5 CEARS PLAZA
+                  BANGALORE-560025
                   </p>
                   <p className="text-xl font-light text-gray-600 poppins-light">
                     <span className="font-medium">Phone:</span>{" "}
