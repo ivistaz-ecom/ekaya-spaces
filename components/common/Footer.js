@@ -5,7 +5,7 @@ import Link from "next/link";
 function Footer() {
   const socialLinks = [
     {
-      href: "https://www.facebook.com/profile.php?id=61559578016047",
+      href: "https://www.facebook.com/EkayaSpaces/",
       label: "Facebook",
     },
     {
