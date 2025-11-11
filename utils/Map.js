@@ -4,7 +4,7 @@ function Map({ data }) {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-[80%] mx-auto py-12">
+    <div className="max-w-[80%] mx-auto py-12">
       <div class="mb-4 dark:border-gray-700">
         <ul
           class="flex flex-wrap -mb-px text-sm font-medium text-center"
@@ -17,18 +17,17 @@ function Map({ data }) {
           {data.map((items, index) => (
             <li class="me-2" role="presentation" key={index}>
               <button
-  className={`inline-block p-4  rounded-t-lg text-xl poppins-light ${
-    activeTab === index
-      ? "bg-[#ABD2D3] text-white hover:bg-[#ABD2D3] border-green-500"
-      : "bg-white text-gray-500 hover:bg-green-100 border-transparent"
-  }`}
-  type="button"
-  role="tab"
-  onClick={() => setActiveTab(index)}
->
-  {items.plan_name}
-</button>
-
+                className={`inline-block p-4  rounded-t-lg text-xl poppins-light ${
+                  activeTab === index
+                    ? "bg-[#ABD2D3] text-white hover:bg-[#ABD2D3] border-green-500"
+                    : "bg-white text-gray-500 hover:bg-green-100 border-transparent"
+                }`}
+                type="button"
+                role="tab"
+                onClick={() => setActiveTab(index)}
+              >
+                {items.plan_name}
+              </button>
             </li>
           ))}
         </ul>

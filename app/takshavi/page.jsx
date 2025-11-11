@@ -3,6 +3,7 @@ import Banner from "../../components/Takshavi/Banner";
 import Content from "../../components/Takshavi/Content";
 import Seo from "../../components/common/Seo";
 import Contact from "@/components/HomePage/Contact";
+import LocationHighlights from "@/components/Takshavi/LocationHighlights";
 
 const Page = () => {
   const pageTitle =
@@ -23,6 +24,7 @@ const Page = () => {
       <Suspense fallback={<div></div>}>
         <Banner />
         <Content />
+        <LocationHighlights />
         <Contact />
       </Suspense>
     </>
