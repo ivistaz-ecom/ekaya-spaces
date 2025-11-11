@@ -77,6 +77,7 @@ export default function NearbyFacilities() {
     },
   ];
   
+  
   return (
     <>
       <div className="max-w-[80%] mx-auto">
