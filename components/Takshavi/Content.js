@@ -163,8 +163,8 @@ function Content() {
         </p>
       </div>
       <div className="w-[80%] mx-auto">
-        <Slider ref={sliderRef} {...settings}>
-          <div>
+        <Slider ref={sliderRef} {...settings} className="z-10">
+          <div className="z-10">
             <img src="/takshavi/gallery-1.png" className="" />
           </div>
           <div>

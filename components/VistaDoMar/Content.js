@@ -194,8 +194,8 @@ function Content() {
         className="lg:w-[80%] sm:w-[80%] w-full mx-auto p-5"
         data-aos="fade-down"
       >
-        <Slider ref={sliderRef} {...settings}>
-          <div className="p-2">
+        <Slider ref={sliderRef} {...settings} className="z-10">
+          <div className="p-2 z-10">
             <img src="/VistaDoMar/part-1.png" className="" />
           </div>
           <div className="p-2">

@@ -164,8 +164,8 @@ function Content() {
         </p>
       </div>
       <div className="w-[80%] mx-auto">
-        <Slider ref={sliderRef} {...settings}>
-          <div>
+        <Slider ref={sliderRef} {...settings} className="z-10">
+          <div className="z-10">
             <Image
               src="/ellen/slide.png"
               className="w-full"

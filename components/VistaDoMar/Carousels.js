@@ -94,9 +94,9 @@ const GymCarousel = () => {
 
   return (
     <div className="  relative ">
-      <Slider ref={sliderRef} {...settings}>
+      <Slider ref={sliderRef} {...settings} className="z-10">
         {gymData.map((item, index) => (
-          <div key={index} className="">
+          <div key={index} className="z-10">
             <div className="relative overflow-hidden">
               {/* Image with arrows inside */}
               <div className="relative w-full h-[500px]">

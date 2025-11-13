@@ -57,8 +57,8 @@ export default function MyComponent() {
       </div>
 
       <div className="relative w-full lg:col-span-2">
-        <Slider {...settings}>
-          <div>
+        <Slider {...settings} className="z-10">
+          <div className="z-10">
             <Image
               src="/embrace/gallery-001.png"
               width={800}
