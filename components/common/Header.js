@@ -47,8 +47,8 @@ function Header({ stats }) {
       setIsScrolled(scrollTop > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   //   useEffect(() => {
@@ -59,7 +59,11 @@ function Header({ stats }) {
   return (
     <>
       <span className="absolute w-full z-0" onClick={handleClick}></span>
-      <nav class={`${isScrolled ? 'bg-[#5CA2B0]' : 'bg-transparent bg-opacity-5'} transition-all duration-300 fixed w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]`}>
+      <nav
+        class={`${
+          isScrolled ? "bg-[#5CA2B0]" : "bg-transparent bg-opacity-5"
+        } transition-all duration-300 fixed w-full z-50 top-0 start-0 border-b border-[#f8fafc7a]`}
+      >
         <div class="flex justify-between p-4 lg:w-[80%] mx-auto  items-center z-50 ">
           <div class="text-center lg:hidden">
             <button
@@ -113,7 +117,7 @@ function Header({ stats }) {
                                 Goa
                               </p>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link
                                 onClick={handleClick}
                                 href="/about-dona-paula"
@@ -121,7 +125,7 @@ function Header({ stats }) {
                               >
                                 — Dona Paula
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link
                                 onClick={handleClick}
@@ -356,86 +360,187 @@ function Header({ stats }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-gray-700 text-2xl font-bold p-2"
                 >
-              <div>
-              <AiOutlineClose className="bg-[#5CA2B0] text-white rounded-full -mx-64 md:-mx-[680px] p-2 mt-3" size={35}/>
-              </div>
-
+                  <div>
+                    <AiOutlineClose
+                      className="bg-[#5CA2B0] text-white rounded-full -mx-64 md:-mx-[680px] p-2 mt-3"
+                      size={35}
+                    />
+                  </div>
                 </button>
               </div>
               <ul className="space-y-7 text-gray-700 text-lg">
-      {/* Ongoing Projects */}
-      <li>
-        <button onClick={() => handleDropdown("ongoing")} className="flex justify-between w-full">
-          Ongoing Projects <span>{openDropdown === "ongoing" ? <FaChevronUp /> :  <FaChevronDown/>}</span>
-        </button>
-        {openDropdown === "ongoing" && (
-          <>
-          <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">Goa</h3>
-          <ul className="pl-4 space-y-2 pb-3">
-            <li className="pt-3"><Link href="/about-dona-paula" onClick={handleMobileClick}>— Dona Paula</Link></li>
-            <li><Link href="/vista-do-mar" onClick={handleMobileClick}>— Vista Do Mar</Link></li>
-            
-          </ul>
-          <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white">Bangalore</h3>
-          <ul className="pl-4 space-y-2 text-">
-            <li className="pt-3"><Link href="/takshavi" onClick={handleMobileClick}>— Takshavi</Link></li>
-          </ul>
-          </>
-        )}
-      </li>
+                {/* Ongoing Projects */}
+                <li>
+                  <button
+                    onClick={() => handleDropdown("ongoing")}
+                    className="flex justify-between w-full"
+                  >
+                    Ongoing Projects{" "}
+                    <span>
+                      {openDropdown === "ongoing" ? (
+                        <FaChevronUp />
+                      ) : (
+                        <FaChevronDown />
+                      )}
+                    </span>
+                  </button>
+                  {openDropdown === "ongoing" && (
+                    <>
+                      <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">
+                        Goa
+                      </h3>
+                      <ul className="pl-4 space-y-2 pb-3">
+                        {/* <li className="pt-3"><Link href="/about-dona-paula" onClick={handleMobileClick}>— Dona Paula</Link></li> */}
+                        <li>
+                          <Link
+                            href="/vista-do-mar"
+                            onClick={handleMobileClick}
+                          >
+                            — Vista Do Mar
+                          </Link>
+                        </li>
+                      </ul>
+                      <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white">
+                        Bangalore
+                      </h3>
+                      <ul className="pl-4 space-y-2 text-">
+                        <li className="pt-3">
+                          <Link href="/takshavi" onClick={handleMobileClick}>
+                            — Takshavi
+                          </Link>
+                        </li>
+                      </ul>
+                    </>
+                  )}
+                </li>
 
-      {/* Completed Projects */}
-      <li>
-        <button onClick={() => handleDropdown("completed")} className="flex justify-between w-full">
-          Completed Projects <span>{openDropdown === "completed" ? <FaChevronUp /> :  <FaChevronDown/>}</span>
-        </button>
-        {openDropdown === "completed" && (
-          <>
-          <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">Bangalore</h3>
-          <ul className="pl-4 space-y-2 text-">
-            
-            <li className="pt-3"><Link href="/about-embrace" onClick={handleMobileClick}>Embrace</Link></li>
-            <li><Link href="/about-ellen" onClick={handleMobileClick}>Ellen</Link></li>
-          </ul>
-          </>
-        )}
-        
-      </li>
+                {/* Completed Projects */}
+                <li>
+                  <button
+                    onClick={() => handleDropdown("completed")}
+                    className="flex justify-between w-full"
+                  >
+                    Completed Projects{" "}
+                    <span>
+                      {openDropdown === "completed" ? (
+                        <FaChevronUp />
+                      ) : (
+                        <FaChevronDown />
+                      )}
+                    </span>
+                  </button>
+                  {openDropdown === "completed" && (
+                    <>
+                      <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">
+                        Bangalore
+                      </h3>
+                      <ul className="pl-4 space-y-2 text-">
+                        <li className="pt-3">
+                          <Link
+                            href="/about-embrace"
+                            onClick={handleMobileClick}
+                          >
+                            Embrace
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/about-ellen" onClick={handleMobileClick}>
+                            Ellen
+                          </Link>
+                        </li>
+                      </ul>
+                    </>
+                  )}
+                </li>
 
-      {/* Upcoming Projects */}
-      <li>
-        <button onClick={() => handleDropdown("upcoming")} className="flex justify-between w-full">
-          Upcoming Projects <span>{openDropdown === "upcoming" ? <FaChevronUp /> :  <FaChevronDown/>}</span>
-        </button>
-        {openDropdown === "upcoming" && (
-          <>
-          <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">Goa</h3>
-          <ul className="pl-4 space-y-2 text-">
-          <li className="pt-3"><Link href="/about-moira" onClick={handleMobileClick}>— Moira</Link></li>
-          <li><Link href="/about-amora" onClick={handleMobileClick}>— Amora</Link></li>
-          <li><Link href="/about-lucilia" onClick={handleMobileClick}>— Lucilia</Link></li>
-          </ul>
-          </>
-        )}
-      </li>
+                {/* Upcoming Projects */}
+                <li>
+                  <button
+                    onClick={() => handleDropdown("upcoming")}
+                    className="flex justify-between w-full"
+                  >
+                    Upcoming Projects{" "}
+                    <span>
+                      {openDropdown === "upcoming" ? (
+                        <FaChevronUp />
+                      ) : (
+                        <FaChevronDown />
+                      )}
+                    </span>
+                  </button>
+                  {openDropdown === "upcoming" && (
+                    <>
+                      <h3 className=" text-xl bg-[#5CA2B0] px-5 p-1 rounded-md text-white mt-4">
+                        Goa
+                      </h3>
+                      <ul className="pl-4 space-y-2 text-">
+                        <li className="pt-3">
+                          <Link href="/about-moira" onClick={handleMobileClick}>
+                            — Moira
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/about-amora" onClick={handleMobileClick}>
+                            — Amora
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/about-lucilia"
+                            onClick={handleMobileClick}
+                          >
+                            — Lucilia
+                          </Link>
+                        </li>
+                      </ul>
+                    </>
+                  )}
+                </li>
 
-      {/* About Ekaya */}
-      <li>
-        <button onClick={() => handleDropdown("about")} className="flex justify-between w-full">
-          <span>About Ekaya</span> <span>{openDropdown === "about" ? <FaChevronUp /> :  <FaChevronDown/>}</span>
-        </button>
-        {openDropdown === "about" && (
-          <ul className="pl-4 space-y-2 text-">
-            <li className="pt-3"><Link href="/about-us" onClick={handleMobileClick}>Our Story</Link></li>
-            <li><Link href="/our-team" onClick={handleMobileClick}>Our Team</Link></li>
-            <li><Link href="/why-ekaya" onClick={handleMobileClick}>Why Ekaya</Link></li>
-            <li><Link href="/sustainability" onClick={handleMobileClick}>Sustainability</Link></li>
-          </ul>
-        )}
-      </li>
-
-      
-    </ul>
+                {/* About Ekaya */}
+                <li>
+                  <button
+                    onClick={() => handleDropdown("about")}
+                    className="flex justify-between w-full"
+                  >
+                    <span>About Ekaya</span>{" "}
+                    <span>
+                      {openDropdown === "about" ? (
+                        <FaChevronUp />
+                      ) : (
+                        <FaChevronDown />
+                      )}
+                    </span>
+                  </button>
+                  {openDropdown === "about" && (
+                    <ul className="pl-4 space-y-2 text-">
+                      <li className="pt-3">
+                        <Link href="/about-us" onClick={handleMobileClick}>
+                          Our Story
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/our-team" onClick={handleMobileClick}>
+                          Our Team
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/why-ekaya" onClick={handleMobileClick}>
+                          Why Ekaya
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/sustainability"
+                          onClick={handleMobileClick}
+                        >
+                          Sustainability
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+              </ul>
             </div>
           </div>
         )}
