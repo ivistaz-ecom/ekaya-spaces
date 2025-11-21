@@ -12,7 +12,7 @@ function Insights() {
   const fetchPost = async () => {
     try {
       const postResponse = await fetch(
-        `${configData.SERVER_URL}posts?_embed&categories[]=2&&production[]=${configData.SERVER}&status[]=publish&per_page=3`
+        `${configData.SERVER_URL}posts?_embed&categories[]=2&&production[]=${configData.SERVER}&status[]=publish&per_page=10`
       );
       const postData = await postResponse.json();
 
@@ -41,16 +41,20 @@ function Insights() {
       </div>
       <div className="mx-auto mt-10 justify-center container px-4 lg:px-0 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Blogs.map((items, index) => (
+          {Blogs.map((items, index) => {
+            // Safely get featured media image URL
+            const featuredImageUrl = items["_embedded"]?.["wp:featuredmedia"]?.[0]?.["source_url"] || "/blogs/banner.png";
+            
+            return (
             <div
-              className={`z-10 dark:bg-gray-800 dark:border-gray-700 ${items.acf.css}`}
+              className={`z-10 dark:bg-gray-800 dark:border-gray-700 ${items.acf?.css || ""}`}
               key={index}
             >
               <div className="bg-gray-100 p-5">
                 <Image
                   className="rounded-0 w-full"
-                  src={items["_embedded"]["wp:featuredmedia"][0]["source_url"]}
-                  alt={items.title.rendered}
+                  src={featuredImageUrl}
+                  alt={items.title?.rendered || "Blog post"}
                   width={300}
                   height={300}
                 />
@@ -73,7 +77,8 @@ function Insights() {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </>

@@ -18,7 +18,7 @@ function Banner() {
   return (
     <div className="lg:h-screen h-[60vh] relative z-19" data-aos="fade-down">
       <Image
-        src="/embrace-banner-1.png"
+        src="/embrace/banner.png"
         alt="Banner"
         width={1000} // Adjust width and height according to your image dimensions
         height={500}

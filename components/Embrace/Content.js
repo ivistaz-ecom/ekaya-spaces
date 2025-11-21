@@ -169,7 +169,7 @@ function Content() {
       <div>
       <ProjectGallery />
       </div>
-      <div className="lg:w-[80%] mx-auto py-12 lg:p-0 p-5">
+      <div className="lg:w-[80%] mx-auto py-12 lg:py-10 p-5">
         <h4 className="lg:text-4xl text-3xl text-black poppins-light pb-6">
           Spacious, modern homes
           <br />

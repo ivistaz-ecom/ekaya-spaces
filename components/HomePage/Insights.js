@@ -100,16 +100,20 @@ function Insights() {
       </div>
       <div className="mx-auto mt-10 justify-center container px-4 lg:px-0 z-10">
         <Slider {...settings} ref={sliderRef} className="z-10">
-          {Blogs.map((items, index) => (
+          {Blogs.map((items, index) => {
+            // Safely get featured media image URL
+            const featuredImageUrl = items["_embedded"]?.["wp:featuredmedia"]?.[0]?.["source_url"] || "/blogs/banner.png";
+            
+            return (
             <div
-              className={`z-10 lg:max-w-sm dark:bg-gray-800 dark:border-gray-700 ${items.acf.css}`}
+              className={`z-10 lg:max-w-sm dark:bg-gray-800 dark:border-gray-700 ${items.acf?.css || ""}`}
               key={index}
             >
               <Link href={`/blogs/${items.slug}`}>
                 <Image
                   className="rounded-0 w-full"
-                  src={items["_embedded"]["wp:featuredmedia"][0]["source_url"]}
-                  alt={items.title.rendered}
+                  src={featuredImageUrl}
+                  alt={items.title?.rendered || "Blog post"}
                   width={300}
                   height={300}
                 />
@@ -129,7 +133,8 @@ function Insights() {
                 </div>
               </Link>
             </div>
-          ))}
+            );
+          })}
         </Slider>
       </div>
       <div className="z-0 -mt-[15em] bg-no-repeat bg-white bg-cover bg-[url('/background.jpg')] bg-blend-multiply h-screen relative"></div>
