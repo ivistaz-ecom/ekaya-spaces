@@ -212,6 +212,15 @@ function Header({ stats }) {
                                 — Amora
                               </Link>
                             </li>
+                            <li>
+                              <Link
+                                onClick={handleClick}
+                                href="/about-lucilia"
+                                class="block px-4 py-2 poppins-light text-[18px] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >
+                                — Lucilia
+                              </Link>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -404,6 +413,7 @@ function Header({ stats }) {
           <ul className="pl-4 space-y-2 text-">
           <li className="pt-3"><Link href="/about-moira" onClick={handleMobileClick}>— Moira</Link></li>
           <li><Link href="/about-amora" onClick={handleMobileClick}>— Amora</Link></li>
+          <li><Link href="/about-lucilia" onClick={handleMobileClick}>— Lucilia</Link></li>
           </ul>
           </>
         )}
