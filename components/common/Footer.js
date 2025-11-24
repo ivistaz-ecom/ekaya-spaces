@@ -28,6 +28,7 @@ function Footer() {
         { href: "/takshavi", label: "Takshavi" },
       ],
     },
+    
     {
       title: "Projects in Goa",
       links: [
