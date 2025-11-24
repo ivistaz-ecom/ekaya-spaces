@@ -6,7 +6,7 @@ import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import Script from "next/script";
 import "aos/dist/aos.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,6 +53,7 @@ export default function RootLayout({
 
         <Header stats={status} />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
