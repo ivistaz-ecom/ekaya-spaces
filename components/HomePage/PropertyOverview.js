@@ -129,6 +129,7 @@ function Crafted() {
   const handlevista = () => {
     setVista(true);
     setAmora(false);
+    setLucilia(false);
     //setTakshavi(false)
     //setEllen(true)
     // setGoa(false)
