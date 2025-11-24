@@ -104,6 +104,7 @@ function Crafted() {
   const [ellen, setEllen] = useState(false);
   const [vista, setVista] = useState(true);
   const [amora, setAmora] = useState(false);
+  const [lucilia, setLucilia] = useState(false);
   //     const [goa, setGoa] = useState(false)
 
   const handletakshavi = () => {
@@ -134,7 +135,13 @@ function Crafted() {
   };
   const handleamora = () => {
     setVista(false);
+    setLucilia(false);
     setAmora(true);
+  };
+  const handlelucilia = () => {
+    setVista(false);
+    setAmora(false);
+    setLucilia(true);
   };
 
   //     const handleGoa = () => {
@@ -596,6 +603,14 @@ function Crafted() {
                         Amora
                       </button>
                     </div>
+                    <div class="border border-b-0 border-gray-200 dark:border-gray-700">
+                      <button
+                        className="bg-e-green w-full font-light text-start p-4 text-[18px] text-white"
+                        onClick={handlelucilia}
+                      >
+                        Lucilia
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -661,10 +676,46 @@ function Crafted() {
                       Amora
                     </h3>
                     <p className="text-[18px] px-4 py-2 font-light mb-6">
-                      Located in the serene coastal town of Moira,
+                      Located in the serene coastal town of Moira
                     </p>
                     <Link
                       href="/about-amora"
+                      className="p-4 px-12 mt-4 ml-4 bg-e-green text-white"
+                    >
+                      Know more
+                    </Link>
+                  </div>
+                </div>
+              )}
+              {lucilia && (
+                <div className="lg:mt-0 mt-4 lg:w-[800px] z-10 relative">
+                  <Slider ref={sliderRef} {...settings}>
+                    <div>
+                      <Image
+                        src="/lucilia/slide-1.png"
+                        className="w-[800px] h-[400px] object-cover"
+                        width={800}
+                        height={400}
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src="/lucilia/slide-2.png"
+                        className="w-[800px] h-[400px] object-cover"
+                        width={800}
+                        height={400}
+                      />
+                    </div>
+                  </Slider>
+                  <div className="text-start">
+                    <h3 className="text-[34px] py-2 px-4 font-regular">
+                      Lucilia
+                    </h3>
+                    <p className="text-[18px] px-4 py-2 font-light mb-6">
+                      Nestled in the evolving premium enclave of Taleigao
+                    </p>
+                    <Link
+                      href="/about-lucilia"
                       className="p-4 px-12 mt-4 ml-4 bg-e-green text-white"
                     >
                       Know more
