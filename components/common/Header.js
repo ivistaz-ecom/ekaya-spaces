@@ -117,7 +117,7 @@ function Header({ stats }) {
                                 Goa
                               </p>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link
                                 onClick={handleClick}
                                 href="/about-dona-paula"
@@ -125,7 +125,7 @@ function Header({ stats }) {
                               >
                                 — Dona Paula
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link
                                 onClick={handleClick}
@@ -198,7 +198,7 @@ function Header({ stats }) {
                               </p>
                             </li>
 
-                            <li>
+                            {/* <li>
                               <Link
                                 onClick={handleClick}
                                 href="/about-moira"
@@ -206,7 +206,7 @@ function Header({ stats }) {
                               >
                                 — Moira
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link
                                 onClick={handleClick}
@@ -390,7 +390,7 @@ function Header({ stats }) {
                         Goa
                       </h3>
                       <ul className="pl-4 space-y-2 pb-3">
-                        <li className="pt-3"><Link href="/about-dona-paula" onClick={handleMobileClick}>— Dona Paula</Link></li>
+                        {/* <li className="pt-3"><Link href="/about-dona-paula" onClick={handleMobileClick}>— Dona Paula</Link></li> */}
                         <li>
                           <Link
                             href="/vista-do-mar"
